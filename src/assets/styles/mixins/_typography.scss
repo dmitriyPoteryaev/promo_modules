@@ -1,0 +1,14 @@
+@mixin header-bold-16px {
+  @include font($size: 60px, $weight: 700, $lineHeight: 78px);
+}
+
+@mixin button-text-bold-16px {
+  @include font($size: 16px, $weight: 700, $lineHeight: 21.55px);
+}
+
+@mixin button-text-bold-18px {
+  @include font($size: 18px, $weight: 700, $lineHeight: 24.25px);
+}
+@mixin button-text-regular-16px {
+  @include font($size: 16px, $weight: 400, $lineHeight: 18.75px);
+}

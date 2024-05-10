@@ -1,0 +1,33 @@
+@import '../../../assets/styles/mixins/mixins.scss';
+
+.client_header {
+  min-width: 100%;
+  height: 110px;
+  padding: 30px 209px 30px 69px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+.client_header_container {
+  max-width: 1920px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* nav toggle */
+.nav_toggle {
+
+  width: 28px;
+  height: 23px;
+  background-color: black;
+}
+
+.client_header_moreInfo {
+  @include button-text-regular-16px;
+  
+  font-family: 'Roboto-Regular', sans-serif;
+  text-align: right;
+}
