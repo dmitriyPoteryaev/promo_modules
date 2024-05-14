@@ -1,10 +1,11 @@
 import React from "react";
 import { ClientLayout } from "../../ui/client-layout/client-layout";
+import { Application } from "./application";
 
 export const Main = () => {
   return (
     <ClientLayout>
-      <p>I'm here!</p>
+      <Application/>
     </ClientLayout>
   );
 };

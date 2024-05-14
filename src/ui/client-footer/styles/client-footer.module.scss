@@ -50,7 +50,7 @@
 }
 
 .client_footer_Links ul li a{
-  @include text-italic-14px;
+  @include text-italic-bold-14px;
 
   line-height: 24px;
   font-family: "Istok-Italic-Bold";
@@ -82,7 +82,7 @@
 }
 
 .client_footer_shortInfo span {
-  @include text-italic-14px;
+  @include text-italic-bold-14px;
 
   max-width: 397px;
   width: 100%;
@@ -98,7 +98,7 @@
 }
 
 .client_footer_contactUs  ul li div { 
-  @include text-italic-14px;
+  @include text-italic-bold-14px;
 
   max-width: 200px;
   width: 100%;

@@ -1,4 +1,4 @@
-@mixin header-bold-16px {
+@mixin header-bold-60px {
   @include font($size: 60px, $weight: 700, $lineHeight: 78px);
 }
 
@@ -6,7 +6,11 @@
   @include font($size: 20px, $weight: 400, $lineHeight: 24px);
 }
 
-@mixin text-italic-14px {
+@mixin header-regular-bold-20px {
+  @include font($size: 20px, $weight: 700, $lineHeight: 27px);
+}
+
+@mixin text-italic-bold-14px {
   @include font($size: 14px, $weight: 700, $lineHeight: 20px);
 }
 
