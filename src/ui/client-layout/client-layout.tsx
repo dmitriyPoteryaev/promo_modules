@@ -1,5 +1,6 @@
 import { ReactNode, FC } from "react";
 import { ClientHeader } from "../client-header/client-header";
+import { ClientFooter } from "../client-footer/client-footer";
 import classes from "./styles/client-layout.module.scss";
 
 interface ClientLayoutProps {
@@ -13,6 +14,7 @@ export const ClientLayout : FC<ClientLayoutProps> = (props) => {
     <div className={classes.layout_client}>
       <ClientHeader />
         <main className={classes.layout_client_container}>{children}</main>
+        <ClientFooter />
     </div>
   );
 };
