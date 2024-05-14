@@ -21,6 +21,22 @@
     font-weight: 400;
     src: url('../fonts/roboto/Roboto-Regular.ttf'),
   }
+  @font-face {
+    font-display: swap;
+    font-family: 'Istok-Italic-Bold';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/istokWeb/IstokWebBoldItalic.ttf'),
+    url('../fonts/istokWeb/IstokWebBoldItalic.woff')
+  }
+  @font-face {
+    font-display: swap;
+    font-family: 'Istok-Regular-Bold';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/istokWeb/IstokWebBold.ttf'),
+    url('../fonts/istokWeb/IstokWebBold.woff')
+  }
   
   
   
