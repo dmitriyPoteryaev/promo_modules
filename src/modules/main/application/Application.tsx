@@ -13,8 +13,8 @@ export const Application = () => {
       <header>Applications</header>
       <ul>
         <li>
-          <Application1 onClick={() => navigate("/application1")} />
-          <span onClick={() => navigate("/application1")}>Application #1</span>
+          <Application1 onClick={() => navigate("/application/:" + "1")} />
+          <span onClick={() => navigate("/application/:" + "1")}>Application #1</span>
         </li>
         <li>
           <Application2 />

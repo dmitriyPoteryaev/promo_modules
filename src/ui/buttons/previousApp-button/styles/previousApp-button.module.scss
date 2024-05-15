@@ -1,0 +1,50 @@
+@import "../../../../assets/styles/mixins/mixins.scss";
+
+
+.prevAppButton {
+
+    width: 100%;
+    margin-top: 61.41px;
+    margin-bottom: 58.78px;
+}
+
+.prevAppButton_container {
+
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.prevAppButton_buttonWrapper {
+
+    width: 37.3px;
+    height: 37.3px;
+    margin-right: 24px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #797979;
+
+}
+
+.prevAppButton_container div {
+ 
+    display: flex;
+}
+
+.prevAppButton_container div div,  .prevAppButton_container div div{
+    @include text-regular-16px;
+
+    font-family: 'Istok-Regular';
+    color: #797979;
+}
+
+.prevAppButton_container div div:last-child {
+
+    height: 20px;
+    margin-left: 5px;
+    border-bottom: 1px solid #797979;
+}
+
+

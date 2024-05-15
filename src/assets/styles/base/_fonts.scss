@@ -37,6 +37,23 @@
     src: url('../fonts/istokWeb/IstokWebBold.ttf'),
     url('../fonts/istokWeb/IstokWebBold.woff')
   }
+
+  @font-face {
+    font-display: swap;
+    font-family: 'Istok-Regular-Bold';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/istokWeb/IstokWebBold.ttf'),
+    url('../fonts/istokWeb/IstokWebBold.woff')
+  }
   
+  @font-face {
+    font-display: swap;
+    font-family: 'Istok-Regular';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/istokWeb/IstokWebRegular.ttf'),
+    url('../fonts/istokWeb/IstokWebRegular.woff')
+  }
   
   

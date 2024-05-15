@@ -7,7 +7,7 @@ import { Route, Routes } from "react-router-dom";
 const AppRoutes: FC = () => {
   return (
     <Routes>
-      <Route path="/application1" element={<Application1 />} />
+      <Route path="/application/:id" element={<Application1 />} />
       <Route path="/" element={<Main />} />
       <Route path="*" element={<Main />} />
     </Routes>

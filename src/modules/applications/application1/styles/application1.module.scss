@@ -1,0 +1,18 @@
+
+@import "../../../../assets/styles/mixins/mixins.scss";
+
+
+.application_header {
+    @include header-bold-60px;
+
+    max-width: 1255.21px;
+    width: 100%;
+    font-family: 'Archivo-Narrow-Bold';
+    color: #212529;
+}
+
+.application_imgDescription {
+
+    width: 100%;
+    max-width: 784px;
+}

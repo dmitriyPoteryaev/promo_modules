@@ -1,0 +1,20 @@
+
+.block_layout {
+    width: 100%;
+    padding-left: 195px;
+    padding-right: 195px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+@media screen and (max-width:  800px) {
+
+    .block_layout {
+  
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+}

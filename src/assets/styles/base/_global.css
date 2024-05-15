@@ -1,7 +1,7 @@
 *,
 *::before,
 *::after {
-  font-family: 'Archivo-Narrow-Regular', 'Archivo-Narrow-Bold', 'Roboto-Regular', 'Istok-Italic-Bold', 'Istok-Regular-Bold';
+  font-family: 'Archivo-Narrow-Regular', 'Archivo-Narrow-Bold', 'Roboto-Regular', 'Istok-Italic-Bold', 'Istok-Regular-Bold', 'Istok-Regular';
   box-sizing: border-box;
   outline: 0;
 }
