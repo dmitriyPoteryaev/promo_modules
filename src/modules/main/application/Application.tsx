@@ -10,20 +10,23 @@ export interface ApplicationProps {
   header: string;
 }
 
-export type application = { nameApp: string; AppPng: ReactNode };
+export type application = { nameApp: string; AppPng: ReactNode, url: string };
 
 const applications: application[] = [
   {
     nameApp: "Application #1",
     AppPng: <Application1 />,
+    url: "1",
   },
   {
     nameApp: "Application #2",
     AppPng: <Application2 />,
+    url: "2",
   },
   {
     nameApp: "Application #3",
     AppPng: <Application3 />,
+    url: "3",
   },
 ];
 
@@ -41,15 +44,15 @@ export const Application: FC<ApplicationProps> = (props) => {
       <header>{header}</header>
       <ul>
         {neddedApp.map((application, index) => {
-          const { nameApp, AppPng } = application;
+          const { nameApp, AppPng, url } = application;
 
-          const numberApp: number = index + 1;
+
           return (
             <li key={nameApp}>
-              <div onClick={() => navigate("/application/:" + numberApp)}>
+              <div onClick={() => navigate("/application/:" + url)}>
                 {AppPng}
               </div>
-              <span onClick={() => navigate("/application/:" + numberApp)}>
+              <span onClick={() => navigate("/application/:" + url)}>
                 {nameApp}
               </span>
             </li>
