@@ -2,7 +2,15 @@
 @import "../../../../assets/styles/mixins/mixins.scss";
 
 
-.application_header {
+.application1 {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.application1_header {
     @include header-bold-60px;
 
     max-width: 1255.21px;
@@ -11,8 +19,101 @@
     color: #212529;
 }
 
-.application_imgDescription {
+.application1_shotDescription {
+
+    margin-top: 30px;
+    display: flex;
+}
+
+.application1_shotDescription figure {
+
+   max-width: 784px;
+   width: 100%;
+   margin: 0px;
+   margin-right: 95px;
+}
+
+.application1_shotDescription  img {
 
     width: 100%;
-    max-width: 784px;
+}
+
+.application1_shotDescription  p {
+    @include text-regular-20px;
+
+    width: 100%;
+    max-width: 648px;
+    font-family: 'Istok-Regular';
+    color: #000000;
+}
+
+.application1_mainImg {
+
+    margin: 69px 0px 140.53px 0px;
+}
+
+.application1_textDescription{
+
+    width: 100%;
+    margin-bottom: 138px;
+}
+
+.application1_textDescription header {
+    @include text-bold-20px;
+
+    margin-bottom: 19.77px;
+    font-family: 'Istok-Regular-Bold';
+    color: #00A197;
+
+}
+
+.application1_textDescription p {
+
+    margin-bottom: 31.86px;
+}
+
+.application1_textDescription ul li{
+
+    margin-bottom: 16.91px;
+}
+
+.application1_textDescription p,  .application1_textDescription ul li{
+    @include text-regular-20px;
+
+    font-family: 'Istok-Regular';
+    color: #000000
+    ;
+
+}
+
+.application1_buttonBlock {
+
+    width: 100%;
+    margin-bottom: 103.18px;
+    display: flex;
+    justify-content: center;
+}
+
+
+@media screen and (max-width:  1050px) {
+
+    .application1_shotDescription {
+  
+       flex-direction: column-reverse;
+       align-items: center;
+       
+    }
+
+    .application1_shotDescription  p {
+
+        min-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .application1_shotDescription figure {
+
+        margin-right: 0px;
+     }
+
+
 }

@@ -1,0 +1,47 @@
+@import '../../../../assets//styles/mixins/mixins.scss';
+
+.button {
+
+    @include button-text-bold-16px;
+
+    height: 60px;
+    border-radius: 30px;
+    font-family: 'Archivo-Narrow-Bold';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.button--white {
+
+    background-color: #F7F7F7;
+    color: #527C79;
+}
+
+.button--magenta {
+
+    background-color: #FF007D;
+    color: #FFFFFF;
+}
+
+.button--teal {
+
+    background-color: #183856;
+    color:  #FFFFFF;
+}
+
+.button--large {
+
+    width: 314.24px;
+}
+
+.button--medium {
+
+    width: 263.53px;
+}
+
+.button--small {
+
+    width: 242px;
+}

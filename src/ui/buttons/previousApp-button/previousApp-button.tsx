@@ -16,7 +16,7 @@ export const PreviousAppButton: FC = () => {
 
     const numberChartInString = id?.length ? id.length - 1 : 0;
 
-    const lastChar = id[numberChartInString];
+    const lastChar = +id[numberChartInString];
 
     if (lastChar === 1) {
       return;
