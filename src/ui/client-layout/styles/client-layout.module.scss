@@ -14,5 +14,6 @@
     width: 100%;
     height: calc(100% - 482px);
     display: flex;
+    flex-direction: column;
     flex: 1 1 auto;
 }

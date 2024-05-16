@@ -5,7 +5,7 @@ import { Application } from "./application";
 export const Main = () => {
   return (
     <ClientLayout>
-      <Application/>
+      <Application header="Applications"/>
     </ClientLayout>
   );
 };

@@ -1,0 +1,21 @@
+
+.block_layout {
+    width: 100%;
+    padding-left: 195px;
+    padding-right: 195px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #F7F7F7; 
+
+}
+
+@media screen and (max-width:  960px) {
+
+    .block_layout {
+  
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+}
