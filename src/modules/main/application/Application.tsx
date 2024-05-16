@@ -43,16 +43,15 @@ export const Application: FC<ApplicationProps> = (props) => {
     <div className={classes.application}>
       <header>{header}</header>
       <ul>
-        {neddedApp.map((application, index) => {
-          const { nameApp, AppPng } = application;
+        {neddedApp.map((application) => {
+          const { nameApp, AppPng, url } = application;
 
-          const numberApp: number = index + 1;
           return (
             <li key={nameApp}>
-              <div onClick={() => navigate("/application/:" + numberApp)}>
+              <div onClick={() => navigate("/application/:" + url)}>
                 {AppPng}
               </div>
-              <span onClick={() => navigate("/application/:" + numberApp)}>
+              <span onClick={() => navigate("/application/:" + url)}>
                 {nameApp}
               </span>
             </li>
