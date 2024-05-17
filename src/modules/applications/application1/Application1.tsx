@@ -1,7 +1,7 @@
 import React from "react";
 import { BlockLayout } from "../../../ui/block-layout/block-layout";
 import { ClientLayout } from "../../../ui/client-layout/client-layout";
-import { PreviousAppButton } from "../../../ui/buttons/previousApp-button/previousApp-button";
+import { ButtonToMainPage } from "../../../ui/buttons/previousApp-button/button-to-main-page";
 import { Application } from "../../main/application";
 import classes from "./styles/application1.module.scss";
 import { Button } from "../../../ui/buttons/button/button";
@@ -13,7 +13,7 @@ export const Application1 = () => {
   return (
     <ClientLayout>
       <BlockLayout>
-        <PreviousAppButton />
+        <ButtonToMainPage />
         <section className={classes.application1}>
           <header className={classes.application1_header}>
             Ensuring Continuous Monitoring and Control of Server Room Parameters

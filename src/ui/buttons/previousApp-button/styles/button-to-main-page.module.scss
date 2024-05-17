@@ -1,21 +1,21 @@
 @import "../../../../assets/styles/mixins/mixins.scss";
 
 
-.prevAppButton {
+.button_to_main_page {
 
     width: 100%;
     margin-top: 61.41px;
     margin-bottom: 58.78px;
 }
 
-.prevAppButton_container {
+.button_to_main_page_container {
 
     display: flex;
     align-items: center;
     
 }
 
-.prevAppButton_buttonWrapper {
+.button_to_main_page_buttonWrapper {
 
     width: 37.3px;
     height: 37.3px;
@@ -29,19 +29,19 @@
 
 }
 
-.prevAppButton_container div {
+.button_to_main_page_container div {
  
     display: flex;
 }
 
-.prevAppButton_container div div,  .prevAppButton_container div div{
+.button_to_main_page_container div div,  .button_to_main_page_container div div{
     @include text-regular-16px;
 
     font-family: 'Istok-Regular';
     color: #797979;
 }
 
-.prevAppButton_container div div:last-child {
+.button_to_main_page_container div div:last-child {
 
     height: 20px;
     margin-left: 5px;
