@@ -1,0 +1,132 @@
+
+@import "../../../../assets/styles/mixins/mixins.scss";
+
+
+.application3 {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.application3_header {
+    @include header-bold-60px;
+
+    max-width: 1530.21px;
+    width: 100%;
+    font-family: 'Archivo-Narrow-Bold';
+    color: #212529;
+}
+
+.application3_shotDescription {
+
+    width: 100%;
+    max-width: 1530px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.application3_shotDescription figure {
+
+    width: 100%;
+    max-width: 1530px;
+    margin: 40px 0px 40px 0px;
+}
+
+.application3_shotDescription figure img{
+
+    width: 100%;
+    margin: 0px;
+}
+
+.application3_shotDescription article header {
+
+    @include text-bold-20px;
+
+    font-family: 'Istok-Regular-Bold';
+    color: #00A197;
+}
+
+.application3_shotDescription article p {
+    @include text-regular-20px;
+
+    margin-top: 50px;
+    font-family: 'Istok-Regular';
+    color: #000000;
+}
+
+.application3_textDescription {
+
+    width: 100%;
+    max-width: 1530px;
+    margin-bottom: 130px;
+}
+
+.application3_textDescription header{
+    @include text-bold-20px;
+
+    margin-bottom: 40px;
+    margin-top: 30px;
+    font-family: 'Istok-Regular-Bold';
+    color: #00A197;
+}
+
+.application3_textDescription p{
+    @include text-regular-20px;
+
+    margin-bottom: 30px;
+    font-family: 'Istok-Regular';
+    color: #000000;
+}
+
+.application3_textDescription ul li{
+    @include text-regular-20px;
+
+    margin-bottom: 5px;
+    font-family: 'Istok-Regular';
+    color: #000000;
+}
+
+.application3_buttonBlock {
+
+    width: 100%;
+    margin-bottom: 103.18px;
+    display: flex;
+    justify-content: center;
+}
+
+
+@media screen and (max-width:  1050px) {
+
+    .application2_shotDescription {
+  
+       flex-direction: column-reverse;
+       align-items: center;
+       
+    }
+
+    .application2_shotDescription  article {
+
+        min-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .application2_shotDescription figure {
+
+        margin-right: 0px;
+     }
+
+
+}
+
+@media screen and (max-width:  960px) {
+
+    .application2_shotDescription  article {
+
+      padding: 10px;
+    }
+
+}
