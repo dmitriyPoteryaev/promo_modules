@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { BlockLayout } from "../../../ui/block-layout/block-layout";
 import { ClientLayout } from "../../../ui/client-layout/client-layout";
 import { ButtonToMainPage } from "../../../ui/buttons/previousApp-button/button-to-main-page";
@@ -18,8 +18,6 @@ export const Application1 = () => {
   const specificId = defineIdApp(id);
 
   const moveToNextApp = () => {
-
-    console.log("ТЫ ЗДЕСЬ");
     
     const nextId = specificId ? +specificId + 1 : 1;
 
@@ -29,6 +27,11 @@ export const Application1 = () => {
       navigate("/application/:" + nextId);
     }
   };
+
+
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
 
   return (
     <ClientLayout>
