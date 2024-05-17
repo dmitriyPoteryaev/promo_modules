@@ -1,4 +1,5 @@
 @import "../../../../assets/styles/mixins/mixins.scss";
+@import "./mixins.scss";
 
 
 .button_to_main_page {
@@ -16,6 +17,8 @@
 }
 
 .button_to_main_page_buttonWrapper {
+
+    @include button-to-main-page-variant-styles;
 
     width: 37.3px;
     height: 37.3px;

@@ -1,0 +1,12 @@
+
+@mixin button-variant-styles { 
+
+    &:hover {
+        box-shadow: 6px 4px 20px 0px #7C003D;
+    }
+
+    &:active {
+        box-shadow: 6px 4px 20px 0px #7C003D;
+    }
+  
+}

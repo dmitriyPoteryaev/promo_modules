@@ -1,7 +1,7 @@
 import React, {useEffect} from "react";
 import { BlockLayout } from "../../../ui/block-layout/block-layout";
 import { ClientLayout } from "../../../ui/client-layout/client-layout";
-import { ButtonToMainPage } from "../../../ui/buttons/previousApp-button/button-to-main-page";
+import { ButtonToMainPage } from "../../../ui/buttons/button-to-main-page/button-to-main-page";
 import { Application } from "../../main/application";
 import classes from "./styles/application2.module.scss";
 import { Button } from "../../../ui/buttons/button/button";

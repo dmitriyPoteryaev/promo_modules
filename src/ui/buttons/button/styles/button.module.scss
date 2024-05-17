@@ -1,8 +1,10 @@
 @import '../../../../assets//styles/mixins/mixins.scss';
+@import "./mixin.scss";
 
 .button {
 
     @include button-text-bold-16px;
+    @include button-variant-styles;
 
     height: 60px;
     border-radius: 30px;
