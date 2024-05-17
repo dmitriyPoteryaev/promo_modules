@@ -6,12 +6,12 @@ import classes from "./styles/client-header.module.scss";
 
 
 
-export const ClientHeader: FC = (props) => {
+export const ClientHeader: FC = () => {
 
     return(
     <header className={classes.client_header}>
     <div className={classes.client_header_container}>
-    <Button variant='teal' size='small'>REQUEST FOR QUOTE</Button>
+    <Button variant='magenta' size='medium'>REQUEST FOR QUOTE</Button>
     </div>
     </header>)
 
