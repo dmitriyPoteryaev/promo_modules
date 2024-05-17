@@ -18,18 +18,21 @@ export const PreviousAppButton: FC = () => {
 
     const lastChar = +id[numberChartInString];
 
-    if (lastChar === 1) {
-      return;
-    } else {
-      neededNumber = lastChar - 1;
-      navigate("/application/:" + neededNumber);
-    }
+
+    navigate("/");
+
+    // if (lastChar === 1) {
+    //   return;
+    // } else {
+    //   neededNumber = lastChar - 1;
+    //   navigate("/");
+    // }
   };
   return (
     <div className={classes.prevAppButton}>
-    <div className={classes.prevAppButton_container} onClick={moveToPrevApp}>
+    <div className={classes.prevAppButton_container} >
       <button>
-        <div className={classes.prevAppButton_buttonWrapper}>
+        <div className={classes.prevAppButton_buttonWrapper} onClick={moveToPrevApp}>
           <LeftIcon />
         </div>
       </button>
