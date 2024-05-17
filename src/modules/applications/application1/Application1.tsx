@@ -5,11 +5,31 @@ import { ButtonToMainPage } from "../../../ui/buttons/previousApp-button/button-
 import { Application } from "../../main/application";
 import classes from "./styles/application1.module.scss";
 import { Button } from "../../../ui/buttons/button/button";
+import { useParams, useNavigate } from "react-router-dom";
+import { defineIdApp } from "../../../utils/defineIdApp";
 
 const png_description = require("../../../assets/png/application1/desc.png");
 const png_main = require("../../../assets/png/application1/main.png");
 
 export const Application1 = () => {
+  const { id } = useParams<{ id: string }>();
+  const navigate = useNavigate();
+
+  const specificId = defineIdApp(id);
+
+  const moveToNextApp = () => {
+
+    console.log("ТЫ ЗДЕСЬ");
+    
+    const nextId = specificId ? +specificId + 1 : 1;
+
+    if (nextId === 4) {
+      navigate("/application/:" + 1);
+    } else {
+      navigate("/application/:" + nextId);
+    }
+  };
+
   return (
     <ClientLayout>
       <BlockLayout>
@@ -66,13 +86,13 @@ export const Application1 = () => {
             </ul>
           </article>
           <div className={classes.application1_buttonBlock}>
-            <Button variant="magenta" size="medium">
+            <Button variant="magenta" size="medium" onClick={moveToNextApp}>
               NEXT APPLICATION
             </Button>
           </div>
         </section>
-        </BlockLayout>
-        <Application excludedApp={1} header="Read more"/>
+      </BlockLayout>
+      <Application excludedApp={1} header="Read more" />
     </ClientLayout>
   );
 };

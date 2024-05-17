@@ -2,16 +2,13 @@ import React, { FC } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import LeftIcon from "../../icon2/LeftIcon";
 import classes from "./styles/button-to-main-page.module.scss";
+import {defineIdApp} from "../../../utils/defineIdApp"
 
 export const ButtonToMainPage: FC = () => {
   const navigate = useNavigate();
   const { id } = useParams<{ id: string }>();
-  
-  const numberChartInString = id?.length ? id.length - 1 : 0;
 
-  const lastChar = id?.[numberChartInString];
-
-  const  IdApplication = lastChar;
+  const specificId  = defineIdApp(id)
 
   const moveToPrevApp = () => {
     navigate("/");
@@ -28,7 +25,7 @@ export const ButtonToMainPage: FC = () => {
           </div>
         </button>
         <div>
-          <div>Modules Mx110/210 |</div> <div>Application {IdApplication}</div>
+          <div>Modules Mx110/210 |</div> <div>Application {specificId}</div>
         </div>
       </div>
     </div>
