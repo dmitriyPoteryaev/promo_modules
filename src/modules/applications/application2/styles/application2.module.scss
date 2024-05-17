@@ -1,0 +1,173 @@
+
+@import "../../../../assets/styles/mixins/mixins.scss";
+
+
+.application2 {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.application2_header {
+    @include header-bold-60px;
+
+    max-width: 1530.21px;
+    width: 100%;
+    font-family: 'Archivo-Narrow-Bold';
+    color: #212529;
+}
+
+.application2_shotDescription {
+
+    margin-top: 30px;
+    display: flex;
+}
+
+.application2_shotDescription figure {
+
+   max-width: 784px;
+   width: 100%;
+   margin: 0px;
+   margin-right: 95px;
+}
+
+.application2_shotDescription  img {
+
+    width: 100%;
+}
+
+.application2_shotDescription  article{
+
+    width: 100%;
+    max-width: 648px;
+}
+
+.application2_shotDescription  article p{
+    @include text-regular-20px;
+;
+    font-family: 'Istok-Regular';
+    color: #000000;
+}
+
+.application2_shotDescription  article header{
+    @include text-bold-20px;
+
+    margin-top: 19.77px;
+    font-family: 'Istok-Regular-Bold';
+    color: #00A197;
+}
+
+.application2_shotDescription  article ul{
+
+    margin-top: 19.77px;
+}
+
+.application2_shotDescription  article ul li{
+
+    @include text-regular-20px;
+
+    font-family: 'Istok-Regular';
+    color: #000000;
+    list-style: disc;
+}
+
+
+.application2_mainImg {
+
+    margin: 69px 0px 140.53px 0px;
+}
+
+.application2_textDescription{
+
+    width: 100%;
+    max-width: 1530px;
+    margin-bottom: 138px;
+    color: #000000;
+}
+
+.application2_textDescription header:nth-child(1){
+    @include text-regular-20px;
+
+    font-family: 'Istok-Regular';
+    color: #000000;
+}
+
+.application2_textDescription ul{
+
+    margin-top: 19.3px;
+}
+
+.application2_textDescription ul li {
+    @include text-regular-20px;
+
+    margin-top: 4px;
+    font-family: 'Istok-Regular';
+
+}
+
+.application2_textDescription_listSteps li{
+
+    @include text-regular-20px;
+
+    margin-top: 35px !important;
+    font-family: 'Istok-Regular';
+}
+
+.application2_textDescription ul li span{
+    @include text-bold-20px;
+
+    margin-top: 19.77px;
+    font-family: 'Istok-Regular-Bold';
+
+}
+
+.application2_textDescription header{
+    @include text-bold-20px;
+
+    margin-top: 25px;
+    font-family: 'Istok-Regular-Bold';
+    color: #00A197;
+}
+
+.application2_buttonBlock {
+
+    width: 100%;
+    margin-bottom: 103.18px;
+    display: flex;
+    justify-content: center;
+}
+
+
+@media screen and (max-width:  1050px) {
+
+    .application2_shotDescription {
+  
+       flex-direction: column-reverse;
+       align-items: center;
+       
+    }
+
+    .application2_shotDescription  article {
+
+        min-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .application2_shotDescription figure {
+
+        margin-right: 0px;
+     }
+
+
+}
+
+@media screen and (max-width:  960px) {
+
+    .application2_shotDescription  article {
+
+      padding: 10px;
+    }
+
+}
