@@ -46,7 +46,7 @@
 
 .application2_shotDescription  article p{
     @include text-regular-20px;
-;
+
     font-family: 'Istok-Regular';
     color: #000000;
 }
@@ -168,6 +168,15 @@
     .application2_shotDescription  article {
 
       padding: 10px;
+    }
+
+}
+
+@media screen and (max-width:  400px) {
+
+    .application2_header {
+        
+    font-size: 40px;
     }
 
 }
