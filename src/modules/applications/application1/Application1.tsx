@@ -72,7 +72,7 @@ export const Application1 = () => {
           </div>
         </section>
         </BlockLayout>
-        <Application excludedNumber={1} header="Read more"/>
+        <Application excludedApp={1} header="Read more"/>
     </ClientLayout>
   );
 };

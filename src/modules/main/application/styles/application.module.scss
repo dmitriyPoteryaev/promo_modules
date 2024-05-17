@@ -1,11 +1,12 @@
 @import "../../../../assets/styles/mixins/mixins.scss";
 
 .application {
+
   width: 100%;
   margin-top: 100px;
+  margin-bottom: 238px;
   padding-left: 195px;
   padding-right: 195px;
-  margin-bottom: 238px;
   background-color: #FFFFFF;
 }
 
@@ -22,13 +23,19 @@
   width: 100%;
   margin-top: 69.52px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 
-.application ul li {
-  width: 400px;
+.application ul li:not(:last-child) {
+
+  width: 100%;
+  width: 565px;
   height: 290px;
+  padding-right: 165px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .application ul svg {
@@ -47,69 +54,32 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 1619px) {
-  .application ul li:not(:last-child) {
-    margin-right: 15px;
-  }
-
-  .application ul li:last-child {
-    margin-top: 25px;
-  }
-}
-
-@media screen and (max-width: 1260px) {
-  .application ul {
-    justify-content: center;
-    align-items: center;
-  }
-
-  .application ul li {
-    margin-right: 0px;
-    margin-top: 25px;
-  }
-}
-
-@media screen and (max-width: 1219px) {
-  .application ul li {
-    margin-right: 0px;
-    margin-top: 30px;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-
-  .application {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-
-  .application ul li {
-
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-@media screen and (max-width: 500px) {
-
-.application ul li {
-
-    margin-right: 0px !important;
-    width: 100%;
-    height: 100%;
-
-  }
-
-  .application ul li svg { 
-
-    aspect-ratio: 1 / 1;
+@media screen and (max-width: 1400px) {
+   .application ul {
+     flex-wrap: wrap;
+     align-content: center;
    }
 
-  .application ul li svg path{ 
+  .application ul li {
 
+    padding-right: 0px !important;
+  }
+}
 
-    aspect-ratio: 1 / 1;
+@media screen and (max-width:  960px) {
+
+  .application {
+
+      padding-left: 16px;
+      padding-right: 16px;
+  }
+
+}
+
+@media screen and (max-width: 980px) {
+
+  .application ul li {
+
+    margin-top: 20px;
   }
 }
