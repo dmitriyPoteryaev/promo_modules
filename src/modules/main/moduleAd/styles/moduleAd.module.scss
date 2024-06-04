@@ -1,0 +1,98 @@
+@import "../../../../assets/styles/mixins/mixins.scss";
+
+
+.moduleAd {
+
+    width: 100%;
+    // height: 707px;
+    padding-bottom: 80px;
+    position: relative;
+}
+
+.moduleAd_img {
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.moduleAd article {
+
+    width: 100%;
+    padding-left: 196px;
+    padding-right: 196px;
+    display:flex ;
+    justify-content: space-between;
+
+
+}
+
+.moduleAd_description {
+
+    
+    margin-top: 117px;
+    color: #FFFFFF;
+}
+
+.moduleAd_description header {
+    @include header-bold-60px;
+
+    max-width: 760px;
+    line-height: 73px;
+    font-family: "Archivo-Narrow-Bold";
+}
+
+.moduleAd_description ul {
+
+    max-width: 524px;
+    margin-top: 29px;
+    margin-bottom: 50px;
+}
+
+.moduleAd_description ul li {
+
+    @include text-regular-20px;
+
+    line-height: 28.79px;
+    font-family: 'Istok-Regular';
+    list-style: disc;
+}
+
+.moduleAd_modulePhoto {
+
+    max-width: 680px;
+    padding-top: 50px;
+
+}
+
+.moduleAd_modulePhoto {
+
+    width: 100%;
+
+}
+
+@media screen and (max-width: 1500px) {
+
+    .moduleAd article {
+
+       padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 1310px) {
+
+    .moduleAd article {
+
+       padding-left: 50px;
+       padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    .moduleAd article {
+
+      flex-direction: column;
+    }
+}
