@@ -29,3 +29,17 @@
     text-align: center;
     font-family: 'Istok-Regular-Bold';
 }
+
+.cardOpportuinities_inscription--default {
+    @include text-bold-16px;
+
+}
+
+.cardOpportuinities_inscription--small {
+    @include text-bold-16px;
+
+    font-size: 15px;
+    letter-spacing: -0.6px;
+    line-height: 22px;
+    
+}
