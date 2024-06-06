@@ -79,6 +79,13 @@
 
 }
 
+.Mx210opportunities_wrapperImg > img:last-child {
+
+    position: absolute;
+    top: 40px;
+    right: -150px;
+}
+
 @media screen and (max-width:  1570px) {
 
     .Mx210opportunities_line {
@@ -113,6 +120,15 @@
         align-items: unset; 
     }
 
+}
+@media screen and (max-width:  1050px) {
+
+    .Mx210opportunities_wrapperImg > img:last-child {
+
+        position: absolute;
+        top: 40px;
+        right: -80px;
+    }
 }
 
 @media screen and (max-width:  940px) {
@@ -175,6 +191,16 @@
         right: -30px;
         top: 180px;
     }
+
+    .Mx210opportunities_wrapperImg > img:last-child {
+
+        position: absolute;
+        top: -50px;
+        right: 200px;
+        height: 100px;
+        width: 100px;
+    }
+
 }
 
 
@@ -229,6 +255,14 @@
         top: 100px;
         line-height: 15px;
   
+    }
+}
+
+@media screen and (max-width:  450px) {
+
+    .Mx210opportunities_wrapperImg > img:last-child {
+
+        right: -30px;
     }
 }
 
