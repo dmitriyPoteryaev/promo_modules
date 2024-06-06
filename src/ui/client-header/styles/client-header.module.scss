@@ -24,3 +24,11 @@
   font-family: 'Roboto-Regular', sans-serif;
   text-align: right;
 }
+
+@media screen and (max-width:  860px) {
+
+  .client_header {
+
+    padding: 8px 16px 8px 16px;
+  }
+}
