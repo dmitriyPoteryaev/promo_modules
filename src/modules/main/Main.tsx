@@ -1,15 +1,16 @@
-import React from "react";
+import React, {useState, useRef, useEffect} from "react";
 import { ClientLayout } from "../../ui/client-layout/client-layout";
 import {Mx210Opportunities} from "./mX210_opportunities/Mx210Opportunities";
 import { Application } from "./application";
 import { ModuleAd } from "./moduleAd";
 
 export const Main = () => {
+
   return (
     <ClientLayout>
-      <ModuleAd />
-      <Mx210Opportunities/>
-      <Application header="Applications"/>
+     <ModuleAd  />
+     <Mx210Opportunities/>
+     <Application header="Applications"/>
     </ClientLayout>
   );
 };
