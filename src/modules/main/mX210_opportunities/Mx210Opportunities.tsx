@@ -31,7 +31,7 @@ export const Mx210Opportunities: FC = () => {
              <div className={classes.Mx210opportunities_wrapperImg}>
              <img className={classes.Mx210opportunities_imgModule} src={Mx210Photo} alt="Mx210" />
             <div>Compatibility with third-party PLCs</div>
-            <img style={{position: 'absolute', top: "40px", right: '-150px'}} src={InterfacesMx210} alt="interfacesMx210" />
+            <img src={InterfacesMx210} alt="interfacesMx210" />
              </div>
          
         </div>
