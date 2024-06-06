@@ -1,14 +1,28 @@
-import React, {FC} from "react";
+import React, {FC, ReactNode} from "react";
 import classes from './styles/card-opportunities.module.scss';
+import { getClasses } from './styles/get-classes';
 
-export const CardOpportuinities: FC<any> = (props) => {
+export interface CardOpportuinitiesProps  {
+    topInscription: string;
+    bottomInscription: string;
+    svg: ReactNode;
+    variant?: string;
+  }
+
+export const CardOpportuinities: FC<{description: CardOpportuinitiesProps}> = (props) => {
 
     const { description } = props;
-    const {topInscription, bottomInscription, svg} = description;
+    const {topInscription, bottomInscription, svg, variant='default'} = description;
+
+
+    const { cnCardOpportuinitiesInscription } = getClasses({
+        variant,
+      });
+    
 
     return <div className={classes.cardOpportuinities}>
         <div className={classes.cardOpportuinities_img}>{svg}</div>
-        <span className={classes.cardOpportuinities_inscription}>{topInscription}</span>
-        <span className={classes.cardOpportuinities_inscription}>{bottomInscription}</span>
+        <span className={cnCardOpportuinitiesInscription}>{topInscription}</span>
+        <span className={cnCardOpportuinitiesInscription}>{bottomInscription}</span>
     </div>
 }
