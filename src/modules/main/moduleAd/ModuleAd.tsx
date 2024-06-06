@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FC } from "react";
 import classes from "./styles/moduleAd.module.scss";
 import  {Button} from "../../../ui/buttons/button/button";
 
@@ -6,12 +6,13 @@ const backgroundComplexModuleAd = require("../../../assets/png/main/Ad/moduleAd_
 const backgroundEasyModuleAd = require("../../../assets/png/main/Ad/moduleAd_easy.png");
 const modulePhoto = require("../../../assets/png/main/Ad/module.png");
 
-export const ModuleAd = () => {
+export const ModuleAd: FC<any> = () => {
+
     return (
         <div className={classes.moduleAd} >
             <picture>
                 <source className={classes.moduleAd_img} srcSet={backgroundEasyModuleAd} media="(max-width: 1160px)" />
-                <img className={classes.moduleAd_img} src={backgroundComplexModuleAd} alt="" />
+                <img  className={classes.moduleAd_img} src={backgroundComplexModuleAd} alt="" />
             </picture>
             <article>
                 <div className={classes.moduleAd_description}>
