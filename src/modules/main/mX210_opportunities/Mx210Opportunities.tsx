@@ -22,11 +22,13 @@ export const Mx210Opportunities: FC = () => {
         <div className={classes.Mx210opportunities_line}>Mx210</div>
         <div className={classes.Mx210opportunities_fullInfo}>
              <div className={classes.Mx210opportunities_wrapperList}>
+                <div style={{width: "100%", display: "flex"}}>
                 <ul className={classes.Mx210opportunities_listOpportunities}>
                     {cards.map((card: any) => {
                         return (<li key={card.topInscription}><CardOpportuinities description={card}/></li>)
                     })}
                 </ul>
+                </div>
             </div> 
              <div className={classes.Mx210opportunities_wrapperImg}>
              <img className={classes.Mx210opportunities_imgModule} src={Mx210Photo} alt="Mx210" />
