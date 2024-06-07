@@ -4,7 +4,7 @@ const SvgMx2108 = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={71}
-    height={75}
+    height={71}
     fill="none"
     {...props}
   >
