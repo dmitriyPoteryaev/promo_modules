@@ -1,10 +1,10 @@
-import axios from "axios";
 
- const  postInfoFromForm =  async (event: any) => {
+const  postInfoFromForm =  async () => {
+
+     try {
 
 
-
-    // $(".popup_rows_add #add-more").click(function(event){
+  // $(".popup_rows_add #add-more").click(function(event){
     //     $($(".popup_rows .popup_row_first")[0]).clone().appendTo(".popup_rows");
         
     // });
@@ -120,15 +120,24 @@ import axios from "axios";
           "mode": "cors",
           "credentials": "include"
         });
+
+
+        console.log(res_clear);
         
         // add product to cart
-        const formData  = new FormData();
-        formData.append('product', '93');
-        formData.append('r4q_hidecart', '1');
-        // formData.append('options[58]', $(this).find('#options').val());
-        formData.append('r4q_hidecart', '1');
-        formData.append('qty', '1');
-        
+
+        // formData.append('product', '107');
+        // formData.append('r4q_hidecart', '1');
+        // formData.append('options[74]', "oP");
+        // formData.append('r4q_hidecart', '1');
+        // formData.append('qty', '1');
+        const formData: any  = {
+
+          product: 93,
+          r4q_hidecart: 1,
+          'options[74]': "Options: Mx210-210: 11",
+          qty: 1,
+        };
         
         
         const res_add = await fetch("https://akytec.de/en/request4quote/quote/add/", {
@@ -144,7 +153,24 @@ import axios from "axios";
         console.log(res_add);
      
         // checkout form 
-        const checkoutFormData = new FormData(event.target);
+        const checkoutFormData: any = {
+
+          options: "Options: Mx210-210: 11",
+          "r4q[details][firstname]":  "Dima",
+          "r4q[details][lastname]":  "Poteryaev",
+          "r4q[details][email]":  "Dima@gmail.com",
+          "r4q[details][telephone]":  "666",
+          "r4q[details][remark]":  "my remark",
+          "r4q[billing][is_required]":  "1",
+          "r4q[shipping][is_required]":  "0",
+          "r4q[shipping][company]":  "My company",
+          "r4q[shipping][adress]":  "My adress",
+          "r4q[shipping][city]":  "My city",
+          "r4q[shipping][postcode]":  "My postcode",
+          "r4q[shipping][country]": "DE",
+          "r4q[shipping][region]": "DE",
+
+        };
 
         const res_checkout = await fetch("https://akytec.de/en/request4quote/quote/send/", {
           "headers": {
@@ -159,7 +185,8 @@ import axios from "axios";
         console.log(res_checkout);
         // $('#checkout-spinner').hide();
         if (res_checkout.status==200){
-            
+
+          console.log("All was went susscesfully");        
             // $('#checkoutModal').modal('hide')
             // Swal.fire(
             //   'Success',
@@ -169,6 +196,9 @@ import axios from "axios";
             
         }
         else {
+          
+          console.log("All wasn't went susscesfully");
+          throw Error("Что пошло не так! Перезагрузите страницу");
             // Swal.fire(
             //   'Error',
             //   'There\'s some problem with yout request! Verify form fields and try again.',
@@ -176,13 +206,16 @@ import axios from "axios";
             // )
         }
         console.log(res_checkout.text());
-     
-        
-      
-    // });
     
-    
-    
+
+     }
+
+     catch(err: any) {
+
+    console.log(err.message);
+
+     }
+
     };
 
     export const formAPI = {
