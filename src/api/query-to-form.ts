@@ -1,32 +1,25 @@
-
 const  postInfoFromForm =  async () => {
 
-     try {
+  try {
+
+  
+     // Clear caart firstChild
      
-        // Clear caart firstChild
-        
-        const res_clear = await fetch("https://akytec.de/en/request4quote/quote/send/", {
-          "headers": {
-            "accept": "*/*",
-            "accept-language": "en-US,en;q=0.9,uk;q=0.8",
-            "cache-control": "no-cache",
-            "content-type": "multipart/form-data; boundary=----WebKitFormBoundaryikPbtbRLc8e0ghYR",
-            "pragma": "no-cache",
-            "priority": "u=1, i",
-            "sec-ch-ua": "\"Google Chrome\";v=\"125\", \"Chromium\";v=\"125\", \"Not.A/Brand\";v=\"24\"",
-            "sec-ch-ua-mobile": "?0",
-            "sec-ch-ua-platform": "\"Windows\"",
-            "sec-fetch-dest": "empty",
-            "sec-fetch-mode": "cors",
-            "sec-fetch-site": "same-origin"
-          },
-          "referrer": "https://promo-modules.akytec.de/",
-          "referrerPolicy": "strict-origin-when-cross-origin",
-          "body": "update_cart_action=empty_cart&update_cart_action=empty_cart&isrfq=1",
-          "method": "POST",
-          "mode": "no-cors",
-          "credentials": "include",
-        });
+     const res_clear = await fetch("https://akytec.de/en/request4quote/quote/send/", {
+       "headers": {
+        "cache-control": "no-cache",
+        "content-type": "application/x-www-form-urlencoded",
+        "sec-ch-ua": "\"Google Chrome\";v=\"125\", \"Chromium\";v=\"125\", \"Not.A/Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+       },
+       "referrer": "https://promo-modules.akytec.de/",
+       "referrerPolicy": "strict-origin-when-cross-origin",
+       "body": "update_cart_action=empty_cart&update_cart_action=empty_cart&isrfq=1",
+       "method": "POST",
+       "mode": "no-cors",
+       "credentials": "include",
+     });
 
 
         console.log(res_clear);
@@ -78,7 +71,7 @@ const  postInfoFromForm =  async () => {
         });
         console.log(res_add);
      
-        // checkout form 
+     // add product to cart
 
         const checkoutFormData = new FormData();
         checkoutFormData.append('options', "Options: Mx210-210: 11");
@@ -120,54 +113,48 @@ const  postInfoFromForm =  async () => {
 // }); 
 
 
-        const res_checkout = await fetch("https://akytec.de/en/request4quote/quote/send/", {
-          "headers": {
-            "accept": "*/*",
-            "accept-language": "en-US,en;q=0.9,uk;q=0.8",
-            "cache-control": "no-cache",
-            "content-type": "multipart/form-data; boundary=----WebKitFormBoundaryikPbtbRLc8e0ghYR",
-            "pragma": "no-cache",
-            "priority": "u=1, i",
-            "sec-ch-ua": "\"Google Chrome\";v=\"125\", \"Chromium\";v=\"125\", \"Not.A/Brand\";v=\"24\"",
-            "sec-ch-ua-mobile": "?0",
-            "sec-ch-ua-platform": "\"Windows\"",
-            "sec-fetch-dest": "empty",
-            "sec-fetch-mode": "cors",
-            "sec-fetch-site": "same-origin"
-          },
-      
-          "referrer": "https://promo-modules.akytec.de/",
-          "referrerPolicy": "strict-origin-when-cross-origin",
-          "body": checkoutFormData,
-          "method": "POST",
-          "mode": "no-cors",
-          "credentials": "include"
-        });
-        console.log(res_checkout);
-        if (res_checkout.status==200){
+     const res_checkout = await fetch("https://akytec.de/en/request4quote/quote/send/", {
+       "headers": {
+        "cache-control": "no-cache",
+        "content-type": "application/x-www-form-urlencoded",
+        "sec-ch-ua": "\"Google Chrome\";v=\"125\", \"Chromium\";v=\"125\", \"Not.A/Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+       },
+   
+       "referrer": "https://promo-modules.akytec.de/",
+       "referrerPolicy": "strict-origin-when-cross-origin",
+       "body": checkoutFormData,
+       "method": "POST",
+       "mode": "no-cors",
+       "credentials": "include"
+     });
+     console.log(res_checkout);
+     if (res_checkout.status==200){
 
-          console.log("All was went susscesfully");        
-            
-        }
-        else {
-          
-          console.log("All wasn't went susscesfully");
-          throw Error("Что пошло не так! Перезагрузите страницу");
-        }
-        console.log(res_checkout.text());
-    
+       console.log("All was went susscesfully");        
+
+         
+     }
+     else {
+       
+       console.log("All wasn't went susscesfully");
+       throw Error("Что пошло не так! Перезагрузите страницу");
 
      }
+     console.log(res_checkout.text());
+ 
 
-     catch(err: any) {
+  }
 
-    console.log(err.message);
+  catch(err: any) {
 
-     }
+ console.log(err.message);
 
-    };
+  }
 
-    export const formAPI = {
-      postInfoFromForm,
-    };
-    
+ };
+
+ export const formAPI = {
+   postInfoFromForm,
+ };
