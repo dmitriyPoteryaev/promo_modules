@@ -1,4 +1,6 @@
-async function querytoform (event: any) {
+import axios from "axios";
+
+ const  postInfoFromForm =  async (event: any) => {
 
 
 
@@ -181,5 +183,9 @@ async function querytoform (event: any) {
     
     
     
+    };
+
+    export const formAPI = {
+      postInfoFromForm,
     };
     
