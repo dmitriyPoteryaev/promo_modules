@@ -31,13 +31,21 @@ const  postInfoFromForm =  async () => {
         // formData.append('options[74]', "oP");
         // formData.append('r4q_hidecart', '1');
         // formData.append('qty', '1');
-        const formData: any  = {
+        // const formData: any  = {
 
-          product: '107',
-          r4q_hidecart: '1',
-          'options[74]': "Options: Mx210-210: 11",
-          qty: '1',
-        };
+        //   product: '107',
+        //   'options[74]': "Options: Mx210-210: 11",
+        //   r4q_hidecart: '1',
+        //   qty: '1',
+        // };
+
+
+        const formData  = new FormData();
+        formData.append('product', '107');
+        formData.append('r4q_hidecart', '1');
+        formData.append('options[74]', "Options: Mx210-210: 11");
+        formData.append('r4q_hidecart', '1');
+        formData.append('qty', '1');
         
         
         const res_add = await fetch("https://akytec.de/en/request4quote/quote/add/", {
