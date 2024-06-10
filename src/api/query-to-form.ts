@@ -43,12 +43,17 @@ const  postInfoFromForm =  async () => {
         const res_add = await fetch("https://akytec.de/en/request4quote/quote/add/", {
           "headers": {
             "cache-control": "no-cache",
+            "content-type": "application/x-www-form-urlencoded",
+            "sec-ch-ua": "\"Google Chrome\";v=\"125\", \"Chromium\";v=\"125\", \"Not.A/Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\"",
           },
       
           "body": formData,
+          "referrerPolicy": "strict-origin-when-cross-origin",
           "method": "POST",
-          "mode": "cors",
-          "credentials": "include"
+          "mode": "no-cors",
+          "credentials": "omit",
         });
         console.log(res_add);
      
@@ -75,12 +80,17 @@ const  postInfoFromForm =  async () => {
         const res_checkout = await fetch("https://akytec.de/en/request4quote/quote/send/", {
           "headers": {
             "cache-control": "no-cache",
+            "content-type": "application/x-www-form-urlencoded",
+            "sec-ch-ua": "\"Google Chrome\";v=\"125\", \"Chromium\";v=\"125\", \"Not.A/Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\"",
           },
       
           "body": checkoutFormData,
+          "referrerPolicy": "strict-origin-when-cross-origin",
           "method": "POST",
-          "mode": "cors",
-          "credentials": "include"
+          "mode": "no-cors",
+          "credentials": "omit",
         });
         console.log(res_checkout);
         if (res_checkout.status==200){
