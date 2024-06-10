@@ -14,7 +14,6 @@ const  postInfoFromForm =  async () => {
             "sec-ch-ua-platform": "\"Windows\"",
           },
       
-          "host": "https://promo-modules.akytec.de/",
           "referrerPolicy": "strict-origin-when-cross-origin",
           "body": "update_cart_action=empty_cart&update_cart_action=empty_cart&isrfq=1",
           "method": "POST",
