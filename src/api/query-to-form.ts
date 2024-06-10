@@ -33,10 +33,10 @@ const  postInfoFromForm =  async () => {
         // formData.append('qty', '1');
         const formData: any  = {
 
-          product: 93,
-          r4q_hidecart: 1,
+          product: '107',
+          r4q_hidecart: '1',
           'options[74]': "Options: Mx210-210: 11",
-          qty: 1,
+          qty: '1',
         };
         
         
