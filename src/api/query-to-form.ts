@@ -7,11 +7,17 @@ const  postInfoFromForm =  async () => {
      
      const res_clear = await fetch("https://akytec.de/en/request4quote/quote/send/", {
        "headers": {
+        "accept": "*/*",
+        "accept-language": "en-US,en;q=0.9,uk;q=0.8",
         "cache-control": "no-cache",
-        "content-type": "application/x-www-form-urlencoded",
+        "pragma": "no-cache",
+        "priority": "u=1, i",
         "sec-ch-ua": "\"Google Chrome\";v=\"125\", \"Chromium\";v=\"125\", \"Not.A/Brand\";v=\"24\"",
         "sec-ch-ua-mobile": "?0",
-        "sec-ch-ua-platform": "\"Windows\""
+        "sec-ch-ua-platform": "\"Windows\"",
+        "sec-fetch-dest": "empty",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-site": "same-origin",
        },
        "referrer": "https://promo-modules.akytec.de/",
        "referrerPolicy": "strict-origin-when-cross-origin",
@@ -92,11 +98,17 @@ const  postInfoFromForm =  async () => {
 
      const res_checkout = await fetch("https://akytec.de/en/request4quote/quote/send/", {
        "headers": {
+        "accept": "*/*",
+        "accept-language": "en-US,en;q=0.9,uk;q=0.8",
         "cache-control": "no-cache",
-        "content-type": "application/x-www-form-urlencoded",
+        "pragma": "no-cache",
+        "priority": "u=1, i",
         "sec-ch-ua": "\"Google Chrome\";v=\"125\", \"Chromium\";v=\"125\", \"Not.A/Brand\";v=\"24\"",
         "sec-ch-ua-mobile": "?0",
-        "sec-ch-ua-platform": "\"Windows\""
+        "sec-ch-ua-platform": "\"Windows\"",
+        "sec-fetch-dest": "empty",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-site": "same-origin",
        },
    
        "referrer": "https://promo-modules.akytec.de/",
