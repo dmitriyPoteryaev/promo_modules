@@ -4,11 +4,17 @@ const  postInfoFromForm =  async () => {
      
      const res_clear = await fetch("https://akytec.de/en/request4quote/quote/send/", {
        "headers": {
+        "accept": "*/*",
+        "accept-language": "en-US,en;q=0.9,uk;q=0.8",
         "cache-control": "no-cache",
-        "content-type": "application/x-www-form-urlencoded",
+        "pragma": "no-cache",
+        "priority": "u=1, i",
         "sec-ch-ua": "\"Google Chrome\";v=\"125\", \"Chromium\";v=\"125\", \"Not.A/Brand\";v=\"24\"",
         "sec-ch-ua-mobile": "?0",
-        "sec-ch-ua-platform": "\"Windows\""
+        "sec-ch-ua-platform": "\"Windows\"",
+        "sec-fetch-dest": "empty",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-site": "same-origin",
        },
        "referrer": "https://promo-modules.akytec.de/",
        "referrerPolicy": "strict-origin-when-cross-origin",
@@ -59,24 +65,6 @@ const  postInfoFromForm =  async () => {
      // checkout form 
 
      const checkoutFormData = new FormData();
-     // const checkoutFoa: any = {
-
-     //   options: "Options: Mx210-210: 11",
-     //   "r4q[details][firstname]":  "Dima",
-     //   "r4q[details][lastname]":  "Poteryaev",
-     //   "r4q[details][email]":  "Dima@gmail.com",
-     //   "r4q[details][telephone]":  "666",
-     //   "r4q[details][remark]":  "my remark",
-     //   "r4q[billing][is_required]":  "1",
-     //   "r4q[shipping][is_required]":  "0",
-     //   "r4q[shipping][company]":  "My company",
-     //   "r4q[shipping][adress]":  "My adress",
-     //   "r4q[shipping][city]":  "My city",
-     //   "r4q[shipping][postcode]":  "My postcode",
-     //   "r4q[shipping][country]": "DE",
-     //   "r4q[shipping][region]": "DE",
-
-     // };
 
      checkoutFormData.append('options', "Options: Mx210-210: 11");
      checkoutFormData.append("r4q[details][firstname]", 'Dima');
@@ -96,11 +84,17 @@ const  postInfoFromForm =  async () => {
 
      const res_checkout = await fetch("https://akytec.de/en/request4quote/quote/send/", {
        "headers": {
+        "accept": "*/*",
+        "accept-language": "en-US,en;q=0.9,uk;q=0.8",
         "cache-control": "no-cache",
-        "content-type": "application/x-www-form-urlencoded",
+        "pragma": "no-cache",
+        "priority": "u=1, i",
         "sec-ch-ua": "\"Google Chrome\";v=\"125\", \"Chromium\";v=\"125\", \"Not.A/Brand\";v=\"24\"",
         "sec-ch-ua-mobile": "?0",
-        "sec-ch-ua-platform": "\"Windows\""
+        "sec-ch-ua-platform": "\"Windows\"",
+        "sec-fetch-dest": "empty",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-site": "same-origin",
        },
    
        "referrer": "https://promo-modules.akytec.de/",
