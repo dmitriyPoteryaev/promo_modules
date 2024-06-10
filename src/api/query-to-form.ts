@@ -2,6 +2,7 @@
 const  postInfoFromForm =  async () => {
 
      try {
+
      
         // Clear caart firstChild
         
@@ -87,13 +88,14 @@ const  postInfoFromForm =  async () => {
         if (res_checkout.status==200){
 
           console.log("All was went susscesfully");        
+
             
         }
         else {
           
           console.log("All wasn't went susscesfully");
           throw Error("Что пошло не так! Перезагрузите страницу");
-     
+
         }
         console.log(res_checkout.text());
     
