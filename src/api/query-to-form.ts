@@ -7,18 +7,25 @@ const  postInfoFromForm =  async () => {
         
         const res_clear = await fetch("https://akytec.de/en/request4quote/quote/send/", {
           "headers": {
+            "accept": "*/*",
+            "accept-language": "en-US,en;q=0.9,uk;q=0.8",
             "cache-control": "no-cache",
-            "content-type": "application/x-www-form-urlencoded",
+            "content-type": "multipart/form-data; boundary=----WebKitFormBoundaryikPbtbRLc8e0ghYR",
+            "pragma": "no-cache",
+            "priority": "u=1, i",
             "sec-ch-ua": "\"Google Chrome\";v=\"125\", \"Chromium\";v=\"125\", \"Not.A/Brand\";v=\"24\"",
             "sec-ch-ua-mobile": "?0",
             "sec-ch-ua-platform": "\"Windows\"",
+            "sec-fetch-dest": "empty",
+            "sec-fetch-mode": "cors",
+            "sec-fetch-site": "same-origin"
           },
-      
+          "referrer": "https://promo-modules.akytec.de/",
           "referrerPolicy": "strict-origin-when-cross-origin",
           "body": "update_cart_action=empty_cart&update_cart_action=empty_cart&isrfq=1",
           "method": "POST",
           "mode": "no-cors",
-          "credentials": "omit",
+          "credentials": "include",
         });
 
 
@@ -50,14 +57,26 @@ const  postInfoFromForm =  async () => {
         
         const res_add = await fetch("https://akytec.de/en/request4quote/quote/add/", {
           "headers": {
+            "accept": "*/*",
+            "accept-language": "en-US,en;q=0.9,uk;q=0.8",
             "cache-control": "no-cache",
+            "content-type": "multipart/form-data; boundary=----WebKitFormBoundaryikPbtbRLc8e0ghYR",
+            "pragma": "no-cache",
+            "priority": "u=1, i",
+            "sec-ch-ua": "\"Google Chrome\";v=\"125\", \"Chromium\";v=\"125\", \"Not.A/Brand\";v=\"24\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\"",
+            "sec-fetch-dest": "empty",
+            "sec-fetch-mode": "cors",
+            "sec-fetch-site": "same-origin"
           },
-      
-          "body": formData,
+
+          "referrer": "https://promo-modules.akytec.de/",
           "referrerPolicy": "strict-origin-when-cross-origin",
+          "body": formData,
           "method": "POST",
           "mode": "no-cors",
-          "credentials": "omit",
+          "credentials": "include"
         });
         console.log(res_add);
      
@@ -98,20 +117,52 @@ const  postInfoFromForm =  async () => {
         checkoutFormData.append('r4q[shipping][country]', 'DE');
         checkoutFormData.append('r4q[shipping][region]', '');
 
+//         fetch("https://akytec.de/en/request4quote/quote/add/", {
+//   "headers": {
+//     "accept": "*/*",
+//     "accept-language": "en-US,en;q=0.9,uk;q=0.8",
+//     "cache-control": "no-cache",
+//     "content-type": "multipart/form-data; boundary=----WebKitFormBoundaryikPbtbRLc8e0ghYR",
+//     "pragma": "no-cache",
+//     "priority": "u=1, i",
+//     "sec-ch-ua": "\"Google Chrome\";v=\"125\", \"Chromium\";v=\"125\", \"Not.A/Brand\";v=\"24\"",
+//     "sec-ch-ua-mobile": "?0",
+//     "sec-ch-ua-platform": "\"Windows\"",
+//     "sec-fetch-dest": "empty",
+//     "sec-fetch-mode": "cors",
+//     "sec-fetch-site": "same-origin"
+//   },
+//   "referrer": "https://akytec.de/_promo_itp2/promo-itp.php?lang=en",
+//   "referrerPolicy": "strict-origin-when-cross-origin",
+//   "body": "------WebKitFormBoundaryikPbtbRLc8e0ghYR\r\nContent-Disposition: form-data; name=\"product\"\r\n\r\n93\r\n------WebKitFormBoundaryikPbtbRLc8e0ghYR\r\nContent-Disposition: form-data; name=\"r4q_hidecart\"\r\n\r\n1\r\n------WebKitFormBoundaryikPbtbRLc8e0ghYR\r\nContent-Disposition: form-data; name=\"options[58]\"\r\n\r\nOptions: \r\nITP11-red: 1\r\nITP11-green: \r\n\r\n------WebKitFormBoundaryikPbtbRLc8e0ghYR\r\nContent-Disposition: form-data; name=\"r4q_hidecart\"\r\n\r\n1\r\n------WebKitFormBoundaryikPbtbRLc8e0ghYR\r\nContent-Disposition: form-data; name=\"qty\"\r\n\r\n1\r\n------WebKitFormBoundaryikPbtbRLc8e0ghYR--\r\n",
+//   "method": "POST",
+//   "mode": "no-cors",
+//   "credentials": "include"
+// }); 
+
+
         const res_checkout = await fetch("https://akytec.de/en/request4quote/quote/send/", {
           "headers": {
+            "accept": "*/*",
+            "accept-language": "en-US,en;q=0.9,uk;q=0.8",
             "cache-control": "no-cache",
-            "content-type": "application/x-www-form-urlencoded",
+            "content-type": "multipart/form-data; boundary=----WebKitFormBoundaryikPbtbRLc8e0ghYR",
+            "pragma": "no-cache",
+            "priority": "u=1, i",
             "sec-ch-ua": "\"Google Chrome\";v=\"125\", \"Chromium\";v=\"125\", \"Not.A/Brand\";v=\"24\"",
             "sec-ch-ua-mobile": "?0",
             "sec-ch-ua-platform": "\"Windows\"",
+            "sec-fetch-dest": "empty",
+            "sec-fetch-mode": "cors",
+            "sec-fetch-site": "same-origin"
           },
       
-          "body": checkoutFormData,
+          "referrer": "https://promo-modules.akytec.de/",
           "referrerPolicy": "strict-origin-when-cross-origin",
+          "body": checkoutFormData,
           "method": "POST",
           "mode": "no-cors",
-          "credentials": "omit",
+          "credentials": "include"
         });
         console.log(res_checkout);
         if (res_checkout.status==200){
