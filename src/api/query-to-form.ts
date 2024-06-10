@@ -24,6 +24,19 @@ const  postInfoFromForm =  async () => {
 
         console.log(res_clear);
 
+        // formData.append('product', '107');
+        // formData.append('r4q_hidecart', '1');
+        // formData.append('options[74]', "oP");
+        // formData.append('r4q_hidecart', '1');
+        // formData.append('qty', '1');
+        // const formData: any  = {
+
+        //   product: '107',
+        //   'options[74]': "Options: Mx210-210: 11",
+        //   r4q_hidecart: '1',
+        //   qty: '1',
+        // };
+
 
         const formData  = new FormData();
         formData.append('product', '107');
