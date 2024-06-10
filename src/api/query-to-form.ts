@@ -63,24 +63,40 @@ const  postInfoFromForm =  async () => {
         console.log(res_add);
      
         // checkout form 
-        const checkoutFormData: any = {
 
-          options: "Options: Mx210-210: 11",
-          "r4q[details][firstname]":  "Dima",
-          "r4q[details][lastname]":  "Poteryaev",
-          "r4q[details][email]":  "Dima@gmail.com",
-          "r4q[details][telephone]":  "666",
-          "r4q[details][remark]":  "my remark",
-          "r4q[billing][is_required]":  "1",
-          "r4q[shipping][is_required]":  "0",
-          "r4q[shipping][company]":  "My company",
-          "r4q[shipping][adress]":  "My adress",
-          "r4q[shipping][city]":  "My city",
-          "r4q[shipping][postcode]":  "My postcode",
-          "r4q[shipping][country]": "DE",
-          "r4q[shipping][region]": "DE",
+        const checkoutFormData = new FormData();
+        // const checkoutFoa: any = {
 
-        };
+        //   options: "Options: Mx210-210: 11",
+        //   "r4q[details][firstname]":  "Dima",
+        //   "r4q[details][lastname]":  "Poteryaev",
+        //   "r4q[details][email]":  "Dima@gmail.com",
+        //   "r4q[details][telephone]":  "666",
+        //   "r4q[details][remark]":  "my remark",
+        //   "r4q[billing][is_required]":  "1",
+        //   "r4q[shipping][is_required]":  "0",
+        //   "r4q[shipping][company]":  "My company",
+        //   "r4q[shipping][adress]":  "My adress",
+        //   "r4q[shipping][city]":  "My city",
+        //   "r4q[shipping][postcode]":  "My postcode",
+        //   "r4q[shipping][country]": "DE",
+        //   "r4q[shipping][region]": "DE",
+
+        // };
+
+        checkoutFormData.append('options', "Options: Mx210-210: 11");
+        checkoutFormData.append("r4q[details][firstname]", 'Dima');
+        checkoutFormData.append('r4q[details][lastname]', "Poteryaev");
+        checkoutFormData.append('r4q[details][email]', 'Dima@gmail.com');
+        checkoutFormData.append('r4q[details][telephone]', '666');
+        checkoutFormData.append('r4q[details][remark]', "my remark");
+        checkoutFormData.append("r4q[billing][is_required]", '0');
+        checkoutFormData.append("r4q[shipping][is_required]", '1');
+        checkoutFormData.append('r4q[shipping][company]', "My company");
+        checkoutFormData.append('r4q[shipping][city]', 'My city');
+        checkoutFormData.append('r4q[shipping][postcode]', 'My postcode');
+        checkoutFormData.append('r4q[shipping][country]', 'DE');
+        checkoutFormData.append('r4q[shipping][region]', '');
 
         const res_checkout = await fetch("https://akytec.de/en/request4quote/quote/send/", {
           "headers": {
