@@ -19,7 +19,7 @@ const  postInfoFromForm =  async () => {
           "body": "update_cart_action=empty_cart&update_cart_action=empty_cart&isrfq=1",
           "method": "POST",
           "mode": "no-cors",
-          "credentials": "include",
+          "credentials": "omit",
         });
 
 
@@ -58,7 +58,7 @@ const  postInfoFromForm =  async () => {
           "referrerPolicy": "strict-origin-when-cross-origin",
           "method": "POST",
           "mode": "no-cors",
-          "credentials": "include",
+          "credentials": "omit",
         });
         console.log(res_add);
      
@@ -112,7 +112,7 @@ const  postInfoFromForm =  async () => {
           "referrerPolicy": "strict-origin-when-cross-origin",
           "method": "POST",
           "mode": "no-cors",
-          "credentials": "include",
+          "credentials": "omit",
         });
         console.log(res_checkout);
         if (res_checkout.status==200){
