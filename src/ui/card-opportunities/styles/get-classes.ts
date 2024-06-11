@@ -7,16 +7,22 @@ const cn = classNames.bind(classes);
 
 type PickedButtonProps = Pick<
 CardOpportuinitiesProps,
-   'variant'
+   'variant' | 'path'
 >;
 
 export const getClasses = ({
   variant,
+  path
 }: PickedButtonProps) => {
-  const cnCardOpportuinitiesInscription = cn('cardOpportuinities_inscription', `cardOpportuinities_inscription--${variant}`,);
+  
+  const cnCardOpportuinitiesInscription = 
+  cn('cardOpportuinities_inscription', `cardOpportuinities_inscription--${variant}`, `cardOpportuinities_inscription--${path}`,);
+
+  const cnCardOpportuinities = 
+  cn('cardOpportuinities', `cardOpportuinities--${path}`,);
 
 
   return {
-    cnCardOpportuinitiesInscription,
+    cnCardOpportuinitiesInscription, cnCardOpportuinities
   };
 };
