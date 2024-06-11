@@ -13,7 +13,7 @@ const cards =
     [{ topInscription: "Modbus TCP,", bottomInscription: "MQTT, SNMP", svg: <SvgMx210427321481/> },
      { topInscription: 'Daisy-Chain',bottomInscription: "Wiring.LAN bypass", svg: <SvgMx210427321496/>}, 
      {topInscription: '2-port', bottomInscription: 'Ethernet Switch', svg: <SvgMx210427321497/>}, 
-     {topInscription:'Up to 32DI / 24DO', bottomInscription:'Up to 8AI / 6AO', svg: <SvgMx210427321717/>}];
+     {topInscription:'Up to 32DI / 24DO', bottomInscription:'Up to 8AI / 6AO', svg: <SvgMx210427321717/>, path: "path"}];
 
 
 export const Mx210Opportunities: FC = () => {

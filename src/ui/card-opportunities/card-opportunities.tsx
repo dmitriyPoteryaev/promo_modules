@@ -7,20 +7,22 @@ export interface CardOpportuinitiesProps  {
     bottomInscription: string;
     svg: ReactNode;
     variant?: string;
+    path?: string;
   }
 
 export const CardOpportuinities: FC<{description: CardOpportuinitiesProps}> = (props) => {
 
     const { description } = props;
-    const {topInscription, bottomInscription, svg, variant='default'} = description;
+    const {topInscription, bottomInscription, svg, variant='default', path='default'} = description;
 
 
-    const { cnCardOpportuinitiesInscription } = getClasses({
+    const { cnCardOpportuinitiesInscription, cnCardOpportuinities  } = getClasses({
         variant,
+        path,
       });
     
 
-    return <div className={classes.cardOpportuinities}>
+    return <div className={cnCardOpportuinities}>
         <div className={classes.cardOpportuinities_img}>{svg}</div>
         <span className={cnCardOpportuinitiesInscription}>{topInscription}</span>
         <span className={cnCardOpportuinitiesInscription}>{bottomInscription}</span>
