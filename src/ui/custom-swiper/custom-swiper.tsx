@@ -24,7 +24,7 @@ export const CustomSwiper: FC<CustomSwiperProps> = (props) => {
     console.log(thumbsSwiper);
 
     return (
-        <div style={{ position: "relative", marginRight: '150px' }}>
+        <div className={classes.custom_swiper}>
             <Swiper
                 onSwiper={(swiper: any) => {
                     swiperRef.current = swiper;
