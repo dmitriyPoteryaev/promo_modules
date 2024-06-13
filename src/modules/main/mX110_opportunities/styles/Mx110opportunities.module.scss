@@ -1,0 +1,361 @@
+@import "../../../../assets/styles/mixins/mixins.scss";
+
+.Mx110opportunities {
+
+    position: relative; 
+    margin-top: 80px;
+    margin-bottom: 65px;
+}
+
+.Mx110opportunities_line {
+    @include header-bold-100px;
+
+    width: 75%;
+    height: 128.25px;
+    padding-left: 160px; 
+    padding-top: 22px;
+    position: absolute; 
+    top: 195px; 
+    z-index: -1;
+    background-color: #4DBDB6;
+    color: white;
+    font-family: 'Archivo-Narrow-Bold';
+    
+}
+
+.Mx110opportunities_fullInfo {
+
+    width: 85%;
+    height: 536px;
+    display: flex;
+}
+
+.Mx110opportunities_wrapperList {
+
+    width: calc( 100% - 536px); 
+    padding-left: 195px;
+    display: flex; 
+    align-items: end; 
+}
+
+.Mx110opportunities_wrapperList ul {
+    gap: 37px;
+  
+  }
+
+  .Mx110opportunities_wrapperList ul li div{
+    margin-right: 0px;
+ 
+ }
+
+.Mx110opportunities_listWrapper {
+
+    width: calc( 100% - 536px); 
+    display: flex; 
+    align-items: center; 
+}
+
+.Mx110opportunities_listOpportunities {
+
+    width: 100%; 
+    max-width: 746px;
+    gap: 37px;
+    display: flex; 
+}
+
+.Mx110opportunities_imgModule {
+
+    margin-left: auto; 
+}
+
+.Mx110opportunities_wrapperImg {
+
+    position: relative;
+}
+
+.Mx110opportunities_wrapperImg div{
+    @include text-regular-20px;
+
+    height: 79.66px;
+    width: 214.79px;
+    padding: 10.83px 17.7px 10.83px 17.7px;
+    position: absolute;
+    right: -70px;
+    top: 420px;
+    color: white; 
+    background-color: #4DBDB6;
+    line-height: 28.79px;
+    font-family: 'Istok-Regular-Bold';
+
+
+}
+
+.Mx110opportunities_wrapperImg > img:last-child {
+
+    position: absolute;
+    top: 40px;
+    right: -150px;
+}
+
+@media screen and (min-width:  4420px) {
+
+    .Mx110opportunities_line {
+
+        width: 82%;
+    }
+}
+
+
+@media screen and (max-width:  1730px) {
+
+    .Mx110opportunities_fullInfo {
+
+        height: 636px;
+    }
+}
+
+@media screen and (max-width:  1700px) {
+
+    .Mx110opportunities_line {
+
+        width: 60%;
+
+    }
+}
+
+@media screen and (max-width:  1570px) {
+
+    .Mx110opportunities {
+
+        margin-bottom: 165px;
+    }
+
+    .Mx110opportunities_fullInfo {
+
+        height: 736px;
+    }
+
+    .Mx110opportunities_listOpportunities {
+
+        height: 40%;
+        flex-wrap: wrap;
+    }
+
+    .Mx110opportunities_wrapperList ul {
+       gap: 15px;
+     
+     }
+
+}
+
+@media screen and (max-width:  1320px) {
+
+    .Mx110opportunities_fullInfo {
+
+        height: unset;
+        flex-direction: column-reverse;
+    }
+
+    .Mx110opportunities_wrapperList {
+
+        width: 100%;
+        align-items: unset; 
+    }
+
+}
+
+
+@media screen and (max-width:  1150px) {
+
+    .Mx110opportunities_line {
+
+        padding-left: 20px;
+    }
+
+}
+
+@media screen and (max-width:  1050px) {
+
+    .Mx110opportunities_wrapperImg > img:last-child {
+
+        position: absolute;
+        top: 40px;
+        right: -80px;
+    }
+}
+
+@media screen and (max-width:  940px) {
+
+    .Mx110opportunities_listOpportunities li {
+
+        margin-top: 10px;
+    }
+
+}
+
+@media screen and (max-width:  950px) {
+
+    .Mx110opportunities_line {
+
+        font-size: 70px;
+    }
+}
+
+
+@media screen and (max-width:  860px) {
+
+    .mX110restOpportunities {
+
+        padding: 8px 16px 8px 16px;
+
+    }
+
+    .Mx110opportunities_wrapperList {
+
+        padding-left: 8px; 
+    }
+}
+
+
+@media screen and (max-width:  850px) {
+
+   
+.Mx110opportunities_wrapperImg {
+
+    padding-left: 80px;
+    display: block;
+    margin-left: auto;
+}
+
+.Mx110opportunities_line {
+    @include header-bold-100px;
+
+    width: 50%;
+    height: 70px;
+    padding-top: 2px;
+    padding-left: 10px;  
+    font-size: 40px;
+    top: 210px; 
+}
+
+}
+@media screen and (max-width:  750px) {
+
+    .Mx110opportunities_wrapperImg div{
+
+        right: -80px;
+        top: 280px;
+    }
+}
+
+@media screen and (max-width:  600px) {
+
+    .Mx110opportunities_wrapperImg div{
+
+        height: 60.66px;
+        width: 150.79px;
+        padding: 5px;
+        font-size: 15px;
+        right: -30px;
+        top: 180px;
+    }
+
+    .Mx110opportunities_wrapperImg > img:last-child {
+
+        position: absolute;
+        top: -50px;
+        right: 200px;
+        height: 100px;
+        width: 100px;
+    }
+
+}
+
+
+@media screen and (max-width:  620px) {
+
+    .Mx110opportunities_line {
+
+    top: 100px;
+}
+
+}
+
+@media screen and (max-width:  500px) {
+
+    .Mx110opportunities_line {
+
+        height: 50px;
+        font-size: 30px;
+        top: 80px; 
+        display: flex;
+        align-items: center;
+    }
+
+    .Mx110opportunities_wrapperImg {
+
+        width: 50%;
+        margin: auto;
+        padding-left: 0px !important;
+    }
+
+    .Mx110opportunities_fullInfo {
+        width: 100%;
+    }
+
+    .Mx110opportunities_wrapperList {
+        width: 100%;
+
+    }
+
+    .Mx110opportunities_listOpportunities {
+
+        width: 100%;
+    }
+    
+    .Mx110opportunities_wrapperImg div{
+
+        height: 40px;
+        width: 100px;
+        padding: 5px;
+        font-size: 7px;
+        top: 100px;
+        line-height: 15px;
+  
+    }
+}
+
+@media screen and (max-width:  450px) {
+
+    .Mx110opportunities_wrapperImg > img:last-child {
+
+        right: -30px;
+    }
+}
+
+
+@media screen and (max-width:  420px) {
+
+    .Mx110opportunities_line {
+
+        height: 40px;
+        font-size: 20px;
+        top: 40px; 
+    }
+}
+
+@media screen and (max-width:  360px) {
+
+    .Mx110opportunities_listOpportunities {
+        justify-content: center;
+    
+    }
+}
+
+@media screen and (max-width:  325px) {
+
+    .Mx110opportunities_listOpportunities li div{
+
+        margin-right: unset;
+    }
+}
