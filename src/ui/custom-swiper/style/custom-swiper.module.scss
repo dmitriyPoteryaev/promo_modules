@@ -1,0 +1,97 @@
+.swiper_bottom {
+
+    all: unset;
+   }
+   
+   .swiper_bottom div {
+   
+       padding: 10px 10px 10px 10px !important;
+   }
+   
+   .swiper_big {
+   
+       width: 100% !important;
+       height: 100% !important;
+       padding-bottom: 20px !important;;
+       display: flex !important;
+       align-items: center !important;
+       justify-content: center !important;
+   }
+   
+   .swiper_up {
+   
+       width: 100%;
+       max-width: 620px;
+   }
+   
+   
+   
+   .swiper_small {
+   
+       max-width: 140px !important;
+       width: 100% !important;
+       height: 100px !important;
+       box-shadow: 0px 0px 10px 0px rgba(11, 17, 16, 0.2) !important;
+       cursor: pointer !important;
+   }
+   
+   
+   .swiper_small,
+   .swiper_small_another {
+   
+       max-width: 140px !important;
+       width: 100% !important;
+       height: 100px !important;
+       box-shadow: 0px 0px 10px 0px rgba(11, 17, 16, 0.2) !important;
+       cursor: pointer !important;
+       display: flex !important;
+       justify-content: center !important;
+       align-items: center !important;
+   }
+   
+   .swiper_small img {
+   
+       width: 100% !important;
+       height: 100% !important;
+   }
+   
+   .swiper_small_another img {
+   
+       width: 100% !important;
+       height: 50% !important;
+   }
+   
+   .arrow__left {
+       display: inline-block;
+       width: 28.61px;
+       height: 28.61px;
+       border-right: 3px solid #B1B1B1;
+       border-top: 3px solid #B1B1B1;
+       transform: rotate(225deg);
+       /* Adjusted rotation to point left */
+       margin-right: 0.5em;
+       margin-left: 1.0em;
+   }
+   
+   .arrow__right {
+       display: inline-block;
+       width: 28.61px;
+       height: 28.61px;
+       border-right: 3px solid #B1B1B1;
+       border-top: 3px solid #B1B1B1;
+       transform: rotate(45deg);
+       /* Adjusted rotation to point left */
+       margin-right: 0.5em;
+       margin-left: 1.0em;
+   }
+   
+   .wrappre_arrow {
+   
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       width: 772px;
+       display: flex;
+       justify-content: space-between;
+   }
