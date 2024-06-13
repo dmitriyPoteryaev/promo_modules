@@ -2,7 +2,7 @@ import React, { FC, CSSProperties, useState, useRef } from "react";
 
 import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import classes from "./styles/customswiper.module.scss";
+import classes from "./style/custom-swiper.module.scss";
 
 import 'swiper/css';
 import 'swiper/css/free-mode';
