@@ -57,7 +57,6 @@ const  postInfoFromForm =  async () => {
             "accept": "*/*",
             "accept-language": "en-US,en;q=0.9,uk;q=0.8",
             "cache-control": "no-cache",
-            "content-type": "multipart/form-data; boundary=----WebKitFormBoundaryikPbtbRLc8e0ghYR",
             "pragma": "no-cache",
             "priority": "u=1, i",
             "sec-ch-ua": "\"Google Chrome\";v=\"125\", \"Chromium\";v=\"125\", \"Not.A/Brand\";v=\"24\"",
@@ -65,7 +64,7 @@ const  postInfoFromForm =  async () => {
             "sec-ch-ua-platform": "\"Windows\"",
             "sec-fetch-dest": "empty",
             "sec-fetch-mode": "cors",
-            "sec-fetch-site": "same-origin"
+            "sec-fetch-site": "same-origin",
           },
 
           "referrer": "https://promo-modules.akytec.de/",
