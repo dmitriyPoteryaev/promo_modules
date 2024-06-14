@@ -1,1 +1,1 @@
-export { ModuleAd } from "./ModuleAd";
+export { ModuleAdAboutModBus, ModuleAdDeployment } from "./ModuleAd";
