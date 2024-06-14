@@ -21,8 +21,6 @@ export const CustomSwiper: FC<CustomSwiperProps> = (props) => {
 
     const [thumbsSwiper, setThumbsSwiper] = useState<SwiperClass>();
 
-    console.log(thumbsSwiper);
-
     return (
         <div className={classes.custom_swiper}>
             <Swiper
