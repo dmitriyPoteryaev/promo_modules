@@ -1,0 +1,94 @@
+@import "../../../../assets/styles/mixins/mixins.scss";
+
+
+.swiper_block{
+
+    width: 100%;
+    padding: 85px 195px 104px 195px;
+    display: flex; 
+    justify-content: space-between;
+}
+
+.swiper_block article {
+   
+    max-width: 581px;
+    width: 100%;
+    color: #000000;
+
+}
+
+.swiper_block article header:first-child{
+
+    @include header-bold-60px;
+
+    font-family: 'Archivo-Narrow-Bold';
+}
+
+.swiper_block article header {
+
+    @include header-regular-20px;
+    
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+.swiper_block article img{
+
+  height: 20%;
+  margin-bottom: 30px;
+}
+
+.swiper_block article p,  .swiper_block article ul li{
+    @include text-regular-20px;
+
+   margin-top: 25px;
+   font-family: 'Istok-Regular';
+   list-style: disc;
+}
+
+.swiper_block article p span{
+    @include text-bold-20px;
+
+    margin-top: 25px;
+    font-family: 'Istok-Regular';
+ }
+
+ .swiper_block article ul{
+   
+
+    margin-top: 20px;
+
+}
+
+
+ @media screen and (max-width:  1650px) {
+    .swiper_block {
+
+        flex-direction: column-reverse;
+        align-items: center;
+
+    }
+
+    .swiper_block article {
+
+        max-width: unset;
+
+    }
+
+    .swiper_block article img{
+
+        width: 20%;
+        height: 20%;
+        margin-bottom: 30px;
+      }
+   }
+
+   @media screen and (max-width: 860px) {
+
+    .swiper_block {
+
+        margin-top: 120px;
+        padding: 8px 16px 8px 16px;
+    }
+    
+}
