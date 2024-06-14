@@ -16,6 +16,16 @@
             stroke: hsl(176, 100%, 32%);
             stroke-width: 0;
         }
+        
+        svg circle:nth-child(2) {
+            stroke: white;
+            stroke-width: 1.5;
+        }
+
+        svg circle:nth-child(3) {
+            stroke: white;
+            stroke-width: 1.5;
+        }
 
     }
 
