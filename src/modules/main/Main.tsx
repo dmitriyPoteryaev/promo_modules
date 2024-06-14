@@ -5,6 +5,7 @@ import { Application } from "./application";
 import { ModuleAd } from "./moduleAd";
 import {Mx210_restOpportunities} from "./mX210_restOpportunities";
 import { Mx110Opportunities } from "./mX110_opportunities";
+import { Mx110_restOpportunities } from "./mX110_restOpportunities";
 import {SwiperBlock} from "./swiper-block/swiper-block"
 
 export const Main = () => {
@@ -16,6 +17,7 @@ export const Main = () => {
      <Mx210_restOpportunities/>
      <SwiperBlock/>
      <Mx110Opportunities/>
+     <Mx110_restOpportunities/>
      <Application header="Applications"/>
     </ClientLayout>
   );
