@@ -13,7 +13,7 @@ export const ClientHeader: FC = () => {
     const {postInfoFromForm} = formAPI;
 
     return(
-    <header className={classes.client_header} onClick={postInfoFromForm}>
+    <header className={classes.client_header}>
     <div className={classes.client_header_container}>
     <Button variant='magenta' size='medium'>REQUEST FOR QUOTE</Button>
     </div>
