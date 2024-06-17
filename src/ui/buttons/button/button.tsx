@@ -41,7 +41,6 @@ export const Button: FC<ButtonProps> = ({
     <button
       className={cnButton} 
       disabled={isDisabled}
-      onClick={onClickHandler}
     >
       {children}
     </button>
