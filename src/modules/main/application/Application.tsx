@@ -1,7 +1,8 @@
+'use client';
 import React, { FC } from "react";
 import classes from "./styles/application.module.scss";
-import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from 'next/navigation';
 
 export interface ApplicationProps {
   excludedApp?: number;
@@ -14,7 +15,7 @@ const applications: application[] = [
   {
     nameApp: "Application #1",
     AppPng: "/png/application/application1.png",
-    url: "/application/1",
+    url: "/application1",
   },
   {
     nameApp: "Application #2",
@@ -29,6 +30,8 @@ const applications: application[] = [
 ];
 
 export const Application: FC<ApplicationProps> = (props) => {
+
+  const router = useRouter()
   // const navigate = useNavigate();
 
   const { excludedApp, header } = props;
@@ -48,12 +51,11 @@ export const Application: FC<ApplicationProps> = (props) => {
           return (
             <li key={nameApp}>
               <div>
-                <Link href={url}><Image width={400} height={234} alt={nameApp} src={AppPng} /></Link>
+                <Image width={400} height={234} alt={nameApp} src={AppPng} onClick={() => router.push('/application1')}/>
               </div>
-              <Link  href={url}><span>
+              <span onClick={() => router.push('/application1')}>
                 {nameApp}
               </span>
-              </Link>
             </li>
           );
         })}

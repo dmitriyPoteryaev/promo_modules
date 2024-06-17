@@ -1,3 +1,4 @@
+'use client';
 import React, { FC, CSSProperties, useState, useRef } from "react";
 
 import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
