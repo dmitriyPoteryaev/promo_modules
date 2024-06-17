@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useEffect } from "react";
 import { BlockLayout } from "../../../ui/block-layout/block-layout";
 import { ClientLayout } from "../../../ui/client-layout/client-layout";
@@ -5,26 +7,12 @@ import { ButtonToMainPage } from "../../../ui/buttons/button-to-main-page/button
 import { Application } from "../../main/application";
 import classes from "./styles/application3.module.scss";
 import { Button } from "../../../ui/buttons/button/button";
-import { useParams, useNavigate } from "react-router-dom";
-import { defineIdApp } from "../../../utils/defineIdApp";
+import Link from "next/link";
+import Image from "next/image";
 
-const main_main = require("../../../assets/png/application3/main.png");
+// const main_main = require("../../../assets/png/application3/main.png");
 
 export const Application3 = () => {
-  const { id } = useParams<{ id: string }>();
-  const navigate = useNavigate();
-
-  const specificId = defineIdApp(id);
-
-  const moveToNextApp = () => {
-    const nextId = specificId ? +specificId + 1 : 1;
-
-    if (nextId === 4) {
-      navigate("/application/:" + 1);
-    } else {
-      navigate("/application/:" + nextId);
-    }
-  };
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -40,7 +28,7 @@ export const Application3 = () => {
           </header>
           <div className={classes.application3_shotDescription}>
             <figure>
-              <img alt="main" src={main_main} />
+               <Image alt="main" src="/png/application3/main.png" width={1530} height={1044}/> 
             </figure>
             <article>
               <header>Project Overview:</header>
@@ -113,9 +101,11 @@ export const Application3 = () => {
             </ul>
           </article>
           <div className={classes.application3_buttonBlock}>
-            <Button variant="magenta" size="medium" onClick={moveToNextApp}>
+            <Button variant="magenta" size="medium">
+            <Link style={{width: "100%", height: "100%", display: 'flex', justifyContent: 'center', alignItems: 'center'}} href='/application/1'>
               NEXT APPLICATION
-            </Button>
+              </Link>
+            </Button> 
           </div>
         </section>
       </BlockLayout>

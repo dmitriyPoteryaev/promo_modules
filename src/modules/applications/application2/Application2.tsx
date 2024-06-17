@@ -1,3 +1,5 @@
+'use client';
+
 import React, {useEffect} from "react";
 import { BlockLayout } from "../../../ui/block-layout/block-layout";
 import { ClientLayout } from "../../../ui/client-layout/client-layout";
@@ -5,27 +7,13 @@ import { ButtonToMainPage } from "../../../ui/buttons/button-to-main-page/button
 import { Application } from "../../main/application";
 import classes from "./styles/application2.module.scss";
 import { Button } from "../../../ui/buttons/button/button";
-import { useParams, useNavigate } from "react-router-dom";
-import { defineIdApp } from "../../../utils/defineIdApp";
+import Link from "next/link";
+import Image from "next/image";
 
-const png_description = require("../../../assets/png/application2/desc.png");
-const png_main = require("../../../assets/png/application2/main.png");
+// const png_description = require("../../../assets/png/application2/desc.png");
+// const png_main = require("../../../assets/png/application2/main.png");
 
 export const Application2 = () => {
-  const { id } = useParams<{ id: string }>();
-  const navigate = useNavigate();
-
-  const specificId = defineIdApp(id);
-
-  const moveToNextApp = () => {
-    const nextId = specificId ? +specificId + 1 : 1;
-
-    if (nextId === 4) {
-      navigate("/application/:" + 1);
-    } else {
-      navigate("/application/:" + nextId);
-    }
-  };
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -34,14 +22,14 @@ export const Application2 = () => {
   return (
     <ClientLayout>
       <BlockLayout>
-        <ButtonToMainPage />
+         <ButtonToMainPage /> 
         <section className={classes.application2}>
           <header className={classes.application2_header}>
             Pharmaceutical Warehouse Automation
           </header>
           <div className={classes.application2_shotDescription}>
             <figure>
-              <img alt="description" src={png_description} />
+             <Image alt="description" src="/png/application2/desc.png" width={784} height={717.43}/>
             </figure>
             <article>
               <p>
@@ -69,7 +57,7 @@ export const Application2 = () => {
             </article>
           </div>
           <figure className={classes.application2_mainImg}>
-            <img alt="main" src={png_main} />
+           <Image alt="main" src="/png/application2/main.png" width={1530} height={1149} /> 
           </figure>
           <article className={classes.application2_textDescription}>
             <header>
@@ -110,9 +98,11 @@ export const Application2 = () => {
             </ul>
           </article>
           <div className={classes.application2_buttonBlock}>
-            <Button variant="magenta" size="medium" onClick={moveToNextApp}>
+            <Button variant="magenta" size="medium">
+            <Link style={{width: "100%", height: "100%", display: 'flex', justifyContent: 'center', alignItems: 'center'}} href='/application/3'>
               NEXT APPLICATION
-            </Button>
+              </Link>
+            </Button> 
           </div>
         </section>
       </BlockLayout>

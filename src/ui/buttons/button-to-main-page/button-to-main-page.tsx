@@ -4,26 +4,26 @@ import LeftIcon from "../../icon2/LeftIcon";
 import classes from "./styles/button-to-main-page.module.scss";
 import {defineIdApp} from "../../../utils/defineIdApp"
 
+import Link from 'next/link';
+import { usePathname } from 'next/navigation'
+
 export const ButtonToMainPage: FC = () => {
-  const navigate = useNavigate();
-  const { id } = useParams<{ id: string }>();
+  const pathname = usePathname()
 
-  const specificId  = defineIdApp(id)
+  const specificId  = defineIdApp(pathname);
 
-  const moveToPrevApp = () => {
-    navigate("/");
-  };
   return (
     <div className={classes.button_to_main_page}>
       <div className={classes.button_to_main_page_container}>
+      <Link href={"/"}>
         <button>
           <div
             className={classes.button_to_main_page_buttonWrapper}
-            onClick={moveToPrevApp}
           >
             <LeftIcon />
           </div>
         </button>
+        </Link>
         <div>
           <div>Modules Mx110/210 |</div> <div>Application {specificId}</div>
         </div>

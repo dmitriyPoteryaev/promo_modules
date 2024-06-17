@@ -1,3 +1,5 @@
+'use client';
+
 import React, {useEffect} from "react";
 import { BlockLayout } from "../../../ui/block-layout/block-layout";
 import { ClientLayout } from "../../../ui/client-layout/client-layout";
@@ -5,30 +7,11 @@ import { ButtonToMainPage } from "../../../ui/buttons/button-to-main-page/button
 import { Application } from "../../main/application";
 import classes from "./styles/application1.module.scss";
 import { Button } from "../../../ui/buttons/button/button";
-import { useParams, useNavigate } from "react-router-dom";
-import { defineIdApp } from "../../../utils/defineIdApp";
-
-const png_description = require("../../../assets/png/application1/desc.png");
-const png_main = require("../../../assets/png/application1/main.png");
+import Link from "next/link";
+import Image from "next/image";
 
 export const Application1 = () => {
-  const { id } = useParams<{ id: string }>();
-  const navigate = useNavigate();
-
-  const specificId = defineIdApp(id);
-
-  const moveToNextApp = () => {
-    
-    const nextId = specificId ? +specificId + 1 : 1;
-
-    if (nextId === 4) {
-      navigate("/application/:" + 1);
-    } else {
-      navigate("/application/:" + nextId);
-    }
-  };
-
-
+  
     useEffect(() => {
       window.scrollTo(0, 0);
     }, []);
@@ -36,14 +19,14 @@ export const Application1 = () => {
   return (
     <ClientLayout>
       <BlockLayout>
-        <ButtonToMainPage />
+         <ButtonToMainPage />
         <section className={classes.application1}>
           <header className={classes.application1_header}>
             Ensuring Continuous Monitoring and Control of Server Room Parameters
           </header>
           <div className={classes.application1_shotDescription}>
-            <figure>
-              <img alt="description" src={png_description} />
+            <figure>        
+               <Image alt="description" src="/png/application1/desc.png" width={784} height={718}/>
             </figure>
             <p>
               akYtec Mx210 input and output modules play a key role in
@@ -58,7 +41,7 @@ export const Application1 = () => {
             </p>
           </div>
           <figure className={classes.application1_mainImg}>
-            <img alt="main" src={png_main} />
+            <Image alt="main" src="/png/application1/main.png" width={1530} height={1060}/>
           </figure>
           <article className={classes.application1_textDescription}>
             <header>Full technical description of the project</header>
@@ -88,10 +71,13 @@ export const Application1 = () => {
               </li>
             </ul>
           </article>
-          <div className={classes.application1_buttonBlock}>
-            <Button variant="magenta" size="medium" onClick={moveToNextApp}>
+          <div className={classes.application1_buttonBlock}>  
+            <Button variant="magenta" size="medium" >
+            <Link style={{width: "100%", height: "100%", display: 'flex', justifyContent: 'center', alignItems: 'center'}} href='/application/2'>
               NEXT APPLICATION
-            </Button>
+              </Link>
+            </Button> 
+            
           </div>
         </section>
       </BlockLayout>
