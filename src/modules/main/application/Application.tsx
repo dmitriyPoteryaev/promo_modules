@@ -14,7 +14,7 @@ const applications: application[] = [
   {
     nameApp: "Application #1",
     AppPng: "/png/application/application1.png",
-    url: "/application/1",
+    url: "/application1",
   },
   {
     nameApp: "Application #2",
