@@ -5,7 +5,7 @@ import dynamic from 'next/dynamic'
  
 
 const MainPage = dynamic<any>(
-  () => import('../../modules/main/Main').then(mod => mod.MainPage), { ssr: false }
+  () => import('../../modules/main').then(mod => mod.MainPage), { ssr: false }
 )
  
 export function ClientMainPage() {
