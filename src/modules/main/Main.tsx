@@ -9,7 +9,7 @@ import { Mx110_restOpportunities } from "./mX110_restOpportunities";
 import { Mx110_swiperBlock } from "./Mx110_swiperBlock";
 import {SwiperBlock} from "./swiper-block/swiper-block"
 
-export const Main = () => {
+export const MainPage = () => {
 
   return (
     <ClientLayout>
