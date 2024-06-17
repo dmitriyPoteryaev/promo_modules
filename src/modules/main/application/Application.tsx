@@ -1,7 +1,7 @@
 import React, { FC } from "react";
-import classes from "./styles/application.module.scss"
-
-import { useNavigate } from "react-router-dom";
+import classes from "./styles/application.module.scss";
+import Link from "next/link";
+import Image from "next/image";
 
 export interface ApplicationProps {
   excludedApp?: number;
@@ -13,23 +13,23 @@ export type application = { nameApp: string; AppPng: string, url: string };
 const applications: application[] = [
   {
     nameApp: "Application #1",
-    AppPng: require("../../../assets/png/application/application1.png"),
-    url: "1",
+    AppPng: "/png/application/application1.png",
+    url: "/application/1",
   },
   {
     nameApp: "Application #2",
-    AppPng: require("../../../assets/png/application/application2.png"),
-    url: "2",
+    AppPng: "/png/application/application2.png",
+    url: "/application/2",
   },
   {
     nameApp: "Application #3",
-    AppPng: require("../../../assets/png/application/application3.png"),
-    url: "3",
+    AppPng: "/png/application/application3.png",
+    url: "/application/3",
   },
 ];
 
 export const Application: FC<ApplicationProps> = (props) => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   const { excludedApp, header } = props;
 
@@ -47,12 +47,13 @@ export const Application: FC<ApplicationProps> = (props) => {
 
           return (
             <li key={nameApp}>
-              <div onClick={() => navigate("/application/:" + url)}>
-                <img alt={nameApp} src={AppPng} />
+              <div>
+                <Link href={url}><Image width={400} height={234} alt={nameApp} src={AppPng} /></Link>
               </div>
-              <span onClick={() => navigate("/application/:" + url)}>
+              <Link  href={url}><span>
                 {nameApp}
               </span>
+              </Link>
             </li>
           );
         })}

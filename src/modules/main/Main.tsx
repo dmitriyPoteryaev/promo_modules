@@ -21,7 +21,7 @@ export const Main = () => {
      <Mx110Opportunities/>
     <Mx110_restOpportunities/>
       <Mx110_swiperBlock/> 
-     {/* <Application header="Applications"/> */}
+     <Application header="Applications"/>
     </ClientLayout>
   );
 };

@@ -2,6 +2,7 @@ import { ButtonHTMLAttributes, FC, MouseEventHandler } from "react";
 
 import type { Sizes } from '../../../types';
 import { getClasses } from './styles/get-classes';
+import Link from "next/link";
 
 export type ButtonVariant = "white" | "magenta" | "teal";
 
@@ -38,7 +39,7 @@ export const Button: FC<ButtonProps> = ({
 
   return (
     <button
-      className={cnButton}
+      className={cnButton} 
       disabled={isDisabled}
       onClick={onClickHandler}
     >
