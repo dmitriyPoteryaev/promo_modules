@@ -62,13 +62,13 @@ export const ModuleAdDeployment: FC = () => {
         <div className={classes.moduleAd} >
                 <Image width={100} height={100} className={classes.moduleAd_img} src={backgroundEasyModuleAd} alt=""/> 
             <article>
-                <div className={classes.moduleAd_description}>
+                <div className={classes.moduleAd_description} >
                     <header className={classes.moduleAd_header}>Flexible Deployment with Daisy Chain Networking and Auto-Bypass Protection</header>
                     <p>Daisy chain connectivity offers flexible cabling and space saving capabilities. With Ethernet auto-bypass
                         function supported to prevent accidental power failures if one of the modules unexpectedly shuts down.</p>
                     <Button variant='magenta' size='large'>EXPLORE MODELS {"&"} SPECS</Button>
                 </div>
-                <div className={classes.moduleAd_modulePhoto}><Image width={685} height={368}  src={'/png/main/Ad/Mx210.png'} alt="module" /></div> 
+                <div className={classes.moduleAd_modulePhoto} style={{marginTop: '117px', paddingTop: 'unset'}}><Image width={685} height={368}  src={'/png/main/Ad/Mx210.png'} alt="module" /></div> 
             </article>
         </div>
     );

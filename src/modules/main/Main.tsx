@@ -18,9 +18,9 @@ export const Main = () => {
       <Mx210_restOpportunities/>
      <SwiperBlock/>
      <ModuleAdDeployment  />
-     {/*<Mx110Opportunities/>
-     <Mx110_restOpportunities/>
-     <Mx110_swiperBlock/> */}
+     <Mx110Opportunities/>
+    <Mx110_restOpportunities/>
+      <Mx110_swiperBlock/> 
      {/* <Application header="Applications"/> */}
     </ClientLayout>
   );

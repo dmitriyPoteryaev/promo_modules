@@ -5,8 +5,7 @@ import SvgMx210427321717 from "../../../ui/icon2/Mx210427321717";
 import SvgMx110427321542 from "../../../ui/icon2/Mx110427321542";
 import SvgMx110427321769 from "../../../ui/icon2/Mx110427321769";
 import { CardOpportuinities } from "../../../ui/card-opportunities/card-opportunities";
-
-const Mx110Photo = require("../../../assets/png/main/Oppotunities/Mx110/Mx110.png");
+import Image from 'next/image';
 
 const cards =
     [{ topInscription: "Modbus RTU,", bottomInscription: "ASCII", svg: <SvgMx210427321481/> },
@@ -30,7 +29,7 @@ export const Mx110Opportunities: FC = () => {
                 </div>
             </div> 
              <div className={classes.Mx110opportunities_wrapperImg}>
-             <img className={classes.Mx110opportunities_imgModule} src={Mx110Photo} alt="Mx210" />
+             <Image className={classes.Mx110opportunities_imgModule} width={626} height={626} src='/png/main/Oppotunities/Mx110/Mx110.png' alt="Mx210" />
              <div>Compatibility with third-party PLCs</div>
              </div>
          

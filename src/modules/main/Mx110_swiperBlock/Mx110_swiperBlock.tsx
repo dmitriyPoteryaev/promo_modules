@@ -2,12 +2,13 @@ import React from "react";
 import { CustomSwiper } from "../../../ui/custom-swiper/custom-swiper";
 import classes from "./style/swiper-block.module.scss";
 
-const pngsProtocolsMx210 = [
-    require("../../../assets/png/main/multiple-protocols/Mx110/Mx110_protocols_1.png"),
-    require("../../../assets/png/main/multiple-protocols/Mx110/Mx110_protocols_2.png"),
-    require("../../../assets/png/main/multiple-protocols/Mx110/Mx110_protocols_3.png"),];
 
-const protocols_logo = require("../../../assets/png/main/multiple-protocols/Mx110/logo.jpg");
+    const pngsProtocolsMx110 = [
+        '/png/main/multiple-protocols/Mx110/Mx110_protocols_1.png',
+        '/png/main/multiple-protocols/Mx110/Mx110_protocols_2.png',
+        '/png/main/multiple-protocols/Mx110/Mx110_protocols_3.png',];
+
+const protocols_logo = "/png/main/multiple-protocols/Mx110/logo.jpg";
 
 export const Mx110_swiperBlock = () => {
 
@@ -30,7 +31,7 @@ export const Mx110_swiperBlock = () => {
             </article>
           
             <div style={{ maxWidth: '620px', width: '100%' }}>
-                <CustomSwiper arrayWithPng={pngsProtocolsMx210} />
+                <CustomSwiper arrayWithPng={pngsProtocolsMx110} />
             </div>
         </section>)
 
