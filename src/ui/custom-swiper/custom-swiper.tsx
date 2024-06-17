@@ -8,6 +8,7 @@ import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/thumbs';
 import SwiperClass from "swiper/types/swiper-class";
+import Image from "next/image";
 
 export interface CustomSwiperProps {
     arrayWithPng: string[];
@@ -37,8 +38,8 @@ export const CustomSwiper: FC<CustomSwiperProps> = (props) => {
                 className={classes.swiper_up}
             >
                 {arrayWithPng.map((urlPng: string) =>
-                    <SwiperSlide className={classes.swiper_big}>
-                        <img src={urlPng} />
+                    <SwiperSlide key={urlPng} className={classes.swiper_big}>
+                        <Image width={596} height={380} src={urlPng} alt="" />
                     </SwiperSlide>)
                 }
             </Swiper>
@@ -55,13 +56,13 @@ export const CustomSwiper: FC<CustomSwiperProps> = (props) => {
                 className={classes.swiper_bottom}>
                 {arrayWithPng.map((urlPng: string, i: number) => {
                     if (i !== 3) {
-                        return (<SwiperSlide className={classes.swiper_small}>
-                            <img src={urlPng} />
+                        return (<SwiperSlide key={urlPng} className={classes.swiper_small}>
+                            <Image width={140} height={100} src={urlPng} alt="" />
                         </SwiperSlide>)
 
                     } else {
-                        return (<SwiperSlide className={classes.swiper_small_another}>
-                            <img src={urlPng} />
+                        return (<SwiperSlide key={urlPng} className={classes.swiper_small_another}>
+                            <Image width={140} height={100} src={urlPng} alt="" />
                         </SwiperSlide>)
 
                     }

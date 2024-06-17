@@ -15,13 +15,13 @@ export const Main = () => {
     <ClientLayout>
      <ModuleAdAboutModBus  />
      <Mx210Opportunities/>
-     <Mx210_restOpportunities/>
+      <Mx210_restOpportunities/>
      <SwiperBlock/>
      <ModuleAdDeployment  />
      <Mx110Opportunities/>
-     <Mx110_restOpportunities/>
-     <Mx110_swiperBlock/>
-     <Application header="Applications"/>
+    <Mx110_restOpportunities/>
+      <Mx110_swiperBlock/> 
+     {/* <Application header="Applications"/> */}
     </ClientLayout>
   );
 };

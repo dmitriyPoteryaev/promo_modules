@@ -5,9 +5,7 @@ import SvgMx210427321496 from "../../../ui/icon2/Mx210427321496";
 import SvgMx210427321497 from "../../../ui/icon2/Mx210427321497";
 import SvgMx210427321717 from "../../../ui/icon2/Mx210427321717";
 import { CardOpportuinities } from "../../../ui/card-opportunities/card-opportunities";
-
-const Mx210Photo = require("../../../assets/png/main/Oppotunities/Mx210/Mx210.png");
-const InterfacesMx210 = require("../../../assets/png/main/Oppotunities/Mx210/interfacesMx210.png");
+import Image from "next/image";
 
 const cards =
     [{ topInscription: "Modbus TCP,", bottomInscription: "MQTT, SNMP", svg: <SvgMx210427321481/> },
@@ -31,9 +29,9 @@ export const Mx210Opportunities: FC = () => {
                 </div>
             </div> 
              <div className={classes.Mx210opportunities_wrapperImg}>
-             <img className={classes.Mx210opportunities_imgModule} src={Mx210Photo} alt="Mx210" />
+             <Image width={580} height={580} className={classes.Mx210opportunities_imgModule} src="/png/main/Oppotunities/Mx210/Mx210.png" alt="Mx210" />
             <div>Compatibility with third-party PLCs</div>
-            <img src={InterfacesMx210} alt="interfacesMx210" />
+            <Image src="/png/main/Oppotunities/Mx210/interfacesMx210.png"  width={164} height={144} alt="interfacesMx210" />
              </div>
          
         </div>
