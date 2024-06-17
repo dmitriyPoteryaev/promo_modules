@@ -1,6 +1,5 @@
 
 export const defineIdApp = (id: string | undefined) => {
-    //  const numberChartInString = id?.length ? id.length - 1 : 0;
   
     const numberChartInString = id?.length ? id.length - 1 : 0;
     
