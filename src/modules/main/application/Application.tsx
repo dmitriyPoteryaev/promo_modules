@@ -20,12 +20,12 @@ const applications: application[] = [
   {
     nameApp: "Application #2",
     AppPng: "/png/application/application2.png",
-    url: "/application/2",
+    url: "/application2",
   },
   {
     nameApp: "Application #3",
     AppPng: "/png/application/application3.png",
-    url: "/application/3",
+    url: "/application3",
   },
 ];
 
@@ -51,9 +51,9 @@ export const Application: FC<ApplicationProps> = (props) => {
           return (
             <li key={nameApp}>
               <div>
-                <Image width={400} height={234} alt={nameApp} src={AppPng} onClick={() => router.push('/application1')}/>
+                <Image width={400} height={234} alt={nameApp} src={AppPng} onClick={() => router.push(url)}/>
               </div>
-              <span onClick={() => router.push('/application1')}>
+              <span onClick={() => router.push(url)}>
                 {nameApp}
               </span>
             </li>
