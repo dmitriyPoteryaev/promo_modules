@@ -1,13 +1,17 @@
 @import '../../../assets/styles/mixins/mixins.scss';
+@import './mixins.scss';
 
 .client_header {
 
   width: 100%;
   height: 110px;
-  padding: 30px 209px 30px 69px;
+  padding: 25px 195px  25px 195px;
   display: flex;
   justify-content: center;
-  background-color: #F1F1F1;
+  background-color: #F8F8F8;
+  position: fixed;
+  top: 0px;
+  z-index: 10;
 }
 
 .client_header_container {
@@ -18,12 +22,97 @@
   justify-content: space-between;
 }
 
-.client_header_moreInfo {
-  @include button-text-regular-16px;
-  
-  font-family: 'Roboto-Regular', sans-serif;
-  text-align: right;
+.client_header_container div:first-child {
+
+     width: 61%;
+     display: flex; 
+     justify-content: space-between;
 }
+
+.client_header_container div:first-child nav{
+
+  width: 66%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.client_header_container div:first-child nav a, .client_header_container div:nth-child(2) div{
+
+  @include text-regular-16px;
+  @include text-header-variant-styles;
+
+  color: #07133C;
+  font-family: 'Istok-Regular';
+  cursor: pointer;
+
+}
+
+.client_header_container div:nth-child(2) {
+
+  width: 24%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.client_header_modalButton {
+   display: none;
+}
+
+.client_header_modalButton div {
+  width: 28px !important;
+  height: 23px !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.client_header_modalButton div div {
+  margin-top: 5px;
+  border-top: 2.5px solid black;
+  transition: transform 0.3s ease, margin-top 0.3s ease; /* Add transition for smooth effect */
+}
+
+@media screen and (max-width:  1300px) {
+
+  .client_header {
+
+    padding: 25px 100px  25px 100px;
+  }
+}
+
+@media screen and (max-width:  1100px) {
+
+  .client_header {
+
+    padding: 25px 100px  25px 100px;
+  }
+
+  .client_header_container div:nth-child(2) {
+
+    width: 35%;
+  }
+  
+}
+
+@media screen and (max-width:  1100px) {
+
+  .client_header {
+
+    padding: 25px 50px  25px 50px;
+  }
+
+}
+
+@media screen and (max-width:  940px) {
+
+  .client_header {
+
+    padding: 25px 20px  25px 20px;
+  }
+
+}
+
 
 @media screen and (max-width:  860px) {
 
@@ -31,4 +120,41 @@
 
     padding: 8px 16px 8px 16px;
   }
+
+  .client_header_container div:first-child nav{
+
+    display: none;
+  }
+
+  .client_header_modalButton {
+
+    display: flex !important;
+  }
+
+  .client_header_modalButton div{
+
+    display: flex !important;
+  }
+
+  .client_header_container div:last-child div{
+
+    display: none;
+  }
 }
+
+@media screen and (max-width:  400px) {
+
+.client_header_container svg{
+
+scale: 0.5;
+}
+}
+
+@media screen and (max-width:  350px) {
+
+  .client_header_container svg{
+  
+  position: absolute;
+  }
+  }
+  
