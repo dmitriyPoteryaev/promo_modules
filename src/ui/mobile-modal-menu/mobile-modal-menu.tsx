@@ -1,15 +1,27 @@
-import React from "react";
+'use client';
+import React, {FC} from "react";
 import classes from "./style/mobile-modal-menu.module.scss";
+import { getClasses } from './style/get-classes';
+import Link from "next/link";
 
+export interface ClientMobileMenuProps {
+    changeVisibilityModal: Function;
+    isOpenModal: boolean;
+    Links: {href: string, name: string}[];
+};
 
-export const MobileMenu = () => {
+export const MobileMenu: FC<ClientMobileMenuProps> = (props) => {
 
+    const {changeVisibilityModal, isOpenModal, Links} = props;
 
-    return (<aside className={classes.modal}>
-        <span>MX210 Modules</span>
-        <span>MX110 Modules</span>
-        <span>Applications</span>
-        <span>Mx Modifications</span>
-        <span>More Info</span>
+    const { cnContainerSideBar } = getClasses(isOpenModal);
+
+    return (<aside className={cnContainerSideBar}>
+         <nav>
+            {Links.map(({href, name}: {href: string, name: string}) => {
+                return (<Link key={href} href={href} onClick={() => { changeVisibilityModal((prevState) => !prevState) }}>{name}</Link>)
+            })
+            }
+        </nav>
         </aside>)
 }

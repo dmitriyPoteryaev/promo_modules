@@ -10,13 +10,14 @@ import classes from "./styles/client-header.module.scss";
 
 export interface ClientHeaderProps {
     changeVisibilityModal: Function;
+    Links: {href: string, name: string}[];
 }
 
 export const ClientHeader: FC<ClientHeaderProps> = (props) => {
 
     const { postInfoFromForm } = formAPI;
 
-    const { changeVisibilityModal } = props;
+    const { changeVisibilityModal, Links } = props;
 
     // onClick={()=> { postInfoFromForm()}}
     return (
@@ -35,14 +36,13 @@ export const ClientHeader: FC<ClientHeaderProps> = (props) => {
                 </button> 
                     <Logo />
                     <nav>
-                        <Link href={"/"}>Mx210</Link>
-                        <Link href={"/"}>Mx110</Link>
-                        <Link href={"/"}>Applications</Link>
-                        <Link href={"/"}>Mx Modifications</Link>
+                        {Links.map(({href, name}: {href: string, name: string}) => {
+                         return(<Link href={href}>{name}</Link>)
+                        })}
                     </nav>
                 </div>
                 <div>
-                    <div>More Info</div>
+                    <Link href={"/"}>More Info</Link>
                     <Button variant='magenta' size='medium'>Basket</Button>
                 </div> 
             </div>
