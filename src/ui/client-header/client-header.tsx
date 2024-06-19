@@ -35,9 +35,9 @@ export const ClientHeader: FC<ClientHeaderProps> = (props) => {
                 </button> 
                     <Logo />
                     <nav>
-                        <Link href={"/"}>Mx210</Link>
-                        <Link href={"/"}>Mx110</Link>
-                        <Link href={"/"}>Applications</Link>
+                        <Link href={"/#Mx210"}>Mx210</Link>
+                        <Link  href={"/#Mx110"}>Mx110</Link>
+                        <Link href={"/#applications"}>Applications</Link>
                         <Link href={"/"}>Mx Modifications</Link>
                     </nav>
                 </div>

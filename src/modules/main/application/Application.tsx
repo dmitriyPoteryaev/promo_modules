@@ -42,7 +42,7 @@ export const Application: FC<ApplicationProps> = (props) => {
 
   return (
     
-    <div className={classes.application}>
+    <div className={classes.application} id='applications'>
       <header>{header}</header>
       <ul>
         {specificApplications.map((application) => {

@@ -16,7 +16,7 @@ const cards =
 
 export const Mx110Opportunities: FC = () => {
 
-    return <section className={classes.Mx110opportunities}>
+    return <section className={classes.Mx110opportunities} id='Mx110'>
         <div className={classes.Mx110opportunities_line}>Mx110</div>
         <div className={classes.Mx110opportunities_fullInfo}>
              <div className={classes.Mx110opportunities_wrapperList}>

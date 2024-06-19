@@ -16,7 +16,7 @@ export const ClientLayout : FC<ClientLayoutProps> = (props) => {
   return (
     <div className={classes.layout_client}>
       <ClientHeader changeVisibilityModal={setOpenModal}/>
-       {isOpenModal && <MobileMenu/>}
+       {isOpenModal && <MobileMenu changeVisibilityModal={setOpenModal}/>}
         <main className={classes.layout_client_container}>{children}</main>
         <ClientFooter />
     </div>
