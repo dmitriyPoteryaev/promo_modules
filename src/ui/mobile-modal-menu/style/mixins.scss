@@ -1,0 +1,14 @@
+
+@mixin text-header-variant-styles { 
+
+    &:hover {
+        color: #00A197;
+        font-weight: 700;
+    }
+
+    &:active {
+        color: #00A197;
+        font-weight: 700;
+    }
+  
+}
