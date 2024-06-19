@@ -37,7 +37,7 @@
   align-items: center;
 }
 
-.client_header_container div:first-child nav a, .client_header_container div:nth-child(2) div{
+.client_header_container div:first-child nav a, .client_header_container div:nth-child(2) a{
 
   @include text-regular-16px;
   @include text-header-variant-styles;
@@ -50,7 +50,7 @@
 
 .client_header_container div:nth-child(2) {
 
-  width: 24%;
+  width: 30%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -136,7 +136,7 @@
     display: flex !important;
   }
 
-  .client_header_container div:last-child div{
+  .client_header_container div:last-child a{
 
     display: none;
   }
