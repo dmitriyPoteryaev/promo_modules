@@ -19,7 +19,7 @@ export const MobileMenu: FC<ClientMobileMenuProps> = (props) => {
     return (<aside className={cnContainerSideBar}>
          <nav>
             {Links.map(({href, name}: {href: string, name: string}) => {
-                return (<Link key={href} href={href} onClick={() => { changeVisibilityModal((prevState) => !prevState) }}>{name}</Link>)
+                return (<Link key={name} href={href} onClick={() => { changeVisibilityModal((prevState) => !prevState) }}>{name}</Link>)
             })
             }
         </nav>

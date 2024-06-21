@@ -1,0 +1,152 @@
+{
+
+"modules": [
+    {
+        "certain_name": "MV210-202",
+        "common_name": "DIGITAL INPUT MODULE",
+        "DI": 20,
+        "DO": null,
+        "AI": null,
+        "AO": null,
+        "interface_connection": "Ethenet",
+        "image": "/png/main/modification/Mx210/MV210-202.png",
+        "width": 234.26,
+        "height": 234.26
+    },
+    {
+        "certain_name": "MV210-204",
+        "common_name": "DIGITAL INPUT MODULE",
+        "DI": 20,
+        "DO": null,
+        "AI": null,
+        "AO": null,
+        "interface_connection": "Ethenet",
+        "image": "/png/main/modification/Mx210/MV210-204.png",
+        "width": 197.15,
+        "height": 227.17
+    },
+    {
+        "certain_name": "MV210-212",
+        "common_name": "DIGITAL INPUT MODULE",
+        "DI": 32,
+        "DO": null,
+        "AI": null,
+        "AO": null,
+        "interface_connection": "Ethenet",
+        "image": "/png/main/modification/Mx210/MV210-212.png",
+        "width": 223.45,
+        "height": 223.45
+    },
+    {
+        "certain_name": "MV210-214",
+        "common_name": "DIGITAL INPUT MODULE",
+        "DI": 32,
+        "DO": null,
+        "AI": null,
+        "AO": null,
+        "interface_connection": "Ethenet",
+        "image": "/png/main/modification/Mx210/MV210-214.png",
+        "width": 258.26,
+        "height": 258.26
+    },
+    {
+        "certain_name": "MV210-221",
+        "common_name": "DIGITAL INPUT MODULE",
+        "DI": 15,
+        "DO": null,
+        "AI": null,
+        "AO": null,
+        "interface_connection": "Ethenet",
+        "image": "/png/main/modification/Mx210/MV210-221.png",
+        "width": 211.62,
+        "height": 224.81
+    },
+    {
+        "certain_name": "MK210-311",
+        "common_name": "INPUT AND OUTPUT MODULE",
+        "DI": 6,
+        "DO": 8,
+        "AI": null,
+        "AO": null,
+        "interface_connection": "Ethenet",
+        "image": "/png/main/modification/Mx210/MK210-311.png",
+        "width": 227.28,
+        "height": 223.26
+    },
+    {
+        "certain_name": "MK210-312",
+        "common_name": "INPUT AND OUTPUT MODULE",
+        "DI": 12,
+        "DO": 4,
+        "interface_connection": "Ethenet",
+        "image": "/png/main/modification/Mx210/MU210-401.png",
+        "width": 234.21,
+        "height": 234.21
+    },
+    {
+        "certain_name": "MU210-401",
+        "common_name": "DIGITAL OUTPUT MODULE",
+        "DI": null,
+        "DO": 8,
+        "AI": null,
+        "AO": null,
+        "interface_connection": "Ethenet",
+        "image": "/png/main/modification/Mx210/MU210-401.png",
+        "width": 234.21,
+        "height": 234.21
+    },
+    {
+        "certain_name": "MU210-402",
+        "common_name": "DIGITAL OUTPUT MODULE",
+        "DI": null,
+        "DO": 16,
+        "AI": null,
+        "AO": null,
+        "interface_connection": "Ethenet",
+        "image": "/png/main/modification/Mx210/MU210-402.png",
+        "width": 226.42,
+        "height": 223.48
+    },
+    {
+        "certain_name": "MU210-412",
+        "common_name": "DIGITAL OUTPUT MODULE",
+        "DI": null,
+        "DO": 24,
+        "AI": null,
+        "AO": null,
+        "interface_connection": "Ethenet",
+        "image": "/png/main/modification/Mx210/MU210-412.png",
+        "width": 233.61,
+        "height": 233.61
+    },
+    {
+        "certain_name": "MU210-502",
+        "common_name": "ANALOG OUTPUT MODULE",
+        "DI": null,
+        "DO": null,
+        "AI": null,
+        "AO": 6,
+        "interface_connection": "Ethenet",
+        "image": "/png/main/modification/Mx210/MU210-502.png",
+        "width": 208.34,
+        "height": 235.56
+    },
+    {
+        "certain_name": "MV210-101",
+        "common_name": "DIGITAL OUTPUT MODULE",
+        "DI": null,
+        "DO": null,
+        "AI": 8,
+        "AO": null,
+        "interface_connection": "Ethenet",
+        "image": "/png/main/modification/Mx210/MV210-101.png",
+        "width": 228.03,
+        "height": 221.73
+    }
+
+
+]
+
+   
+    
+}

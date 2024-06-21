@@ -37,7 +37,7 @@ export const ClientHeader: FC<ClientHeaderProps> = (props) => {
                     <Logo />
                     <nav>
                         {Links.map(({href, name}: {href: string, name: string}) => {
-                         return(<Link href={href}>{name}</Link>)
+                         return(<Link key={name} href={href}>{name}</Link>)
                         })}
                     </nav>
                 </div>

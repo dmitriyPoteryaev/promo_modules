@@ -24,6 +24,7 @@ const cards: CardOpportuinitiesProps[] =
 
 export const Mx210_restOpportunities = () => {
 
+
     return (<section className={classes.mX210restOpportunities}>   
          <ul >
         {cards.map((card: CardOpportuinitiesProps) => {
