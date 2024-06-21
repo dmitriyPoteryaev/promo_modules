@@ -1,0 +1,36 @@
+
+.moidificationBlock {
+
+    padding: 0px 195px 0px 195px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.moidificationBlock ul{
+
+    max-width: 1530px;
+    width: 100%;
+    gap: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    
+    }
+
+    
+@media screen and (max-width:  860px) {
+
+    .moidificationBlock {
+
+        padding: 0px 20px 0px 20px;
+       
+    }
+
+    .moidificationBlock ul {
+
+        align-items: center;
+    }
+
+}

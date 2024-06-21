@@ -7,7 +7,8 @@ import {Mx210_restOpportunities} from "./mX210_restOpportunities";
 import { Mx110Opportunities } from "./mX110_opportunities";
 import { Mx110_restOpportunities } from "./mX110_restOpportunities";
 import { Mx110_swiperBlock } from "./Mx110_swiperBlock";
-import {SwiperBlock} from "./swiper-block/swiper-block"
+import {SwiperBlock} from "./swiper-block/swiper-block";
+import { Modifications_Mx210 } from "./modifications_Mx210/Modifications_Mx210";
 
 export const Main = () => {
 
@@ -22,6 +23,7 @@ export const Main = () => {
     <Mx110_restOpportunities/>
       <Mx110_swiperBlock/> 
      <Application header="Applications"/>
+     <Modifications_Mx210/>
     </ClientLayout>
   );
 };
