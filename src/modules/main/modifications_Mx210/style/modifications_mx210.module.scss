@@ -3,11 +3,13 @@
 
     padding: 0px 195px 0px 195px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
 
 }
 
-.moidificationBlock ul{
+.moidificationBlock__listModifications{
 
     max-width: 1530px;
     width: 100%;
@@ -18,6 +20,18 @@
     box-sizing: border-box;
     
     }
+
+    .moidificationBlock_listCheckbox{
+
+        max-width: 1530px;
+        width: 100%;
+        min-height: 83px;
+        border: 1px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        }
 
     
 @media screen and (max-width:  860px) {
@@ -34,3 +48,12 @@
     }
 
 }
+
+@media screen and (max-width: 1600px) {
+
+    .moidificationBlock_listCheckbox{
+    
+      flex-wrap: wrap;
+    
+    }
+  }
