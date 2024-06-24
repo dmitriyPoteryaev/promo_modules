@@ -12,6 +12,8 @@ export const Modifications_Mx210 = () => {
   const [isChecked, isSetChecked] = useState({});
 
 
+
+
     return (<section className={classes.moidificationBlock}>
       <div  className={classes.moidificationBlock_listCheckbox}><span>Number of inputs/outputs:</span>
       <div>
@@ -110,11 +112,11 @@ export const Modifications_Mx210 = () => {
          </div>
       </div>
       <ul className={classes.moidificationBlock__listModifications}>
-        {sortModifications(modulesInfo.modules, isChecked).map((infoAboutModule) => {
+        {sortModifications(modulesInfo.modules, isChecked)?.length !== 0 ?  sortModifications(modulesInfo.modules, isChecked).map((infoAboutModule) => {
            
            return(<ModificationCard key={infoAboutModule.certain_name} info={infoAboutModule}/>)
 
-        })
+        }) : <div className={classes.moidificationBlock__listModifications_empty}>There is not appropriate Mx210</div>
 
         }
       

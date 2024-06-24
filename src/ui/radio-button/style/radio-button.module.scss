@@ -60,17 +60,6 @@
 
 }
 
-.text {
-@include text-bold-20px;
-  
-  width: fit-content;
-  padding-left: 13px;
-  display: flex;
-  color: #000000;
-  user-select: none;
-  cursor: pointer;
-}
-
 .label_radio_number {
     @include text-regular-20px;
 

@@ -1,3 +1,4 @@
+@import "../../../../assets/styles/mixins/mixins.scss";
 
 .moidificationBlock {
 
@@ -6,10 +7,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: #F8F8F8;
 
 }
 
-.moidificationBlock__listModifications{
+.moidificationBlock__listModifications {
 
     max-width: 1530px;
     width: 100%;
@@ -18,28 +20,99 @@
     justify-content: center;
     flex-wrap: wrap;
     box-sizing: border-box;
-    
+
+}
+
+.moidificationBlock_listCheckbox {
+
+    max-width: 1530px;
+    width: 100%;
+    min-height: 83px;
+    margin-top: 50px;
+    margin-bottom: 31px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+
+}
+
+
+.moidificationBlock_listCheckbox span:first-child {
+
+    @include text-regular-20px;
+
+    font-family: 'Istok-Regular';
+
+}
+
+
+.moidificationBlock_listCheckbox div {
+
+    display: flex;
+
+}
+
+.moidificationBlock_listCheckbox div span:first-child {
+    @include text-bold-20px;
+
+    font-family: 'Istok-Regular-Bold';
+
+}
+
+.moidificationBlock__listModifications_empty {
+
+    @include text-bold-20px;
+
+    width: 100%;
+    margin: 50px 0px 80px 0px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    font-family: 'Istok-Regular-Bold';
+}
+
+@media screen and (max-width: 1600px) {
+
+    .moidificationBlock_listCheckbox {
+        
+        flex-wrap: wrap;
+
     }
 
-    .moidificationBlock_listCheckbox{
+    .moidificationBlock {
 
-        max-width: 1530px;
-        width: 100%;
-        min-height: 83px;
-        border: 1px solid black;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        
-        }
+        padding: 0px 100px 0px 100px;
+    }
+}
 
-    
-@media screen and (max-width:  860px) {
+@media screen and (max-width: 1100px) {
+
+    .moidificationBlock__listModifications_empty {
+
+        font-size: 30px;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    .moidificationBlock {
+
+        padding: 0px 50px 0px 50px;
+    }
+
+}
+
+@media screen and (max-width: 860px) {
 
     .moidificationBlock {
 
         padding: 0px 20px 0px 20px;
-       
+
     }
 
     .moidificationBlock ul {
@@ -49,11 +122,52 @@
 
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 860px) {
 
-    .moidificationBlock_listCheckbox{
-    
-      flex-wrap: wrap;
+    .moidificationBlock {
+
+        padding: 0px 20px 0px 20px;
+
+    }
+
+    .moidificationBlock ul {
+
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width: 720px) {
+
+    .moidificationBlock__listModifications_empty {
+
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .moidificationBlock_listCheckbox div {
+
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
     
     }
-  }
+
+    .moidificationBlock_listCheckbox div ul{
+
+        flex-wrap: wrap;
+    
+    }
+
+    
+    .moidificationBlock__listModifications_empty {
+
+        font-size: 15px;
+    }
+
+}

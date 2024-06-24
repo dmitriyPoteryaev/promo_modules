@@ -9,7 +9,6 @@ if(!checked) {
             return newObj;
         }, {}
     );
-    console.log(newObj);
 
     return newObj;
 

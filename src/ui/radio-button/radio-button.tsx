@@ -20,8 +20,6 @@ export const RadioButton: FC<RadioButtonProps> = ({
 }) => {
 
     const {value, name} = props;
-
-    console.log(checkedObj?.[name]?.value === value);
     
    const checked =  checkedObj?.[name]?.value === value;
 
