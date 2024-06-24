@@ -8,15 +8,12 @@ import classes from "./style/swiper-block.module.scss";
         '/png/main/multiple-protocols/Mx110/Mx110_protocols_2.png',
         '/png/main/multiple-protocols/Mx110/Mx110_protocols_3.png',];
 
-const protocols_logo = "/png/main/multiple-protocols/Mx110/logo.jpg";
-
 export const Mx110_swiperBlock = () => {
 
     return (
         <section className={classes.swiper_block}>
             <article>
                 <header>Multiple Protocols</header>
-                <img src={protocols_logo} alt="protocols_logo" />
                 <p>Universal Modbus RTU I/O modules Mx110 offer cost effective and flexible solution for centralized and decentralized systems.
                     The modules are connected to the Master using a two-wire communication line up to 1200 m.
                 </p>

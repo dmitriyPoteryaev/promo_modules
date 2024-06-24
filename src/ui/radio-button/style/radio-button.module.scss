@@ -1,0 +1,70 @@
+@import '../../../assets/styles/mixins/mixins.scss';
+
+.label_radio_button {
+
+  width: fit-content;
+  padding-left: 1.3em;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input_radio_button {
+  position: absolute;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.fake_radio_button {
+
+  width: 25px;
+  height: 25px;
+  padding: 6px;
+  border: 1px solid  #212529;
+  margin-left: -0.6em;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-image: url('');
+  
+}
+
+//hover effect; styles checked radio-button 
+.fake_radio_button:hover{
+
+    background-image: url(../../../assets/svgs/radio-button-tick-hover.svg);
+}
+//active effect; styles checked radio-button 
+.fake_radio_button:active{
+
+    background-image: url(../../../assets/svgs/radio-button-tick-active.svg);
+
+}
+
+.fake_radio_button_checked_true{
+
+  background-image: url(../../../assets/svgs/radio-button-tick-active.svg);
+
+}
+
+.fake_radio_button_checked_true:hover{
+
+  background-image: url(../../../assets/svgs/radio-button-tick-active.svg);
+
+}
+
+.label_radio_number {
+    @include text-regular-20px;
+
+    margin-right: 24px;
+    padding-left: 9px;
+    font-family: 'Istok-Regular';
+    color: black;
+}
