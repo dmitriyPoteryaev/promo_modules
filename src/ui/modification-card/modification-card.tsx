@@ -1,20 +1,25 @@
 import React, {FC} from "react";
 import classes from "./style/modificationCard.module.scss"
 import Image from "next/image";
-
+import { getClasses } from './style/get-classes';
 
 export const ModificationCard: FC<any> = (props) => {
 
-const {info} = props;
+const {info, ChangeArrayWithAllOrderPosition} = props;
 
-const {AI, AO, DI, DO, certain_name, common_name, image, width, height} = info;
+const {AI, AO, DI, DO, certain_name, common_name, image, width, height, isOrdered} = info;
+
+const {cnContainerNotification, cnContainerButton} = getClasses({
+    isOrdered,
+  });
 
 
     return (<li className={classes.modificationCardBlock}>
+        <span className={cnContainerNotification}>ADDED TO CART</span>
         <Image alt="module" src={image} width={width} height={height}/>
         <header>{certain_name}</header>
         <div>{common_name}</div>
         <div>{DI && ` DI: ${DI}`}{DO && ` DO: ${DO}`}{AI && ` AI: ${AI}`}{AO && ` AO: ${AO}`}</div>
-        <button>ADD TO CART</button>
+        <button className={cnContainerButton}  onClick={() =>{ChangeArrayWithAllOrderPosition(info)}}>{isOrdered ? "REMOVE FROM CART" : "ADD TO CART"}</button>
     </li>)
 }

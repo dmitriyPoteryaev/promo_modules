@@ -18,6 +18,10 @@
   @include font($size: 14px, $weight: 700, $lineHeight: 20px);
 }
 
+@mixin text-bold-12px {
+  @include font($size: 12px, $weight: 700, $lineHeight: 23px);
+}
+
 @mixin text-regular-16px {
   @include font($size: 16px, $weight: 400, $lineHeight: 23.03px);
 }
