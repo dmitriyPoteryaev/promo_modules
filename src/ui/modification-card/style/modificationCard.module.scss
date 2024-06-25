@@ -1,4 +1,3 @@
-
 @import '../../../assets/styles/mixins/mixins.scss';
 
 .modificationCardBlock {
@@ -6,7 +5,8 @@
     max-width: 293.91px;
     width: 100%;
     height: 406px;
-    padding: 10px 30px 18.86px 20px;
+    padding: 26px 30px 18.86px 20px;
+    border-radius: 1px;
     background-color: white;
     box-shadow: 0px 0px 10px 0px rgba(11, 17, 16, 0.1);
     display: flex;
@@ -17,7 +17,34 @@
 
 }
 
-.modificationCardBlock header{
+.modificationCardBlock_addedCart_true {
+
+    @include text-bold-12px;
+
+    max-width: 100px;
+    width: 100%;
+    border-top-right-radius: 1px;
+    background-color: #00A197;
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 3;
+    visibility: visible;
+}
+
+.modificationCardBlock_addedCart_false {
+
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 3;
+    visibility: hidden;
+
+}
+
+.modificationCardBlock header {
 
     @include header-regular-bold-20px;
 
@@ -30,17 +57,16 @@
     bottom: 123px;
 }
 
-.modificationCardBlock div{
+.modificationCardBlock div {
 
     width: 100%;
     text-align: left
-    
 }
 
-.modificationCardBlock :nth-child(3) {
+.modificationCardBlock :nth-child(4) {
     @include text-regular-16px;
-    
-    line-height: 27px; 
+
+    line-height: 27px;
     color: #263B3B;
     position: absolute;
     left: 20px;
@@ -48,7 +74,7 @@
     font-family: 'Istok-Regular';
 }
 
-.modificationCardBlock :nth-child(4) {
+.modificationCardBlock :nth-child(5) {
     @include text-bold-16px;
 
     line-height: 20px;
@@ -59,7 +85,7 @@
     color: #00A197;
 }
 
-.modificationCardBlock button{
+.modificationCardBlock_button_added_false, .modificationCardBlock_button_added_true  {
     @include text-bold-16px;
 
     width: 255px;
@@ -73,51 +99,58 @@
 
 }
 
-.modificationCardBlock button:hover{
-  
+.modificationCardBlock_button_added_false:hover {
+
     color: white;
     background-color: #00A197;
 
+}
+
+.modificationCardBlock_button_added_true:hover {
+
+    color: white;
+    background-color: #BFBFBF;
+    border: 1px #BFBFBF solid;
 
 }
 
-@media screen and (max-width:  700px)  {
+@media screen and (max-width: 700px) {
 
     .modificationCardBlock {
 
         max-width: unset;
         width: 100%;
-    
+
     }
-    
+
 }
 
-@media screen and (max-width:  400px) {
+@media screen and (max-width: 400px) {
 
-    .modificationCardBlock button{
+    .modificationCardBlock button {
 
-        width: 100%;  
-    
+        width: 100%;
+
     }
-  
+
 }
 
-@media screen and (max-width:  290px) {
+@media screen and (max-width: 290px) {
 
     .modificationCardBlock :nth-child(3) {
 
         position: unset;
     }
-    
+
     .modificationCardBlock :nth-child(4) {
 
         position: unset;
 
     }
 
-    .modificationCardBlock header{
+    .modificationCardBlock header {
 
         position: unset;
     }
-  
+
 }

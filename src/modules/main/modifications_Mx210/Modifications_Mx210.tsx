@@ -6,13 +6,16 @@ import { ModificationCard } from "src/ui/modification-card/modification-card";
 import { RadioButton } from "src/ui/radio-button/radio-button";
 import {sortModifications} from "../../../utils/sortModifications";
 import {changeState} from '../../../utils/changeState'
-
-export const Modifications_Mx210 = () => {
+import { observer } from "mobx-react-lite";
+import { basketStore } from "../../../store";
+export const Modifications_Mx210 = observer(() => {
 
   const [isChecked, isSetChecked] = useState({});
 
+  const { ChangeArrayWithAllOrderPosition, ArrayWithAllOrderPositionStore } =
+  basketStore;
 
-
+  // console.log(ArrayWithAllOrderPositionStore);
 
     return (<section className={classes.moidificationBlock}>
       <div  className={classes.moidificationBlock_listCheckbox}><span>Number of inputs/outputs:</span>
@@ -112,9 +115,9 @@ export const Modifications_Mx210 = () => {
          </div>
       </div>
       <ul className={classes.moidificationBlock__listModifications}>
-        {sortModifications(modulesInfo.modules, isChecked)?.length !== 0 ?  sortModifications(modulesInfo.modules, isChecked).map((infoAboutModule) => {
+        {sortModifications(modulesInfo.modules, isChecked, ArrayWithAllOrderPositionStore)?.length !== 0 ?  sortModifications(modulesInfo.modules, isChecked, ArrayWithAllOrderPositionStore).map((infoAboutModule) => {
            
-           return(<ModificationCard key={infoAboutModule.certain_name} info={infoAboutModule}/>)
+           return(<ModificationCard key={infoAboutModule.certain_name} info={infoAboutModule} ChangeArrayWithAllOrderPosition={ChangeArrayWithAllOrderPosition}/>)
 
         }) : <div className={classes.moidificationBlock__listModifications_empty}>There is not appropriate Mx210</div>
 
@@ -123,4 +126,4 @@ export const Modifications_Mx210 = () => {
       </ul></section>)
 
 
-}
+})

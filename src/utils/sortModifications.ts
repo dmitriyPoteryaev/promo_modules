@@ -1,10 +1,23 @@
-export const sortModifications = (arrayModificatons, obj) => {
+export const sortModifications = (arrayModificatons, obj, ArrayWithAllOrderPositionStore) => {
 
     let newArray = arrayModificatons;
 
+    newArray =  newArray.map((modification) => {
+
+        if(ArrayWithAllOrderPositionStore.map((orderedPosition) => orderedPosition.certain_name).some((certanName) => modification.certain_name === certanName)){
+
+            return {...modification, isOrdered: true}
+        } else {
+
+            return modification
+        }
+
+
+    });
+
     if(Object.keys(obj).length === 0  ||  !Object.values(obj).some((specificKey: any) => specificKey.checked)) {
 
-        return arrayModificatons
+        return newArray
     }
 
     Object.keys(obj).forEach((specificKey) => {
@@ -20,12 +33,12 @@ export const sortModifications = (arrayModificatons, obj) => {
                 return 
             }
 
-
-
         })
         
     });
-    
-    return newArray
+
+
+    return  newArray
+
 
 }
