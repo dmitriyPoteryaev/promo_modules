@@ -4,6 +4,7 @@ import { ClientHeader } from "../client-header/client-header";
 import { ClientFooter } from "../client-footer/client-footer";
 import { MobileMenu } from "../mobile-modal-menu/mobile-modal-menu";
 import classes from "./styles/client-layout.module.scss";
+import { ShoppingCart } from "../shopping-cart/shopping-cart";
 
 interface ClientLayoutProps {
   children?: ReactNode;
@@ -11,6 +12,7 @@ interface ClientLayoutProps {
 
 export const ClientLayout: FC<ClientLayoutProps> = (props) => {
   const [isOpenModal, setOpenModal] = useState(false);
+  const [isOpenCart, setOpenCart] = useState(false);
   const { children } = props;
 
   const Links: { href: string, name: string }[] = [
@@ -66,7 +68,8 @@ export const ClientLayout: FC<ClientLayoutProps> = (props) => {
 
   return (
     <div className={classes.layout_client}>
-      <ClientHeader changeVisibilityModal={setOpenModal} Links={headerLinks} />
+      <ClientHeader changeVisibilityModal={setOpenModal} changeVisibilityCart={setOpenCart} Links={headerLinks} />
+      <ShoppingCart isOpenCart={isOpenCart} changeVisibilityCart={setOpenCart} />
       <MobileMenu isOpenModal={isOpenModal} changeVisibilityModal={setOpenModal} Links={Links} />
       <main className={classes.layout_client_container}>{children}</main>
       <ClientFooter />

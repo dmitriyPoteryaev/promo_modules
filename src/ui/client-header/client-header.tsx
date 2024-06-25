@@ -10,6 +10,7 @@ import classes from "./styles/client-header.module.scss";
 
 export interface ClientHeaderProps {
     changeVisibilityModal: Function;
+    changeVisibilityCart: Function;
     Links: {href: string, name: string}[];
 }
 
@@ -17,7 +18,7 @@ export const ClientHeader: FC<ClientHeaderProps> = (props) => {
 
     const { postInfoFromForm } = formAPI;
 
-    const { changeVisibilityModal, Links } = props;
+    const { changeVisibilityModal, Links, changeVisibilityCart } = props;
 
     // onClick={()=> { postInfoFromForm()}}
     return (
@@ -43,7 +44,7 @@ export const ClientHeader: FC<ClientHeaderProps> = (props) => {
                 </div>
                 <div>
                     <Link href={"/"}>More Info</Link>
-                    <Button variant='magenta' size='medium'>Basket</Button>
+                    <Button onClick={() => { changeVisibilityCart((prevState) => !prevState) }} variant='magenta' size='medium'>Basket</Button>
                 </div> 
             </div>
         </header>)

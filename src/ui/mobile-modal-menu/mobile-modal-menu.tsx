@@ -1,6 +1,5 @@
 'use client';
 import React, {FC} from "react";
-import classes from "./style/mobile-modal-menu.module.scss";
 import { getClasses } from './style/get-classes';
 import Link from "next/link";
 
