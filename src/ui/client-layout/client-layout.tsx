@@ -11,8 +11,11 @@ interface ClientLayoutProps {
 }
 
 export const ClientLayout: FC<ClientLayoutProps> = (props) => {
-  const [isOpenModal, setOpenModal] = useState(false);
-  const [isOpenCart, setOpenCart] = useState(false);
+  const [isSideModals, setSideModals] = useState({
+     
+    isOpenModal: false,
+    isOpenCart: false,
+  });
   const { children } = props;
 
   const Links: { href: string, name: string }[] = [
@@ -67,10 +70,10 @@ export const ClientLayout: FC<ClientLayoutProps> = (props) => {
   ];
 
   return (
-    <div className={classes.layout_client}>
-      <ClientHeader changeVisibilityModal={setOpenModal} changeVisibilityCart={setOpenCart} Links={headerLinks} />
-      <ShoppingCart isOpenCart={isOpenCart} changeVisibilityCart={setOpenCart} />
-      <MobileMenu isOpenModal={isOpenModal} changeVisibilityModal={setOpenModal} Links={Links} />
+    <div className={classes.layout_client} onClick={() => setSideModals( {isOpenCart: false, isOpenModal: false}) }>
+      <ClientHeader changeVisibilityModal={setSideModals} Links={headerLinks} />
+      <ShoppingCart isSideModals={isSideModals} changeVisibilityCart={setSideModals} />
+      <MobileMenu isSideModals={isSideModals} changeVisibilityModal={setSideModals} Links={Links} />
       <main className={classes.layout_client_container}>{children}</main>
       <ClientFooter />
     </div>

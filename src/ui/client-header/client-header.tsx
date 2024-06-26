@@ -10,7 +10,6 @@ import classes from "./styles/client-header.module.scss";
 
 export interface ClientHeaderProps {
     changeVisibilityModal: Function;
-    changeVisibilityCart: Function;
     Links: {href: string, name: string}[];
 }
 
@@ -18,14 +17,13 @@ export const ClientHeader: FC<ClientHeaderProps> = (props) => {
 
     const { postInfoFromForm } = formAPI;
 
-    const { changeVisibilityModal, Links, changeVisibilityCart } = props;
+    const { changeVisibilityModal, Links } = props;
 
-    // onClick={()=> { postInfoFromForm()}}
     return (
-        <header className={classes.client_header}>
+        <header className={classes.client_header}  onClick={(event) => event.stopPropagation()}>
             <div className={classes.client_header_container}>
                 <div>
-                <button className={classes.client_header_modalButton} onClick={() => { changeVisibilityModal((prevState) => !prevState) }}>
+                <button className={classes.client_header_modalButton} onClick={() => { changeVisibilityModal( (prevState) => { return {isOpenCart: false, isOpenModal: !prevState.isOpenModal}}) }}>
                     <div>
                         <div>
                         </div>
@@ -44,7 +42,7 @@ export const ClientHeader: FC<ClientHeaderProps> = (props) => {
                 </div>
                 <div>
                     <Link href={"/"}>More Info</Link>
-                    <Button onClick={() => { changeVisibilityCart((prevState) => !prevState) }} variant='magenta' size='medium'>Basket</Button>
+                    <Button onClick={() => { changeVisibilityModal( (prevState) => { return {isOpenCart: !prevState.isOpenCart, isOpenModal: false}}) }} variant='magenta' size='medium'>Basket</Button>
                 </div> 
             </div>
         </header>)
