@@ -32,9 +32,64 @@ class BasketStore {
       return 
     }
   
-    this.ArrayWithAllOrderPositionStore = [...this.ArrayWithAllOrderPositionStore, obj];
+    this.ArrayWithAllOrderPositionStore = [...this.ArrayWithAllOrderPositionStore, {...obj, counter: 1}];
   };
 
+
+  increment =  (obj: any) => {
+
+    this.ArrayWithAllOrderPositionStore = this.ArrayWithAllOrderPositionStore.map((orderedModification: any) => {
+         
+      if(orderedModification.certain_name === obj.certain_name){
+
+        return {...orderedModification, counter: ++orderedModification.counter}
+
+      } else {
+
+        return orderedModification
+      }
+     
+
+    });
+
+  }
+
+  decrement =  (obj: any) => {
+    this.ArrayWithAllOrderPositionStore = this.ArrayWithAllOrderPositionStore.map((orderedModification: any) => {
+         
+      if(orderedModification.certain_name === obj.certain_name){
+
+
+        return {...orderedModification, counter: --orderedModification.counter};
+        
+      } else {
+
+        return orderedModification
+      }
+     
+
+    });
+    
+  }
+
+  deletePosition =  (obj: any) => {
+
+    this.ArrayWithAllOrderPositionStore = this.ArrayWithAllOrderPositionStore.filter((orderedModification: any) => {
+         
+      if(orderedModification.certain_name !== obj.certain_name){
+
+
+        return orderedModification
+        
+      } else {
+
+        return
+      }
+     
+
+    });
+    
+  }
 
 
 }

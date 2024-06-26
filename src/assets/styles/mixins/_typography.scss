@@ -6,6 +6,10 @@
   @include font($size: 60px, $weight: 700, $lineHeight: 78px);
 }
 
+@mixin header-bold-36px {
+  @include font($size: 36px, $weight: 700, $lineHeight: 48.49px);
+}
+
 @mixin header-regular-20px {
   @include font($size: 20px, $weight: 400, $lineHeight: 24px);
 }
@@ -16,6 +20,10 @@
 
 @mixin text-italic-bold-14px {
   @include font($size: 14px, $weight: 700, $lineHeight: 20px);
+}
+
+@mixin text-regular-14px {
+  @include font($size: 14px, $weight: 500, $lineHeight: 19.1px);
 }
 
 @mixin text-bold-12px {

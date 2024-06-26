@@ -30,16 +30,11 @@ export const Button: FC<ButtonProps> = ({
     disabled,
   });
 
-
-  const onClickHandler: MouseEventHandler<HTMLButtonElement> = (event) => {
-    event.currentTarget.blur();
-    onClick?.(event);
-  };
-
   return (
     <button
       className={cnButton} 
       disabled={isDisabled}
+      onClick={onClick}
     >
       {children}
     </button>

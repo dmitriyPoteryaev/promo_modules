@@ -4,13 +4,18 @@ import { ClientHeader } from "../client-header/client-header";
 import { ClientFooter } from "../client-footer/client-footer";
 import { MobileMenu } from "../mobile-modal-menu/mobile-modal-menu";
 import classes from "./styles/client-layout.module.scss";
+import { ShoppingCart } from "../shopping-cart/shopping-cart";
 
 interface ClientLayoutProps {
   children?: ReactNode;
 }
 
 export const ClientLayout: FC<ClientLayoutProps> = (props) => {
-  const [isOpenModal, setOpenModal] = useState(false);
+  const [isSideModals, setSideModals] = useState({
+     
+    isOpenModal: false,
+    isOpenCart: false,
+  });
   const { children } = props;
 
   const Links: { href: string, name: string }[] = [
@@ -65,9 +70,10 @@ export const ClientLayout: FC<ClientLayoutProps> = (props) => {
   ];
 
   return (
-    <div className={classes.layout_client}>
-      <ClientHeader changeVisibilityModal={setOpenModal} Links={headerLinks} />
-      <MobileMenu isOpenModal={isOpenModal} changeVisibilityModal={setOpenModal} Links={Links} />
+    <div className={classes.layout_client} onClick={() => setSideModals( {isOpenCart: false, isOpenModal: false}) }>
+      <ClientHeader changeVisibilityModal={setSideModals} Links={headerLinks} />
+      <ShoppingCart isSideModals={isSideModals} changeVisibilityCart={setSideModals} />
+      <MobileMenu isSideModals={isSideModals} changeVisibilityModal={setSideModals} Links={Links} />
       <main className={classes.layout_client_container}>{children}</main>
       <ClientFooter />
     </div>
