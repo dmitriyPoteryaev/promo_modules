@@ -11,7 +11,8 @@
         "interface_connection": "Ethenet",
         "image": "/png/main/modification/Mx210/MV210-202.png",
         "width": 234.26,
-        "height": 234.26
+        "height": 234.26,
+        "href": "https://akytec.de/media/wysiwyg/downloads/MX210/MV210-2xx/UG_MV210-202-204_3-EN-43057-2.10.pdf"
     },
     {
         "certain_name": "MV210-204",
@@ -23,7 +24,8 @@
         "interface_connection": "Ethenet",
         "image": "/png/main/modification/Mx210/MV210-204.png",
         "width": 197.15,
-        "height": 227.17
+        "height": 227.17,
+        "href": "https://akytec.de/media/wysiwyg/downloads/MX210/MV210-2xx/UG_MV210-202-204_3-EN-43057-2.10.pdf"
     },
     {
         "certain_name": "MV210-212",
@@ -35,7 +37,8 @@
         "interface_connection": "Ethenet",
         "image": "/png/main/modification/Mx210/MV210-212.png",
         "width": 223.45,
-        "height": 223.45
+        "height": 223.45,
+        "href": "https://akytec.de/media/wysiwyg/downloads/MX210/MV210-2xx/UG_MV210-212-214_3-EN-59115-2.3.pdf"
     },
     {
         "certain_name": "MV210-214",
@@ -47,7 +50,8 @@
         "interface_connection": "Ethenet",
         "image": "/png/main/modification/Mx210/MV210-214.png",
         "width": 258.26,
-        "height": 258.26
+        "height": 258.26,
+        "href": "https://akytec.de/media/wysiwyg/downloads/MX210/MV210-2xx/UG_MV210-212-214_3-EN-59115-2.3.pdf"
     },
     {
         "certain_name": "MV210-221",
@@ -59,7 +63,8 @@
         "interface_connection": "Ethenet",
         "image": "/png/main/modification/Mx210/MV210-221.png",
         "width": 211.62,
-        "height": 224.81
+        "height": 224.81,
+        "href": "https://akytec.de/media/wysiwyg/downloads/MX210/MV210-2xx/UG_MV210-221_3-EN-38998-2.2.pdf"
     },
     {
         "certain_name": "MK210-311",
@@ -71,7 +76,8 @@
         "interface_connection": "Ethenet",
         "image": "/png/main/modification/Mx210/MK210-311.png",
         "width": 227.28,
-        "height": 223.26
+        "height": 223.26,
+        "href": "https://akytec.de/media/wysiwyg/downloads/MX210/MK210-311/UG_МК210-301-311_3-EN-25165-2.6.pdf"
     },
     {
         "certain_name": "MK210-312",
@@ -81,7 +87,8 @@
         "interface_connection": "Ethenet",
         "image": "/png/main/modification/Mx210/MU210-401.png",
         "width": 234.21,
-        "height": 234.21
+        "height": 234.21,
+        "href": "https://akytec.de/media/wysiwyg/downloads/MX210/MK210-312/UG_MK210-302-312_3-EN-38929-2.4.pdf"
     },
     {
         "certain_name": "MU210-401",
@@ -93,7 +100,8 @@
         "interface_connection": "Ethenet",
         "image": "/png/main/modification/Mx210/MU210-401.png",
         "width": 234.21,
-        "height": 234.21
+        "height": 234.21,
+        "href": "https://akytec.de/media/wysiwyg/downloads/MX210/MU210-40x/UG_MU210-401_3-EN-43201-2.3.pdf"
     },
     {
         "certain_name": "MU210-402",
@@ -105,7 +113,8 @@
         "interface_connection": "Ethenet",
         "image": "/png/main/modification/Mx210/MU210-402.png",
         "width": 226.42,
-        "height": 223.48
+        "height": 223.48,
+        "href": "https://akytec.de/media/wysiwyg/downloads/MX210/MU210-40x/UG_MU210-402_3-EN-47647-2.2.pdf"
     },
     {
         "certain_name": "MU210-412",
@@ -117,7 +126,8 @@
         "interface_connection": "Ethenet",
         "image": "/png/main/modification/Mx210/MU210-412.png",
         "width": 233.61,
-        "height": 233.61
+        "height": 233.61,
+        "href": "https://akytec.de/media/wysiwyg/downloads/MX210/MU210-40x/UG_MU210‐412_3-EN-125356-1.4.pdf"
     },
     {
         "certain_name": "MU210-502",
@@ -129,7 +139,8 @@
         "interface_connection": "Ethenet",
         "image": "/png/main/modification/Mx210/MU210-502.png",
         "width": 208.34,
-        "height": 235.56
+        "height": 235.56,
+        "href": "https://akytec.de/media/wysiwyg/downloads/MX210/MU210-502/UG_MU210-502_3-EN-122423-1.9.pdf"
     },
     {
         "certain_name": "MV210-101",
@@ -141,7 +152,8 @@
         "interface_connection": "Ethenet",
         "image": "/png/main/modification/Mx210/MV210-101.png",
         "width": 228.03,
-        "height": 221.73
+        "height": 221.73,
+        "href": "/"
     }
 
 

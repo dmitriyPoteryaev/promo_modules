@@ -50,7 +50,7 @@
 
 .modal_wrapperListOrderedItems ul{
 
-    padding: 23px;
+    padding-top: 23px;
 }
 
 .modal_wrapperListOrderedItems ul li{
@@ -174,6 +174,40 @@
     }
 }
 
+.modal_continueShoppingButton, .modal_checkoutButton {
+      @include button-text-bold-16px;
+
+        width: 100%;
+        height: 55px;
+        border: 1px solid #00A197;
+        text-align: center;
+        font-family: 'Archivo-Narrow-Bold';
+}
+
+.modal_continueShoppingButton {
+
+    margin-top: 19px;
+    background-color: white;
+    color: #00A197;
+}
+
+.modal_checkoutButton {
+    
+      margin-top: 8px;
+      background-color: #00A197;
+      color: white;
+}
+
+.modal_notification {
+    @include text-regular-14px;
+
+    line-height: 20.15px;
+    font-weight: 500;
+    color: #797979;
+    font-family: 'Istok-Regular';
+
+
+}
 
 @media screen and (max-width:  750px) {
 
