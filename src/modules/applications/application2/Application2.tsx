@@ -55,7 +55,6 @@ export const Application2 = () => {
           </div>
           <figure className={classes.application2_mainImg}>
             <Image alt="main" src="/png/application2/main.png" width={1530} height={1149}/>
-            <Image alt="main" src="/png/application2/main.png" width={1530} height={1149}/>
           </figure>
           <article className={classes.application2_textDescription}>
             <header>
