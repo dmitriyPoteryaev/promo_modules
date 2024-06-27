@@ -10,9 +10,6 @@ import { Button } from "../../../ui/buttons/button/button";
 import Link from "next/link";
 import Image from "next/image";
 
-// const png_description = require("../../../assets/png/application2/desc.png");
-// const png_main = require("../../../assets/png/application2/main.png");
-
 export const Application2 = () => {
 
   useEffect(() => {
@@ -57,7 +54,8 @@ export const Application2 = () => {
             </article>
           </div>
           <figure className={classes.application2_mainImg}>
-           <Image alt="main" src="/png/application2/main.png" width={1530} height={1149} /> 
+            <Image alt="main" src="/png/application2/main.png" width={1530} height={1149}/>
+            <Image alt="main" src="/png/application2/main.png" width={1530} height={1149}/>
           </figure>
           <article className={classes.application2_textDescription}>
             <header>
