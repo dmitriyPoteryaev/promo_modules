@@ -56,10 +56,11 @@ export const ShoppingCart = observer((props: any) => {
                 })
                 }
             </ul>
-           {ArrayWithAllOrderPositionStore.length !==0 && <div>
-                <a target="_blank" href='https://akytec.de/media/wysiwyg/downloads/MX110/MV110-16D(DN)/MV110-16D(DN)_0294_EN.pdf'>Upon viewing the shopping cart, you will be directed to a page to fill out your information. After filling it out, we will contact you.</a>
-                <button style={{backgroundColor: 'white', border: '1px solid #00A197', height: '55px', width: '100%', color:'#00A197', textAlign: 'center', marginTop: '19px' }}>CONTINUE SHOPPING</button>
-                <button style={{border: '1px solid #00A197', height: '55px', width: '100%', color:'white', textAlign: 'center', backgroundColor: '#00A197', marginTop: '8px' }}>TO CHECK OUT</button>
+           {ArrayWithAllOrderPositionStore.length !==0 && <div >
+            {/* target="_blank" href='https://akytec.de/media/wysiwyg/downloads/MX110/MV110-16D(DN)/MV110-16D(DN)_0294_EN.pdf' */}
+                <span className={classes.modal_notification}>Upon viewing the shopping cart, you will be directed to a page to fill out your information. After filling it out, we will contact you.</span>
+                <button className={classes.modal_continueShoppingButton}  onClick={() => { changeVisibilityCart({isOpenCart: false, isOpenModal: false})}}>CONTINUE SHOPPING</button>
+                <button className={classes.modal_checkoutButton}>CHECKOUT</button>
             </div>}
         </div>
     </aside>)

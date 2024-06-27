@@ -2,12 +2,14 @@ import React, {FC} from "react";
 import classes from "./style/modificationCard.module.scss"
 import Image from "next/image";
 import { getClasses } from './style/get-classes';
+import Pdf from '../icon2/Pdf';
+import Link from "next/link";
 
 export const ModificationCard: FC<any> = (props) => {
 
 const {info, ChangeArrayWithAllOrderPosition} = props;
 
-const {AI, AO, DI, DO, certain_name, common_name, image, width, height, isOrdered} = info;
+const {AI, AO, DI, DO, certain_name, common_name, image, width, height, isOrdered, href} = info;
 
 const {cnContainerNotification, cnContainerButton} = getClasses({
     isOrdered,
@@ -20,6 +22,7 @@ const {cnContainerNotification, cnContainerButton} = getClasses({
         <header>{certain_name}</header>
         <div>{common_name}</div>
         <div>{DI && ` DI: ${DI}`}{DO && ` DO: ${DO}`}{AI && ` AI: ${AI}`}{AO && ` AO: ${AO}`}</div>
+        <Link target="_blank" href={href}><Pdf style={{position: 'absolute', right: '25px', bottom: '90px'}}/></Link>
         <button className={cnContainerButton}  onClick={() =>{ChangeArrayWithAllOrderPosition(info)}}>{isOrdered ? "REMOVE FROM CART" : "ADD TO CART"}</button>
     </li>)
 }
