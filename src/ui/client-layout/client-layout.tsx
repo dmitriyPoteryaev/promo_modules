@@ -66,6 +66,11 @@ export const ClientLayout: FC<ClientLayoutProps> = (props) => {
       name: "Applications",
 
     },
+    {
+      href: "/",
+      name: "Mx Modifications",
+
+    },
 
   ];
 
