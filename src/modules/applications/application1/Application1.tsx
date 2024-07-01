@@ -73,7 +73,7 @@ export const Application1 = () => {
           </article>
           <div className={classes.application1_buttonBlock}>  
             <Button variant="magenta" size="medium" >
-            <Link style={{width: "100%", height: "100%", display: 'flex', justifyContent: 'center', alignItems: 'center'}} href='/application/2'>
+            <Link style={{width: "100%", height: "100%", display: 'flex', justifyContent: 'center', alignItems: 'center'}} href='/application2'>
               NEXT APPLICATION
               </Link>
             </Button> 
