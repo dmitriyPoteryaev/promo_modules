@@ -1,3 +1,5 @@
+'use client';
+
 import React from "react";
 
 import { observer } from "mobx-react-lite";
@@ -8,7 +10,8 @@ import classes from "./style/shopping-cart.module.scss";
 import CounterMinus from '../icon2/CounterMinus';
 import CounterPlus from '../icon2/CounterPlus';
 import Trash from "../icon2/Trash"
-import LeftIcon from '../icon2/LeftIcon'
+import LeftIcon from '../icon2/LeftIcon';
+import Link from "next/link";
 
 export const ShoppingCart = observer((props: any) => {
 
@@ -57,10 +60,9 @@ export const ShoppingCart = observer((props: any) => {
                 }
             </ul>
            {ArrayWithAllOrderPositionStore.length !==0 && <div >
-            {/* target="_blank" href='https://akytec.de/media/wysiwyg/downloads/MX110/MV110-16D(DN)/MV110-16D(DN)_0294_EN.pdf' */}
                 <span className={classes.modal_notification}>Upon viewing the shopping cart, you will be directed to a page to fill out your information. After filling it out, we will contact you.</span>
                 <button className={classes.modal_continueShoppingButton}  onClick={() => { changeVisibilityCart({isOpenCart: false, isOpenModal: false})}}>CONTINUE SHOPPING</button>
-                <button className={classes.modal_checkoutButton}>CHECKOUT</button>
+                <Link href='/form'><button className={classes.modal_checkoutButton}>CHECKOUT</button></Link>
             </div>}
         </div>
     </aside>)
