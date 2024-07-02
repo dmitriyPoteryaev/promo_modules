@@ -4,9 +4,9 @@ import classes from "./style/swiper-block.module.scss";
 
 
     const pngsProtocolsMx110 = [
-        '/png/main/multiple-protocols/Mx110/Mx110_protocols_1.png',
-        '/png/main/multiple-protocols/Mx110/Mx110_protocols_2.png',
-        '/png/main/multiple-protocols/Mx110/Mx110_protocols_3.png',];
+        '/png/main/multiple-protocols/Mx110/Mx110_protocols_1.svg',
+        '/png/main/multiple-protocols/Mx110/Mx110_protocols_2.svg',
+        '/png/main/multiple-protocols/Mx110/Mx110_protocols_3.svg',];
 
 export const Mx110_swiperBlock = () => {
 
