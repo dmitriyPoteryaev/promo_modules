@@ -4,8 +4,10 @@
 .moduleAd {
 
     width: 100%;
-    padding-bottom: 80px;
+    padding-bottom: 134px;
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .moduleAd_img {
@@ -13,14 +15,12 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    z-index: -1;
+    z-index: -2;
 }
 
 .moduleAd article {
 
     width: 100%;
-    padding-left: 196px;
-    padding-right: 196px;
     display:flex ;
     justify-content: space-between;
 
@@ -29,26 +29,15 @@
 
 .moduleAd_description {
 
-    
-    margin-top: 117px;
+    max-width: 54%;
+    margin-top: 103px;
+    margin-left: 35px;
     color: #FFFFFF;
-}
-
-
-.moduleAd_description  p{
-    @include text-regular-20px;
-
-    max-width: 686px;
-    width: 100%;
-    margin-top: 26px;
-    margin-bottom: 71px;
-    font-family: "Istok-Regular";
 }
 
 .moduleAd_description header {
     @include header-bold-60px;
 
-    max-width: 760px;
     width: 100%;
     line-height: 73px;
     font-family: "Archivo-Narrow-Bold";
@@ -56,9 +45,10 @@
 
 .moduleAd_description ul {
 
-    max-width: 524px;
+    max-width: 560px;
     margin-top: 29px;
-    margin-bottom: 50px;
+    margin-bottom: 72px;
+    margin-left: 40px;
 }
 
 .moduleAd_description ul li {
@@ -72,17 +62,10 @@
 
 .moduleAd_modulePhoto {
 
-    max-width: 680px;
-    padding-top: 50px;
+    width: 46%;
+    margin-top: 83px;
 
 }
-
-.moduleAd_modulePhoto {
-
-    width: 100%;
-
-}
-
 @media screen and (max-width: 1500px) {
 
     .moduleAd article {
