@@ -12,34 +12,19 @@ import Link from "next/link";
 
 export const ModuleAdAboutModBus: FC = () => {
 
-    const common = { alt: 'Art Direction Example', sizes: '100vw' };
-    const {
-        props: { srcSet: desktop },
-    } = getImageProps({
-        quality: 80,
-        width: 100,
-        height: 100,
-        src: '/png/main/Ad/moduleAd_complex.png',
-        ...common,
-    })
-    const {
-        props: { srcSet: mobile, ...rest },
-    } = getImageProps({
-        quality: 80,
-        width: 100,
-        height: 100,
-        src: backgroundEasyModuleAd,
-        ...common,
-    })
-
     return (
         <div className={classes.moduleAd} >
-            <picture className={classes.moduleAd_img}>
-                <source srcSet={desktop} media="(min-width:1160px)" />
-                <source srcSet={mobile} media="(max-width:1160px)" />
+            {/* <picture style={{position: 'relative'}} className={classes.moduleAd_img}>
+                <source srcSet={mobile} />
                 <img {...rest} style={{ width: '100%', height: '100%' }} />
-            </picture>
-            <article>
+            </picture>  */}
+            <div  className={classes.moduleAd_img}>
+            <img src={'/png/main/Ad/moduleAd_easy.png'}  style={{ width: '100%', height: '100%' }} />
+            </div>
+            <div  className={classes.moduleAd_img} style={{ width: '100%', height:"100%", display: 'flex', justifyContent:'end' }}>
+                <img src={'/png/main/Ad/moduleAd_complex.svg'} alt="svg" />
+                </div>
+            <article style={{maxWidth: '1230px', width: '100%'}}>
                 <div className={classes.moduleAd_description}>
                     <header className={classes.moduleAd_header}>Modbus TCP/RTU universal remote I/O modules</header>
                     <ul>
@@ -54,7 +39,10 @@ export const ModuleAdAboutModBus: FC = () => {
                         REQUEST FOR QUOTE
                     </Link> </Button>
                 </div>
-                <div className={classes.moduleAd_modulePhoto}><Image src={modulePhoto} alt="module" /></div>
+
+                
+                <div style={{paddingLeft: '35px'}} className={classes.moduleAd_modulePhoto}><Image src={modulePhoto} alt="module" /></div>
+
             </article>
         </div>
     );
@@ -75,7 +63,7 @@ export const ModuleAdDeployment: FC = () => {
                         EXPLORE MODELS {"&"} SPECS
                     </Link> </Button>
                 </div>
-                <div className={classes.moduleAd_modulePhoto} style={{ marginTop: '117px', paddingTop: 'unset' }}><Image width={685} height={368} src={'/png/main/Ad/Mx210.png'} alt="module" /></div>
+                <div className={classes.moduleAd_modulePhoto} style={{ marginTop: '117px', paddingTop: 'unset' }}><Image width={685} height={368} src={'/png/main/Ad/Mx210.svg'} alt="module" /></div>
             </article>
         </div>
     );
