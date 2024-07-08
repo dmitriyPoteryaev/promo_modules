@@ -1,1 +1,1 @@
-export { Mx210Opportunities } from "./Mx210Opportunities";
+export { Mx210Opportunities } from './Mx210Opportunities';

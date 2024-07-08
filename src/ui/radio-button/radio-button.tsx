@@ -12,26 +12,19 @@ export interface RadioButtonProps extends InputHTMLAttributes<HTMLInputElement> 
   value: string;
 }
 
-export const RadioButton: FC<RadioButtonProps> = ({
-  text,
-  number,
-  checkedObj,
-   ...props
-}) => {
+export const RadioButton: FC<RadioButtonProps> = ({ text, number, checkedObj, ...props }) => {
+  const { value, name } = props;
 
-    const {value, name} = props;
-    
-   const checked =  checkedObj?.[name]?.value === value;
+  const checked = checkedObj?.[name]?.value === value;
 
-    const {cnContainerFakeRadioButton} = getClasses({
-        checked,
-      });
+  const { cnContainerFakeRadioButton } = getClasses({
+    checked
+  });
 
   return (
     <label className={classes.label_radio_button}>
-      <input className={classes.input_radio_button}  type="checkbox" {...props} checked={checked}/>
-      <span className={cnContainerFakeRadioButton}>
-      </span>
+      <input className={classes.input_radio_button} type="checkbox" {...props} checked={checked} />
+      <span className={cnContainerFakeRadioButton}></span>
       <span className={classes.label_radio_number}>{number}</span>
     </label>
   );

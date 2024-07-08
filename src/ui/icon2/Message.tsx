@@ -1,13 +1,7 @@
-import * as React from "react";
-import type { SVGProps } from "react";
+import * as React from 'react';
+import type { SVGProps } from 'react';
 const SvgMessage = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={25}
-    height={25}
-    fill="none"
-    {...props}
-  >
+  <svg xmlns="http://www.w3.org/2000/svg" width={25} height={25} fill="none" {...props}>
     <circle cx={12.781} cy={12.566} r={11.5} stroke="#919191" />
     <path
       fill="#919191"

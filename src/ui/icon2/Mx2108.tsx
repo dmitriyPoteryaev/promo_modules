@@ -1,13 +1,7 @@
-import * as React from "react";
-import type { SVGProps } from "react";
+import * as React from 'react';
+import type { SVGProps } from 'react';
 const SvgMx2108 = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={71}
-    height={71}
-    fill="none"
-    {...props}
-  >
+  <svg xmlns="http://www.w3.org/2000/svg" width={71} height={71} fill="none" {...props}>
     <circle cx={35.512} cy={35.965} r={34.25} stroke="#fff" strokeWidth={1.5} />
     <mask
       id="Mx210-8_svg__a"
@@ -17,14 +11,10 @@ const SvgMx2108 = (props: SVGProps<SVGSVGElement>) => (
       y={5}
       maskUnits="userSpaceOnUse"
       style={{
-        maskType: "alpha",
+        maskType: 'alpha'
       }}
     >
-      <path
-        stroke="#fff"
-        strokeWidth={1.5}
-        d="M49.66 58.368V14.207h11.97v44.161z"
-      />
+      <path stroke="#fff" strokeWidth={1.5} d="M49.66 58.368V14.207h11.97v44.161z" />
       <path fill="#fff" d="M62.605 5.777h-1.859v61.02h1.86z" />
       <path
         fill="#fff"
@@ -34,14 +24,7 @@ const SvgMx2108 = (props: SVGProps<SVGSVGElement>) => (
       />
     </mask>
     <g mask="url(#Mx210-8_svg__a)">
-      <circle
-        cx={35.512}
-        cy={35.965}
-        r={34.25}
-        fill="#fff"
-        stroke="#fff"
-        strokeWidth={1.5}
-      />
+      <circle cx={35.512} cy={35.965} r={34.25} fill="#fff" stroke="#fff" strokeWidth={1.5} />
     </g>
     <mask
       id="Mx210-8_svg__e"
@@ -51,7 +34,7 @@ const SvgMx2108 = (props: SVGProps<SVGSVGElement>) => (
       y={3}
       maskUnits="userSpaceOnUse"
       style={{
-        maskType: "alpha",
+        maskType: 'alpha'
       }}
     >
       <mask id="Mx210-8_svg__b" fill="#fff">

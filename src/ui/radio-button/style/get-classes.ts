@@ -8,10 +8,12 @@ const cn = classNames.bind(classes);
 type PickeCheckboxProps = Pick<RadioButtonProps, 'checked'>;
 
 export const getClasses = ({ checked }: PickeCheckboxProps) => {
+  const cnContainerFakeRadioButton = cn(
+    'fake_radio_button',
+    `fake_radio_button_checked_${checked}`
+  );
 
-   const  cnContainerFakeRadioButton = cn('fake_radio_button', `fake_radio_button_checked_${checked}`);
-  
   return {
-    cnContainerFakeRadioButton,
+    cnContainerFakeRadioButton
   };
 };

@@ -1,13 +1,7 @@
-import * as React from "react";
-import type { SVGProps } from "react";
+import * as React from 'react';
+import type { SVGProps } from 'react';
 const SvgYoutubeLogo = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={25}
-    height={25}
-    fill="none"
-    {...props}
-  >
+  <svg xmlns="http://www.w3.org/2000/svg" width={25} height={25} fill="none" {...props}>
     <path
       fill="#fff"
       d="M12.324 24.71c-6.617 0-12-5.382-12-12 0-6.616 5.383-12 12-12s12 5.384 12 12c0 6.618-5.383 12-12 12m0-23.184C6.157 1.526 1.14 6.544 1.14 12.71s5.018 11.185 11.185 11.185S23.51 18.878 23.51 12.711 18.492 1.526 12.324 1.526"

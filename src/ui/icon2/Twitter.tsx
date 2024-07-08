@@ -1,13 +1,7 @@
-import * as React from "react";
-import type { SVGProps } from "react";
+import * as React from 'react';
+import type { SVGProps } from 'react';
 const SvgTwitter = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={25}
-    height={25}
-    fill="none"
-    {...props}
-  >
+  <svg xmlns="http://www.w3.org/2000/svg" width={25} height={25} fill="none" {...props}>
     <path
       fill="#fff"
       d="M12.91 24.71h-.054C6.254 24.71.883 19.34.883 12.738v-.053C.883 6.083 6.254.711 12.856.711h.053c6.602 0 11.974 5.371 11.974 11.974v.052c0 6.603-5.372 11.974-11.974 11.974m-.054-23.187c-6.154 0-11.16 5.007-11.16 11.162v.052c0 6.155 5.006 11.162 11.16 11.162h.053c6.155 0 11.161-5.007 11.161-11.162v-.053c0-6.154-5.006-11.16-11.16-11.16z"
