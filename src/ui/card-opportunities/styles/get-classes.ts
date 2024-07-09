@@ -5,24 +5,19 @@ import classes from './card-opportunities.module.scss';
 
 const cn = classNames.bind(classes);
 
-type PickedButtonProps = Pick<
-CardOpportuinitiesProps,
-   'variant' | 'path'
->;
+type PickedButtonProps = Pick<CardOpportuinitiesProps, 'variant' | 'path'>;
 
-export const getClasses = ({
-  variant,
-  path
-}: PickedButtonProps) => {
-  
-  const cnCardOpportuinitiesInscription = 
-  cn('cardOpportuinities_inscription', `cardOpportuinities_inscription--${variant}`, `cardOpportuinities_inscription--${path}`,);
+export const getClasses = ({ variant, path }: PickedButtonProps) => {
+  const cnCardOpportuinitiesInscription = cn(
+    'cardOpportuinities_inscription',
+    `cardOpportuinities_inscription--${variant}`,
+    `cardOpportuinities_inscription--${path}`
+  );
 
-  const cnCardOpportuinities = 
-  cn('cardOpportuinities', `cardOpportuinities--${path}`,);
-
+  const cnCardOpportuinities = cn('cardOpportuinities', `cardOpportuinities--${path}`);
 
   return {
-    cnCardOpportuinitiesInscription, cnCardOpportuinities
+    cnCardOpportuinitiesInscription,
+    cnCardOpportuinities
   };
 };

@@ -1,11 +1,11 @@
-import React, { FC } from "react";
+import React, { FC } from 'react';
 
-import classes from "./styles/client-footer.module.scss";
-import Telephone from "../icon2/Telephone";
-import Location from "../icon2/Location";
-import Message from "../icon2/Message";
-import Logo from "../icon2/Logo";
-import MailTo from "../mailto/mailto";
+import classes from './styles/client-footer.module.scss';
+import Telephone from '../icon2/Telephone';
+import Location from '../icon2/Location';
+import Message from '../icon2/Message';
+import Logo from '../icon2/Logo';
+import MailTo from '../mailto/mailto';
 
 export const ClientFooter: FC = () => {
   return (
@@ -56,10 +56,9 @@ export const ClientFooter: FC = () => {
             <p className={classes.client_footer_shortInfo}>
               <Logo />
               <span>
-                akYtec GmbH from Hanover, Germany develops and distributes
-                innovative automation technology and industrial electronic
-                products. These include various digital displays, control panels
-                and programmable relays.
+                akYtec GmbH from Hanover, Germany develops and distributes innovative automation
+                technology and industrial electronic products. These include various digital
+                displays, control panels and programmable relays.
               </span>
             </p>
             <div className={classes.client_footer_Links}>
@@ -71,10 +70,7 @@ export const ClientFooter: FC = () => {
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="https://akytec.de/en/datenschutzerklarung"
-                    title="Privacy Policy"
-                  >
+                  <a href="https://akytec.de/en/datenschutzerklarung" title="Privacy Policy">
                     Privacy Policy
                   </a>
                 </li>

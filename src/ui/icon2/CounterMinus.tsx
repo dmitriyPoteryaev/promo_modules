@@ -1,13 +1,7 @@
-import * as React from "react";
-import type { SVGProps } from "react";
+import * as React from 'react';
+import type { SVGProps } from 'react';
 const SvgCounterMinus = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={23}
-    height={23}
-    fill="none"
-    {...props}
-  >
+  <svg xmlns="http://www.w3.org/2000/svg" width={23} height={23} fill="none" {...props}>
     <circle cx={11.223} cy={11.32} r={11.043} fill="#4DBDB6" />
     <path
       fill="#fff"

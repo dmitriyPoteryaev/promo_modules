@@ -1,0 +1,1 @@
+export { RestOpportunities } from './restOpportunities';

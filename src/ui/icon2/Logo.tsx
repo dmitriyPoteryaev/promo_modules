@@ -1,13 +1,7 @@
-import * as React from "react";
-import type { SVGProps } from "react";
+import * as React from 'react';
+import type { SVGProps } from 'react';
 const SvgLogo = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={160}
-    height={39}
-    fill="none"
-    {...props}
-  >
+  <svg xmlns="http://www.w3.org/2000/svg" width={160} height={39} fill="none" {...props}>
     <path
       fill="#00A197"
       d="M71.697 13.917 62.078.238h-9.287v7.43h6.468l8.458 11.991-8.458 11.821H52.79v7.43h9.287l9.619-13.678 3.98-5.573z"

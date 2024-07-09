@@ -1,13 +1,7 @@
-import * as React from "react";
-import type { SVGProps } from "react";
+import * as React from 'react';
+import type { SVGProps } from 'react';
 const SvgMx2101 = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={71}
-    height={71}
-    fill="none"
-    {...props}
-  >
+  <svg xmlns="http://www.w3.org/2000/svg" width={71} height={71} fill="none" {...props}>
     <circle cx={35.895} cy={35.645} r={34.25} stroke="#fff" strokeWidth={1.5} />
     <path
       fill="#fff"

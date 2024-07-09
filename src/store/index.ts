@@ -1,3 +1,3 @@
-import { BasketStore } from "./basket";
+import { BasketStore } from './basket';
 
 export const basketStore = new BasketStore();

@@ -5,21 +5,12 @@ import classes from './button.module.scss';
 
 const cn = classNames.bind(classes);
 
-type PickedButtonProps = Pick<
-  ButtonProps,
-   'variant' | 'size' | 'isLoading' | 'disabled'
->;
+type PickedButtonProps = Pick<ButtonProps, 'variant' | 'size' | 'isLoading' | 'disabled'>;
 
-export const getClasses = ({
-  variant,
-  size,
-  isLoading,
-  disabled,
-}: PickedButtonProps) => {
+export const getClasses = ({ variant, size, isLoading, disabled }: PickedButtonProps) => {
   const cnButton = cn('button', `button--${variant}`, `button--${size}`);
 
-
   return {
-    cnButton,
+    cnButton
   };
 };

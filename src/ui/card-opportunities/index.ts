@@ -1,1 +1,1 @@
-export { CardOpportuinities } from "./card-opportunities";
+export { CardOpportuinities } from './card-opportunities';
