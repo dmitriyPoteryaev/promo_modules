@@ -1,0 +1,51 @@
+
+.mX210restOpportunities{
+
+    width: 100%;
+    padding: 45px 195px 65px 195px;
+    background-color: #00A197;
+    display: flex; 
+    justify-content: center;
+}
+
+.mX210restOpportunities ul{
+    width: 100%; 
+    max-width: 1530px;
+    gap: 15px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    flex-wrap: wrap; 
+
+}
+
+.mX210restOpportunities ul li{
+    margin-top: 20px;
+
+}
+
+.mX210restOpportunities ul li{
+    margin-top: 20px;
+}
+
+.mX210restOpportunities ul li div{
+    margin-right: 0px;
+
+}
+
+@media screen and (max-width:  860px) {
+
+    .mX210restOpportunities {
+
+        padding: 8px 16px 8px 16px;
+
+    }
+}
+
+@media screen and (max-width:  380px) {
+
+    .mX210restOpportunities ul {
+        justify-content: center;
+    
+    }
+}

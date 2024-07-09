@@ -1,0 +1,1 @@
+export { SwiperBlock } from './swiperBlock';
