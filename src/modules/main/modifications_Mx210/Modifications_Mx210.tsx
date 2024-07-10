@@ -15,8 +15,6 @@ export const Modifications_Mx210 = observer(() => {
   const { ChangeArrayWithAllOrderPosition, ArrayWithAllOrderPositionStore } =
   basketStore;
 
-  // console.log(ArrayWithAllOrderPositionStore);
-
     return (<section className={classes.moidificationBlock}>
       <div  className={classes.moidificationBlock_listCheckbox}><span>Number of inputs/outputs:</span>
       <div>
