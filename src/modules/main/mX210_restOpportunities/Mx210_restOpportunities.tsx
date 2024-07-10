@@ -18,9 +18,7 @@ const cards: CardOpportuinitiesProps[] =
     { topInscription: 'Group', bottomInscription: 'configuration', svg: <SvgMx2103 /> },
     { topInscription: 'Fast DO up to 400 Hz', bottomInscription: 'Fast DI up to 60 kHz', svg: <SvgMx2104 />, variant: "small" },
     { topInscription: "Real-time ", bottomInscription: "clock", svg: <SvgMx2105 /> },
-    { topInscription: 'Free of charge', bottomInscription: "configuration tool", svg: <SvgMx2106 /> },
-    { topInscription: 'Data', bottomInscription: 'logging', svg: <SvgMx2107 /> },
-    { topInscription: 'DIN-rail &', bottomInscription: 'wall mounting', svg: <SvgMx2108 /> }];
+    { topInscription: 'Free of charge', bottomInscription: "configuration tool", svg: <SvgMx2106 /> },];
 
 export const Mx210_restOpportunities = () => {
 
