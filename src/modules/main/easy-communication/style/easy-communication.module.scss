@@ -1,0 +1,23 @@
+@import "../../../../assets/styles/mixins/mixins.scss";
+
+.easy_communication {
+
+    width: 100%;
+    margin-bottom: 100px; 
+
+}
+
+.easy_communication header {
+    @include header-bold-40px;
+
+    margin-top: 50px;
+    margin-bottom: 52px;
+    text-align: center;
+    font-family: 'Archivo-Narrow-Bold';
+}
+
+.easy_communication img {
+
+    margin: auto;
+
+}
