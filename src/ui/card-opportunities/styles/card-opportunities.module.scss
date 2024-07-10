@@ -1,11 +1,9 @@
 @import "../../../assets/styles/mixins/mixins.scss";
-@import "./mixin.scss";
 
 .cardOpportuinities {
-    @include card-variant-styles;
 
-    width: 158px;
-    height: 175.55px;
+    width: 154px;
+    height: 170px;
     padding-top: 23.45px;
     padding-bottom: 14.13px;
     background-color: #4DBDB6;
@@ -15,7 +13,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    box-shadow: 10px 20px 30px 0px #0A3734;
+    box-shadow: 10px 20px 30px 0px rgba(10, 55, 52, 0.2);
     
 }
 
