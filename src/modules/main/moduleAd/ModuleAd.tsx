@@ -14,10 +14,6 @@ export const ModuleAdAboutModBus: FC = () => {
 
     return (
         <div className={classes.moduleAd} >
-            {/* <picture style={{position: 'relative'}} className={classes.moduleAd_img}>
-                <source srcSet={mobile} />
-                <img {...rest} style={{ width: '100%', height: '100%' }} />
-            </picture>  */}
             <div  className={classes.moduleAd_img}>
             <img src={'/png/main/Ad/moduleAd_easy.png'}  style={{ width: '100%', height: '100%' }} />
             </div>
