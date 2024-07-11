@@ -9,8 +9,6 @@ import SvgMx2103 from "../../../ui/icon2/Mx2103";
 import SvgMx2104 from "../../../ui/icon2/Mx2104";
 import SvgMx2105 from "../../../ui/icon2/Mx2105";
 import SvgMx2106 from "../../../ui/icon2/Mx2106";
-import SvgMx2107 from "../../../ui/icon2/Mx2107";
-import SvgMx2108 from "../../../ui/icon2/Mx2108";
 
 const cards: CardOpportuinitiesProps[] =
     [{ topInscription: "Wide operating", bottomInscription: "temperature range", svg: <SvgMx2101 /> },
