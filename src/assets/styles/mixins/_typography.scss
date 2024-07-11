@@ -50,6 +50,10 @@
   @include font($size: 20px, $weight: 700, $lineHeight: 32px);
 }
 
+@mixin text-bold-30px {
+  @include font($size: 30px, $weight: 700, $lineHeight: 32px);
+}
+
 @mixin button-text-bold-16px {
   @include font($size: 16px, $weight: 700, $lineHeight: 21.55px);
 }

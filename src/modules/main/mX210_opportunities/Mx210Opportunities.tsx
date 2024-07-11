@@ -21,7 +21,7 @@ const cards =
 export const Mx210Opportunities: FC = () => {
 
     return <section className={classes.Mx210opportunities} id='Mx210'>
-        <div className={classes.Mx210opportunities_line}><div>Mx210</div></div>
+        <div className={classes.Mx210opportunities_line}><div>Mx210 <span>with Ethernet</span></div></div>
         <div className={classes.Mx210opportunities_fullInfo}>
             <article>
             <p><strong>Mx210</strong> - the line of universal I/O modules with Ethernet interfaces. 
@@ -29,7 +29,7 @@ export const Mx210Opportunities: FC = () => {
                 centralized and decentralized industrial automation systems, <br/> as well as IIoT applications.</p>
                 <div className={classes.Mx210opportunities_wrapperImg}>
                 <Image width={535} height={535} className={classes.Mx210opportunities_imgModule} src="/png/main/Oppotunities/Mx210/Mx210.png" alt="Mx210" />
-                {/* <div>Compatibility with third-party PLCs</div> */}
+                <div>Compatibility with third-party PLCs</div> 
                 </div>
             </article>
                 <Image width={470} height={42} src='/png/main/multiple-protocols/Mx210/logo.png' alt="protocols_logo"/>
@@ -39,22 +39,6 @@ export const Mx210Opportunities: FC = () => {
                             return (<li key={card.topInscription}><CardOpportuinities description={card} /></li>)
                         })}
                     </ul>
-              
-            {/* <div className={classes.Mx210opportunities_wrapperList}>
-                <div style={{ width: "100%", display: "flex" }}>
-                    <ul className={classes.Mx210opportunities_listOpportunities}>
-                        {cards.map((card: any) => {
-                            return (<li key={card.topInscription}><CardOpportuinities description={card} /></li>)
-                        })}
-                    </ul>
-                </div>
-            </div>
-            <div className={classes.Mx210opportunities_wrapperImg}>
-                <Image width={580} height={580} className={classes.Mx210opportunities_imgModule} src="/png/main/Oppotunities/Mx210/Mx210.png" alt="Mx210" />
-                <div>Compatibility with third-party PLCs</div>
-                <Image src="/png/main/Oppotunities/Mx210/interfacesMx210.png" width={164} height={144} alt="interfacesMx210" />
-            </div> */}
-
  </div>
         </div>
     </section>
