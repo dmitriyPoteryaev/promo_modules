@@ -2,17 +2,16 @@
 .mX210restOpportunities{
 
     width: 100%;
-    padding: 45px 195px 65px 195px;
+    padding: 45px 0px 65px 0px;
     background-color: #00A197;
     display: flex; 
-    justify-content: center;
+    align-items: center;
 }
 
 .mX210restOpportunities ul{
     width: 100%; 
     max-width: 1162px;
     margin: auto;
-    gap: 15px;
     display: flex; 
     justify-content: space-between;
     align-items: center; 
@@ -34,18 +33,27 @@
 
 }
 
-@media screen and (max-width:  860px) {
+@media screen and (max-width:  1200px) {
 
     .mX210restOpportunities {
 
-        padding: 8px 16px 8px 16px;
-
+       padding-left: 24px;
+       padding-right: 24px;
     }
 }
 
-@media screen and (max-width:  380px) {
+@media screen and (max-width:  1000px) {
 
     .mX210restOpportunities ul {
+
+       gap: 10px;
+    }
+}
+
+@media screen and (max-width:  370px) {
+
+    .mX210restOpportunities ul {
+        
         justify-content: center;
     
     }
