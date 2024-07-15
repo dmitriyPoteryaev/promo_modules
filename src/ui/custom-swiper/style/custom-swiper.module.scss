@@ -1,12 +1,15 @@
 .custom_swiper {
 
-    margin-right: 150px;
+    // margin-right: 150px;
+    width: 100%;
+    max-width: 600px;
     position: relative;
 }
 
 .swiper_bottom {
 
     all: unset;
+    max-width: 590px;
 }
 
 .swiper_bottom div {
@@ -21,7 +24,6 @@
     width: 100% !important;
     height: 100% !important;
     padding-bottom: 20px !important;
-    ;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
@@ -30,7 +32,7 @@
 .swiper_up {
 
     width: 100%;
-    max-width: 620px;
+    max-width: 520px;
 }
 
 
@@ -100,63 +102,76 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 772px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-@media screen and (max-width: 1760px) {
+// @media screen and (max-width: 1760px) {
 
 
-    .wrappre_arrow {
-        width: 672px;
+//     .wrappre_arrow {
+//         width: 672px;
 
-    }
-}
+//     }
+// }
 
-@media screen and (max-width: 1690px) {
-
-
-    .wrappre_arrow {
-        width: 640px;
-
-    }
-}
-
-@media screen and (max-width: 1680px) {
+// @media screen and (max-width: 1690px) {
 
 
-    .wrappre_arrow {
+//     .wrappre_arrow {
+//         width: 640px;
 
-        width: 600px;
+//     }
+// }
 
-    }
-}
+// @media screen and (max-width: 1680px) {
+
+
+//     .wrappre_arrow {
+
+//         width: 600px;
+
+//     }
+// }
 
 @media screen and (max-width: 1650px) {
 
 
-    .custom_swiper{
+    // .custom_swiper{
 
-        margin-right: unset;
-        margin-bottom: 20px;
+    //     margin-right: unset;
+    //     margin-bottom: 20px;
 
-    }
+    // }
 
-    .wrappre_arrow {
+    // .wrappre_arrow {
 
-        width: 772px;
+    //     width: 772px;
 
-    }
+    // }
 }
 
-@media screen and (max-width: 900px) {
+// @media screen and (max-width: 900px) {
 
-    .custom_swiper {
+//     .custom_swiper {
 
-        width: 100%;
-    }
+//         width: 100%;
+//     }
     
+
+//     .wrappre_arrow {
+
+//        margin-bottom: 40px;
+//        position: unset;
+//        transform: unset;
+//        width: unset;
+
+//     }
+// }
+
+
+@media screen and (max-width: 800px) {
 
     .wrappre_arrow {
 

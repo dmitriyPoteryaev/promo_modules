@@ -32,7 +32,7 @@ export const Mx210Opportunities: FC = () => {
                 <div>Compatibility with third-party PLCs</div> 
                 </div>
             </article>
-                <Image width={470} height={42} src='/png/main/multiple-protocols/Mx210/logo.png' alt="protocols_logo"/>
+                <Image width={470} height={42} src='/png/main/multiple-protocols/Mx210/logo.svg' alt="protocols_logo"/>
                 <div style={{ width: "100%", display: "flex" }}>
                     <ul className={classes.Mx210opportunities_listOpportunities}>
                         {cards.map((card: any) => {
