@@ -11,7 +11,7 @@ import SwiperClass from "swiper/types/swiper-class";
 import Image from "next/image";
 
 export interface CustomSwiperProps {
-    arrayWithPng: string[];
+    arrayWithPng: { url: string, center: boolean }[];
 }
 
 export const CustomSwiper: FC<CustomSwiperProps> = (props) => {
@@ -37,10 +37,14 @@ export const CustomSwiper: FC<CustomSwiperProps> = (props) => {
                 modules={[FreeMode, Thumbs]}
                 className={classes.swiper_up}
             >
-                {arrayWithPng.map((urlPng: string) =>
-                    <SwiperSlide key={urlPng} className={classes.swiper_big}>
-                        <Image width={519} height={422} src={urlPng} alt="" />
+                {arrayWithPng.map((png) => {
+
+                    const { url, center } = png;
+
+                    return (<SwiperSlide key={url} className={center ? classes.swiper_up_center : classes.swiper_up}>
+                        <Image width={519} height={422} src={url} alt="" />
                     </SwiperSlide>)
+                })
                 }
             </Swiper>
             <div className={classes.wrappre_arrow}>
@@ -54,15 +58,17 @@ export const CustomSwiper: FC<CustomSwiperProps> = (props) => {
                 spaceBetween={10}
                 slidesPerView={3}
                 className={classes.swiper_bottom}>
-                {arrayWithPng.map((urlPng: string, i: number) => {
-                    if (i !== 3) {
-                        return (<SwiperSlide key={urlPng} className={classes.swiper_small}>
-                            <Image width={140} height={100} src={urlPng} alt="" />
+                {arrayWithPng.map((png, i: number) => {
+                    const { url, center } = png;
+
+                    if (center) {
+                        return (<SwiperSlide key={url} className={classes.swiper_small_another}>
+                            <Image width={140} height={100} src={url} alt="" />
                         </SwiperSlide>)
 
                     } else {
-                        return (<SwiperSlide key={urlPng} className={classes.swiper_small_another}>
-                            <Image width={140} height={100} src={urlPng} alt="" />
+                        return (<SwiperSlide key={url} className={classes.swiper_small}>
+                            <Image width={140} height={100} src={url} alt="" />
                         </SwiperSlide>)
 
                     }
