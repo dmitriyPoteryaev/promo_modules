@@ -6,7 +6,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import classes from "./style/custom-swiper.module.scss";
 
 import 'swiper/css';
-import 'swiper/css/free-mode';
 import 'swiper/css/thumbs';
 import SwiperClass from "swiper/types/swiper-class";
 import Image from "next/image";
@@ -35,12 +34,12 @@ export const CustomSwiper: FC<CustomSwiperProps> = (props) => {
                 } as CSSProperties}
                 spaceBetween={10}
                 thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }}
-                modules={[FreeMode, Navigation, Thumbs]}
+                modules={[FreeMode, Thumbs]}
                 className={classes.swiper_up}
             >
                 {arrayWithPng.map((urlPng: string) =>
                     <SwiperSlide key={urlPng} className={classes.swiper_big}>
-                        <Image width={596} height={380} src={urlPng} alt="" />
+                        <Image width={519} height={422} src={urlPng} alt="" />
                     </SwiperSlide>)
                 }
             </Swiper>
