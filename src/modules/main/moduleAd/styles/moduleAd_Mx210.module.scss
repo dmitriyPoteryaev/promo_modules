@@ -1,0 +1,7 @@
+@import "../../../../assets/styles/mixins/mixins.scss";
+
+.description_Mx210 {
+    @include text-regular-20px;
+
+    color: #FFFFFF;
+}

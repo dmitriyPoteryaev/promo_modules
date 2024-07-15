@@ -1,7 +1,7 @@
 @import "../../../../assets/styles/mixins/mixins.scss";
 
 
-.moduleAd {
+.moduleAd, .moduleAd_Mx210 {
 
     width: 100%;
     padding-bottom: 134px;
@@ -10,7 +10,7 @@
     justify-content: center;
 }
 
-.moduleAd_img {
+.moduleAd_img, .moduleAd_img_complex {
 
     width: 100%;
     height: 100%;
@@ -18,7 +18,7 @@
     z-index: -2;
 }
 
-.moduleAd article {
+.moduleAd article, .moduleAd_Mx210 article {
 
     width: 100%;
     display:flex ;
@@ -27,12 +27,21 @@
 
 }
 
-.moduleAd_description {
+.moduleAd_description, .moduleAd_description_Mx210 {
 
-    max-width: 54%;
+    max-width: 55.5%;
     margin-top: 103px;
     margin-left: 35px;
     color: #FFFFFF;
+}
+
+.moduleAd_description_Mx210 header{
+    @include header-bold-60px;
+
+    width: 100%;
+    margin-bottom: 28px;
+    color: #FFFFFF;
+    font-family: "Archivo-Narrow-Bold";
 }
 
 .moduleAd_description header {
@@ -43,7 +52,7 @@
     font-family: "Archivo-Narrow-Bold";
 }
 
-.moduleAd_description ul {
+.moduleAd_description ul,.moduleAd_description_Mx210 ul {
 
     max-width: 560px;
     margin-top: 29px;
@@ -51,7 +60,7 @@
     margin-left: 40px;
 }
 
-.moduleAd_description ul li {
+.moduleAd_description ul li, .moduleAd_description_Mx210 ul li {
 
     @include text-regular-20px;
 
@@ -64,41 +73,96 @@
 
     width: 46%;
     margin-top: 83px;
+    padding-left: 35px;
 
 }
-@media screen and (max-width: 1500px) {
 
-    .moduleAd article {
+.description_Mx210 {
+    @include text-regular-20px;
 
-       padding-right: 20px;
+    max-width: 500px;
+    width: 100%;
+    margin-bottom: 68px;
+    color: #FFFFFF;
+    font-family: 'Istok-Regular';
+}
+
+ @media screen and (max-width: 1220px) {
+
+ .moduleAd_img_complex {
+
+    display: none !important;
+ }
+
+ .moduleAd_modulePhoto {
+
+    padding-left: 0px;
+
+}
+
+ }
+
+ @media screen and (max-width: 1200px) {
+
+
+    .moduleAd_Mx210 {
+
+        padding-left: 24px;
+        padding-right: 24px;
     }
-}
-
-@media screen and (max-width: 1310px) {
-
-    .moduleAd article {
-
-       padding-left: 50px;
-       padding-right: 20px;
     }
-}
+ 
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 950px) {
 
-    .moduleAd article {
+    .moduleAd article, .moduleAd_Mx210 article {
 
-      flex-direction: column;
+      padding-left: 24px;
+      padding-right: 24px;
+      flex-direction: column-reverse;
+      align-items: center;
     }
 
+    .moduleAd article div, .moduleAd_Mx210 article div{
+
+     width: 100%;
+     max-width: 100%;
+     margin-left: unset;
+      }
+
+      .moduleAd_modulePhoto {
+
+        width: 70% !important;
+      }
+
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 720px) {
 
 
-    .moduleAd_description header {
+    .moduleAd_description header, .moduleAd_description_Mx210 header{
        
+        line-height: 50px;
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+
+    .moduleAd_description header, .moduleAd_description_Mx210 header {
+       
+        line-height: 40px;
         font-size: 40px;
     }
 }
 
+@media screen and (max-width: 350px) {
 
+
+    .moduleAd_description header, .moduleAd_description_Mx210 header {
+       
+        line-height: 30px;
+        font-size: 30px;
+    }
+}
