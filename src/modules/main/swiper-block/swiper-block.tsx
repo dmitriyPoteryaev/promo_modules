@@ -4,11 +4,11 @@ import classes from "./style/swiper-block.module.scss";
 import Image from "next/image";
 
 const pngsProtocolsMx210 = [
-    '/png/main/multiple-protocols/Mx210/1.svg',
-    '/png/main/multiple-protocols/Mx210/2.svg',
-    '/png/main/multiple-protocols/Mx210/3.svg',
-    '/png/main/multiple-protocols/Mx210/4.svg',
-    '/png/main/multiple-protocols/Mx210/5.svg', ];
+    {url: '/png/main/multiple-protocols/Mx210/1.svg',center: false},
+    {url: '/png/main/multiple-protocols/Mx210/2.svg',center: false},
+    {url: '/png/main/multiple-protocols/Mx210/3.svg',center: false},
+    {url: '/png/main/multiple-protocols/Mx210/4.svg',center: true },
+    {url: '/png/main/multiple-protocols/Mx210/5.svg',center: false}, ];
 
 
 export const SwiperBlock = () => {
