@@ -1,12 +1,11 @@
 import React from "react";
 import { CustomSwiper } from "../../../ui/custom-swiper/custom-swiper";
 import classes from "./style/swiper-block.module.scss";
-
-
-    const pngsProtocolsMx110 = [
-        '/png/main/multiple-protocols/Mx110/Mx110_protocols_1.svg',
-        '/png/main/multiple-protocols/Mx110/Mx110_protocols_2.svg',
-        '/png/main/multiple-protocols/Mx110/Mx110_protocols_3.svg',];
+        
+const pngsProtocolsMx110 = [
+    {url: '/png/main/multiple-protocols/Mx110/Mx110_protocols_1.svg',center: false},
+    {url: '/png/main/multiple-protocols/Mx110/Mx110_protocols_2.svg',center: false},
+    {url: '/png/main/multiple-protocols/Mx110/Mx110_protocols_3.svg',center: false} ];
 
 export const Mx110_swiperBlock = () => {
 
