@@ -4,9 +4,7 @@
 
   width: 100%;
   margin-top: 100px;
-  margin-bottom: 238px;
-  padding-left: 195px;
-  padding-right: 195px;
+  margin-bottom: 70px;
   background-color: #FFFFFF;
 }
 
@@ -20,7 +18,9 @@
 }
 
 .application ul {
+  max-width: 1162px;
   width: 100%;
+  margin: auto;
   margin-top: 69.52px;
   display: flex;
   justify-content: center;
@@ -54,33 +54,39 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 1400px) {
-   .application ul {
-     flex-wrap: wrap;
-     align-content: center;
-   }
+// @media screen and (max-width:  960px) {
 
-  .application ul li {
+//   .application {
 
-    padding-right: 0px !important;
-  }
-}
+//       padding-left: 16px;
+//       padding-right: 16px;
+//   }
 
-@media screen and (max-width:  960px) {
+// }
 
-  .application {
+@media screen and (max-width: 1250px) {
 
-      padding-left: 16px;
-      padding-right: 16px;
+  .application ul {
+
+    padding-left: 24px;
+    padding-right: 24px;
   }
 
 }
 
 @media screen and (max-width: 980px) {
 
+  .application ul {
+    flex-wrap: wrap;
+    align-content: center;
+    justify-items: center;
+  }
+
   .application ul li {
 
     margin-top: 20px;
+    padding-right: 0px !important;
+    
   }
 }
 
