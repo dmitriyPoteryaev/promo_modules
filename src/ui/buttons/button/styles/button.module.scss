@@ -3,12 +3,12 @@
 
 .button {
 
-    @include button-text-bold-16px;
+    @include button-text-bold-18px;
     @include button-variant-styles;
 
     height: 60px;
     border-radius: 30px;
-    font-family: 'Archivo-Narrow-Bold';
+    font-family: 'Archivo-Narrow-Bold' !important;
     display: flex;
     justify-content: center;
     align-items: center;

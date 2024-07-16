@@ -6,6 +6,10 @@
   @include font($size: 60px, $weight: 700, $lineHeight: 78px);
 }
 
+@mixin header-bold-48px {
+  @include font($size: 48px, $weight: 700, $lineHeight: 64.66px);
+}
+
 @mixin header-bold-40px {
   @include font($size: 40px, $weight: 700, $lineHeight: 78px);
 }

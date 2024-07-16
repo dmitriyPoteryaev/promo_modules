@@ -24,10 +24,10 @@ export const Mx110_swiperBlock = () => {
                 <li>Compatibility with any equipment supporting the RS-485 interface and Modbus-RTU/ASCII protocols.</li>
             </ul>
             <div style={{marginTop: '69px'}}>
-            <Button variant='magenta' size='medium' >                   
-                        <Link style={{ width: "100%", height: "100%", display: 'flex', justifyContent: 'center', alignItems: 'center' }} href='/'>
+            <Link href='/'>
+            <Button variant='magenta' size='large' >                   
                         EXPLORE MODELS {"&"} SPECS
-                    </Link> </Button></div>
+                     </Button></Link></div>
         </article>
         <div style={{ maxWidth: '620px', width: '100%' }}>
         <CustomSwiper arrayWithPng={pngsProtocolsMx210}/>

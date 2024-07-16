@@ -10,6 +10,7 @@ import { Mx110_swiperBlock } from "./Mx110_swiperBlock";
 import {SwiperBlock} from "./swiper-block/swiper-block";
 import { EasyCommunication } from "./easy-communication/easy-communication";
 import { Modifications_Mx210 } from "./modifications_Mx210/Modifications_Mx210";
+import {AdAkytec} from "./ad-akytec/ad-akytec"
 
 export const Main = () => {
 
@@ -25,6 +26,7 @@ export const Main = () => {
     <Mx110_restOpportunities/>
       <Mx110_swiperBlock/> 
      <Application header="Applications"/>
+     <AdAkytec/>
      <Modifications_Mx210/>
     </ClientLayout>
   );
