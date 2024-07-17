@@ -40,7 +40,7 @@ export const ShoppingCart = observer((props: any) => {
 
                     return (<li key={certain_name}>
                         <div className={classes.modal_img}>
-                            <Image alt="module" src={image} width={width} height={height} />
+                            <Image alt="module" src={image} width={100} height={100} />
                         </div>
                         <div className={classes.modal_description}>
                             <div>{certain_name}</div>
