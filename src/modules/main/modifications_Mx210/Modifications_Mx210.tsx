@@ -16,7 +16,9 @@ export const Modifications_Mx210 = observer(() => {
   basketStore;
 
     return (<section className={classes.moidificationBlock}>
-      <div  className={classes.moidificationBlock_listCheckbox}><span>Number of inputs/outputs:</span>
+      <header className={classes.moidificationBlock_title}>Mx210 modifications</header>
+      <div style={{width: '100%',maxWidth: '1162px', textAlign: 'left', fontSize: '20px', marginBottom: '9px'}}>Number of inputs/outputs:</div>
+      <div  className={classes.moidificationBlock_listCheckbox}>
       <div>
       <span style={{marginRight: "12px"}}> AI</span>
       <ul>

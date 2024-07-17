@@ -14,7 +14,7 @@ export const AdAkytec = () => {
             <div style={{width: '47%'}}>
         <header className={classes.akytecAd_title}>Looking for even more quality items for your projects?</header>
         <div style={{marginBottom: '69px'}}>
-        <Link href='https://akytec.de/en/'>
+        <Link target="_blank" href='https://akytec.de/en/'>
             <Button style={{fontSize: '18px'}} variant='magenta' size='large' >                   
                         DISCOVER AKYTEC PRODUCTS
                     </Button></Link> </div>

@@ -53,10 +53,10 @@ export const ModuleAdDeployment: FC = () => {
                     <header>Flexible Deployment with Daisy Chain Networking and <br/> Auto-Bypass Protection</header>
                     <p className={classes.description_Mx210}>Daisy chain connectivity offers flexible cabling and space saving capabilities. With Ethernet auto-bypass
                         function supported to prevent accidental power failures if one of the modules unexpectedly shuts down.</p>
+                        <Link href='/'>
                         <Button variant='magenta' size='large' >                   
-                        <Link style={{ width: "100%", height: "100%", display: 'flex', justifyContent: 'center', alignItems: 'center' }} href='/'>
-                        EXPLORE MODELS {"&"} SPECS
-                    </Link> </Button>
+                        EXPLORE MODELS &amp; SPECS
+                     </Button></Link>
                 </div>
                 <div className={classes.moduleAd_modulePhoto} style={{ marginTop: '117px', paddingTop: 'unset',margin: 'auto'}}><Image width={587} height={428} src={'/png/main/Ad/Mx210.svg'} alt="module" /></div>
             </article>

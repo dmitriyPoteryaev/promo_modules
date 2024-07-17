@@ -26,6 +26,11 @@
   justify-content: center;
 }
 
+.application ul li img{
+
+ cursor: pointer;
+}
+
 .application ul li:not(:last-child) {
 
   width: 100%;

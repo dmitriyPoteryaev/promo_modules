@@ -68,7 +68,7 @@
     },
     {
         "certain_name": "MK210-311",
-        "common_name": "INPUT AND OUTPUT MODULE",
+        "common_name": "INPUT & OUTPUT MODULE",
         "DI": 6,
         "DO": 8,
         "AI": null,
@@ -81,7 +81,7 @@
     },
     {
         "certain_name": "MK210-312",
-        "common_name": "INPUT AND OUTPUT MODULE",
+        "common_name": "INPUT & OUTPUT MODULE",
         "DI": 12,
         "DO": 4,
         "interface_connection": "Ethenet",
