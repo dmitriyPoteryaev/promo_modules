@@ -1,0 +1,235 @@
+@import "../../../../assets/styles/mixins/mixins.scss";
+
+.header {
+
+    @include header-bold-60px;
+
+    margin-top: 80px;
+    margin-bottom: 42px;
+    text-align: center;
+
+}
+
+.table {
+
+    max-width: 1162px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 89px;
+    border-collapse: collapse;
+    
+}
+
+.table thead tr th:nth-child(1), .table tbody td:nth-child(1) {
+
+    width: 23%;
+    
+}
+
+.table thead tr th:nth-child(1) {
+    @include text-bold-20px;
+
+    padding: 12px 0px 13px 11px;
+    background-color: #4DBDB6;
+    border: 1.4px solid #CCCCCC;
+    text-align: left;
+    line-height: 26.94px;
+    color: white;
+    font-family: 'Archivo-Narrow-Bold';
+
+}
+
+.table tbody tr td:nth-child(1){
+
+    @include text-bold-16px;
+
+    padding-top: 55.6px;
+    padding-bottom: 56px;
+    padding-left: 10px;
+    border: 1.4px solid #CCCCCC;
+    border-top: 1px solid white;
+    position: relative;
+    color: #212529;
+    font-family: 'Istok-Regular-Bold';
+    
+}
+
+.table tbody tr td:nth-child(1) img{
+
+ position: absolute;
+ right: 30px;
+ top: 0px;
+    
+}
+
+.table thead tr th:nth-child(2), .table tbody tr td:nth-child(2){
+
+    width: 17%;
+    
+}
+
+.table thead tr th:nth-child(2) {
+
+    @include text-bold-20px;
+
+    padding: 12px 0px 13px 11px;
+    background-color: #4DBDB6;
+    border: 1.4px solid #CCCCCC;
+    border-left: 1px solid #4DBDB6;
+    text-align: left;
+    color: white;
+    font-family: 'Archivo-Narrow-Bold';
+
+}
+
+.table tbody tr td:nth-child(2){
+
+    @include text-regular-16px;
+
+    padding-left: 12px;
+    border: 1.4px solid #CCCCCC;
+    border-top: 0px solid #CCCCCC;
+    border-left: 0px solid #CCCCCC;
+    font-family: 'Istok-Regular';
+    
+}
+
+.table thead tr th:nth-child(3), .table tbody tr td:nth-child(3){
+
+    width: 21%;
+    
+}
+
+.table thead tr th:nth-child(3) {
+
+    @include text-bold-20px;
+
+    padding: 12px 0px 13px 11px;
+    background-color: #4DBDB6;
+    border: 1.4px solid #CCCCCC;
+    border-left: 0px solid #CCCCCC;
+    text-align: left;
+    color: white;
+    font-family: 'Archivo-Narrow-Bold';
+
+}
+
+.table tbody tr td:nth-child(3){
+
+    @include text-regular-16px;
+
+    padding-left: 12px;
+    border: 1.4px solid #CCCCCC;
+    border-top: 0px solid #CCCCCC;
+    border-left: 0px solid #CCCCCC;
+    font-family: 'Istok-Regular';
+    
+}
+
+.table thead tr th:nth-child(4), .table tbody tr th:nth-child(4){
+
+    width: 16%;
+    
+}
+
+.table thead tr th:nth-child(4) {
+
+    @include text-bold-20px;
+
+    padding: 12px 0px 13px 11px;
+    background-color: #4DBDB6;
+    border: 1.4px solid #CCCCCC;
+    border-left: 0px solid #CCCCCC;
+    text-align: left;
+    color: white;
+    font-family: 'Archivo-Narrow-Bold';
+
+}
+
+.table tbody tr td:nth-child(4) {
+
+ 
+    @include text-regular-16px;
+
+    padding-left: 12px;
+    border: 1.4px solid #CCCCCC;
+    border-top: 0px solid #CCCCCC;
+    border-left: 0px solid #CCCCCC;
+    font-family: 'Istok-Regular';
+    
+}
+
+.table thead tr th:nth-child(5), .table tbody tr td:nth-child(5){
+
+    width: 21%;
+    
+}
+
+.table thead tr th:nth-child(5) {
+
+    @include text-bold-20px;
+
+    padding: 12px 0px 13px 11px;
+    background-color: #4DBDB6;
+    border: 1.4px solid #CCCCCC;
+    border-left: 0px solid #CCCCCC;
+    text-align: left;
+    color: white;
+    font-family: 'Archivo-Narrow-Bold'
+
+}
+
+.table tbody tr td:nth-child(5) {
+
+ 
+    @include text-regular-16px;
+
+    padding-left: 12px;
+    border: 1.4px solid #CCCCCC;
+    border-top: 0px solid #CCCCCC;
+    border-left: 0px solid #CCCCCC;
+    font-family: 'Istok-Regular';
+    
+}
+
+
+@media screen and (max-width: 1220px) {
+
+    .tableBlock {
+        
+        padding-left: 24px;
+        padding-right: 24px;
+    }   
+}
+
+@media screen and (max-width: 980px) {
+
+    .tableContainer {
+        
+        width: 100%;
+        overflow-x: auto;
+    }   
+
+    .table {
+
+        max-width: unset;
+        min-width: 980px;
+        
+    }
+}
+
+@media screen and (max-width: 510px) {
+
+    .header {
+font-size: 40px;
+    
+    }
+}
+
+@media screen and (max-width: 360px) {
+
+    .header {
+font-size: 30px;
+    
+    }
+}

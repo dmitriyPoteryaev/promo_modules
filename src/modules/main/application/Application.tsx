@@ -32,7 +32,6 @@ const applications: application[] = [
 export const Application: FC<ApplicationProps> = (props) => {
 
   const router = useRouter()
-  // const navigate = useNavigate();
 
   const { excludedApp, header } = props;
 
