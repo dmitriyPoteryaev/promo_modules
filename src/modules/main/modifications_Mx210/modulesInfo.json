@@ -85,7 +85,7 @@
         "DI": 12,
         "DO": 4,
         "interface_connection": "Ethenet",
-        "image": "/png/main/modification/Mx210/MU210-401.png",
+        "image": "/png/main/modification/Mx210/MK210-312.png",
         "width": 234.21,
         "height": 234.21,
         "href": "https://akytec.de/media/wysiwyg/downloads/MX210/MK210-312/UG_MK210-302-312_3-EN-38929-2.4.pdf"
@@ -153,6 +153,20 @@
         "image": "/png/main/modification/Mx210/MV210-101.png",
         "width": 228.03,
         "height": 221.73,
+        "href": "/"
+    }
+    ,
+    {
+        "certain_name": "MU210-403",
+        "common_name": "DIGITAL OUTPUT MODULE",
+        "DI": null,
+        "DO": 16,
+        "AI": null,
+        "AO": null,
+        "interface_connection": "Ethenet",
+        "image": "/png/main/modification/Mx210/MU210-402.png",
+        "width": 228.03,
+        "height": 223.73,
         "href": "/"
     }
 
