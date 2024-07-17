@@ -10,6 +10,7 @@ import { Mx110_swiperBlock } from "./Mx110_swiperBlock";
 import {SwiperBlock} from "./swiper-block/swiper-block";
 import { EasyCommunication } from "./easy-communication/easy-communication";
 import { Modifications_Mx210 } from "./modifications_Mx210/Modifications_Mx210";
+import { Modifications_Mx110 } from "./modifications_Mx110/modifications_Mx110";
 import {AdAkytec} from "./ad-akytec/ad-akytec";
 import { TableComprasion } from "./module-comprasion-table/module-comprssion-table";
 
@@ -30,6 +31,7 @@ export const Main = () => {
      <AdAkytec/>
      <TableComprasion/>
      <Modifications_Mx210/>
+     <Modifications_Mx110/>
     </ClientLayout>
   );
 };
