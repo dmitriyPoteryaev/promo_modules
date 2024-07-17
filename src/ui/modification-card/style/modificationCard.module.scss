@@ -2,10 +2,10 @@
 
 .modificationCardBlock {
 
-    max-width: 293.91px;
+    max-width: 282px;
     width: 100%;
     height: 406px;
-    padding: 26px 30px 18.86px 20px;
+    padding: 22px 28px 18.86px 18px;
     border-radius: 1px;
     background-color: white;
     box-shadow: 0px 0px 10px 0px rgba(11, 17, 16, 0.1);
@@ -88,7 +88,7 @@
 .modificationCardBlock_button_added_false, .modificationCardBlock_button_added_true  {
     @include text-bold-16px;
 
-    width: 255px;
+    width: 246px;
     height: 55px;
     border: 1px #00A197 solid;
     line-height: 21.55px;

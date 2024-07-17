@@ -22,7 +22,7 @@ const {cnContainerNotification, cnContainerButton} = getClasses({
         <header>{certain_name}</header>
         <div>{common_name}</div>
         <div>{DI && ` DI: ${DI}`}{DO && ` DO: ${DO}`}{AI && ` AI: ${AI}`}{AO && ` AO: ${AO}`}</div>
-        <Link target="_blank" href={href}><Pdf style={{position: 'absolute', right: '25px', bottom: '90px'}}/></Link>
+        <Link target="_blank" href={href}><Pdf style={{position: 'absolute', right: '15px', bottom: '90px'}}/></Link>
         <button className={cnContainerButton}  onClick={() =>{ChangeArrayWithAllOrderPosition(info)}}>{isOrdered ? "REMOVE FROM CART" : "ADD TO CART"}</button>
     </li>)
 }
