@@ -1,0 +1,192 @@
+{
+
+    "modules": [
+        {
+            "certain_name": "MV110-24.2A",
+            "common_name": "ANALOG INPUT MODULE",
+            "DI": null,
+            "DO": null,
+            "AI": 2,
+            "AO": null,
+            "interface_connection": "Rs485",
+            "image": "/png/main/modification/Mx110/MV110-24.2A.png",
+            "width": 232.43,
+            "height": 232.43,
+            "href": "https://akytec.de/media/wysiwyg/downloads/MX210/MV210-2xx/UG_MV210-202-204_3-EN-43057-2.10.pdf"
+        },
+        {
+            "certain_name": "MV110-24.8A",
+            "common_name": "ANALOG INPUT MODULE",
+            "DI": null,
+            "DO": null,
+            "AI": 8,
+            "AO": null,
+            "interface_connection": "Rs485",
+            "image": "/png/main/modification/Mx110/MV110-24.8A.png",
+            "width": 232.43,
+            "height": 232.43,
+            "href": "https://akytec.de/media/wysiwyg/downloads/MX210/MV210-2xx/UG_MV210-202-204_3-EN-43057-2.10.pdf"
+        },
+        {
+            "certain_name": "MV110-24.8AS",
+            "common_name": "ANALOG INPUT MODULE",
+            "DI": null,
+            "DO": null,
+            "AI": 8,
+            "AO": null,
+            "interface_connection": "Rs485",
+            "image": "/png/main/modification/Mx110/MV110-24.8AS.png",
+            "width": 232.43,
+            "height": 232.43,
+            "href": "https://akytec.de/media/wysiwyg/downloads/MX210/MV210-2xx/UG_MV210-212-214_3-EN-59115-2.3.pdf"
+        },
+        {
+            "certain_name": "MV110-24.16D",
+            "common_name": "DIGITAL INPUT MODULE",
+            "DI": 16,
+            "DO": null,
+            "AI": null,
+            "AO": null,
+            "interface_connection": "Rs485",
+            "image": "/png/main/modification/Mx110/MV110-24.16D.png",
+            "width": 232.43,
+            "height": 232.43,
+            "href": "https://akytec.de/media/wysiwyg/downloads/MX210/MV210-2xx/UG_MV210-212-214_3-EN-59115-2.3.pdf"
+        },
+        {
+            "certain_name": "MV110-24.16DN",
+            "common_name": "DIGITAL INPUT MODULE",
+            "DI": 16,
+            "DO": null,
+            "AI": null,
+            "AO": null,
+            "interface_connection": "Rs485",
+            "image": "/png/main/modification/Mx110/MV110-24.16DN.png",
+            "width": 232.43,
+            "height": 232.43,
+            "href": "https://akytec.de/media/wysiwyg/downloads/MX210/MV210-2xx/UG_MV210-221_3-EN-38998-2.2.pdf"
+        },
+        {
+            "certain_name": "MV110-24.32DN",
+            "common_name": "INPUT & OUTPUT MODULE",
+            "DI": 32,
+            "DO": null,
+            "AI": null,
+            "AO": null,
+            "interface_connection": "Rs485",
+            "image": "/png/main/modification/Mx110/MV110-24.32DN.png",
+            "width": 240.14,
+            "height": 232.43,
+            "href": "https://akytec.de/media/wysiwyg/downloads/MX210/MK210-311/UG_МК210-301-311_3-EN-25165-2.6.pdf"
+        },
+        {
+            "certain_name": "MK110-24.8D.4R",
+            "common_name": "INPUT & OUTPUT MODULE",
+            "DI": 8,
+            "DO": 4,
+            "AI": null,
+            "AO": null,
+            "interface_connection": "Rs485",
+            "image": "/png/main/modification/Mx110/MK110-24.8D.4R.png",
+            "width": 232.43,
+            "height": 232.43,
+            "href": "https://akytec.de/media/wysiwyg/downloads/MX210/MK210-312/UG_MK210-302-312_3-EN-38929-2.4.pdf"
+        },
+        {
+            "certain_name": "MU110-24.8I",
+            "common_name": "ANALOG OUTPUT MODULE",
+            "DI": null,
+            "DO": null,
+            "AI": null,
+            "AO": 8,
+            "interface_connection": "Rs485",
+            "image": "/png/main/modification/Mx110/MU110-24.8I.png",
+            "width": 232.43,
+            "height": 232.43,
+            "href": "https://akytec.de/media/wysiwyg/downloads/MX210/MU210-40x/UG_MU210-401_3-EN-43201-2.3.pdf"
+        },
+        {
+            "certain_name": "MU110-24.6U",
+            "common_name": "ANALOG OUTPUT MODULE",
+            "DI": null,
+            "DO": null,
+            "AI": null,
+            "AO": 6,
+            "interface_connection": "Rs485",
+            "image": "/png/main/modification/Mx110/MU110-24.6U.png",
+            "width": 232.43,
+            "height": 232.43,
+            "href": "https://akytec.de/media/wysiwyg/downloads/MX210/MU210-40x/UG_MU210-402_3-EN-47647-2.2.pdf"
+        },
+        {
+            "certain_name": "MU110-24.8R",
+            "common_name": "DIGITAL OUTPUT MODULE",
+            "DI": null,
+            "DO": 8,
+            "AI": null,
+            "AO": null,
+            "interface_connection": "Rs485",
+            "image": "/png/main/modification/Mx110/MU110-24.8R.png",
+            "width": 232.43,
+            "height": 202.82,
+            "href": "https://akytec.de/media/wysiwyg/downloads/MX210/MU210-40x/UG_MU210‐412_3-EN-125356-1.4.pdf"
+        },
+        {
+            "certain_name": "MU110-24.8K",
+            "common_name": "DIGITAL OUTPUT MODULE",
+            "DI": null,
+            "DO": 8,
+            "AI": null,
+            "AO": null,
+            "interface_connection": "Rs485",
+            "image": "/png/main/modification/Mx110/MU110-24.8K.png",
+            "width": 232.43,
+            "height": 232.43,
+            "href": "https://akytec.de/media/wysiwyg/downloads/MX210/MU210-502/UG_MU210-502_3-EN-122423-1.9.pdf"
+        },
+        {
+            "certain_name": "MU110-24.16R",
+            "common_name": "DIGITAL OUTPUT MODULE",
+            "DI": null,
+            "DO": 16,
+            "AI": null,
+            "AO": null,
+            "interface_connection": "Rs485",
+            "image": "/png/main/modification/Mx110/MU110-24.16R.png",
+            "width": 232.43,
+            "height": 232.43,
+            "href": "/"
+        },
+        {
+            "certain_name": "MU110-24.32R",
+            "common_name": "DIGITAL OUTPUT MODULE",
+            "DI": null,
+            "DO": 32,
+            "AI": null,
+            "AO": null,
+            "interface_connection": "Rs485",
+            "image": "/png/main/modification/Mx110/MU110-24.32R.png",
+            "width": 276.64,
+            "height": 232.43,
+            "href": "/"
+        },
+        {
+            "certain_name": "MU110-24.16K",
+            "common_name": "DIGITAL OUTPUT MODULE",
+            "DI": null,
+            "DO": 16,
+            "AI": null,
+            "AO": null,
+            "interface_connection": "Rs485",
+            "image": "/png/main/modification/Mx110/MU110-24.16K.png",
+            "width": 232.43,
+            "height": 232.43,
+            "href": "/"
+        }
+    
+    
+    ]
+    
+       
+        
+    }
