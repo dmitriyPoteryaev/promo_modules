@@ -41,7 +41,7 @@ export const ClientHeader: FC<ClientHeaderProps> = observer((props) => {
                             </div>
                         </div>
                     </button>
-                    <Logo />
+                    <Link target="_blank" href={"/https://akytec.de/en/"}> <Logo /></Link>
                     <nav>
                         {Links.map(({ href, name }: { href: string, name: string }) => {
                             return (<Link key={name} href={href}>{name}</Link>)
