@@ -23,3 +23,23 @@ export const AdAkytec = () => {
         </div>
     </section>)
 }
+
+export const AdAkytecBottom = () => {
+
+    return(    <section className={classes.akytecAd_bottom} >
+        <div  className={classes.akytecAd_img}>
+        <img src={'/png/main/Ad/moduleAd_easy.png'}  style={{ width: '100%', height: '100%' }} />
+        </div>
+        <div style={{margin: 'auto', maxWidth: '1202px', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'space-between', paddingTop: '46px', paddingBottom: '46px'}}>
+            <Image src="/png/main/Ad/logo.svg" width={125} height={30} alt='logo'/>
+        <header style={{fontSize: '28px', lineHeight: '37.72px', marginBottom: '0px', paddingTop: '0px', maxWidth: '598px' }} className={classes.akytecAd_title}>Looking for even more quality items for your projects?</header>
+
+            <Button variant='magenta' size='large' >  
+            <Link style={{width: '100%'}} target="_blank" href='https://akytec.de/en/'>                 
+                        DISCOVER AKYTEC PRODUCTS
+                        </Link> 
+                    </Button>
+             
+        </div>
+    </section>)
+}
