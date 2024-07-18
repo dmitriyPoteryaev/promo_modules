@@ -36,7 +36,7 @@ export const ClientLayout: FC<ClientLayoutProps> = (props) => {
 
     },
     {
-      href: "/",
+      href: "/#modification",
       name: "Mx Modifications",
 
     },
@@ -67,7 +67,7 @@ export const ClientLayout: FC<ClientLayoutProps> = (props) => {
 
     },
     {
-      href: "/",
+      href: "/#modification",
       name: "Mx Modifications",
 
     },
