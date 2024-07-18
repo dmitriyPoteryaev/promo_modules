@@ -1,9 +1,30 @@
-.customSelect {
+@import "../../../assets/styles/mixins/mixins.scss";
+@import "./mixins.scss";
 
-    scroll-behavior: auto !important;
+.form_header {
+
+    @include header-bold-60px;
+
+    width: 100%;
+    max-width: 1162px;
+    margin: auto;
+    margin-top: 55px;
+    margin-bottom: 45px;
+    font-family: "Archivo-Narrow-Bold";
+    color: #212529;
 }
+.button_to_main_page_buttonWrapper {
 
-.ant-select-dropdown {
+    @include button-to-main-page-variant-styles;
 
-    scroll-behavior: auto !important;
+    width: 37.3px;
+    height: 37.3px;
+    margin-right: 24px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #797979;
+    cursor: pointer;
+
 }

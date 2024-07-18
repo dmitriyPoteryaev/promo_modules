@@ -1,0 +1,19 @@
+@import "../../..//assets/styles/mixins/mixins.scss";
+
+.form_input span{
+
+    @include text-bold-16px;
+
+    font-family: 'Istok-Regular-Bold';
+    color: #212529;
+
+}
+
+.form_input div{
+
+    @include text-regular-12px;
+
+    font-family: 'Istok-Regular';
+    color: #CD3D64;
+
+}
