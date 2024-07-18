@@ -6,6 +6,9 @@ import { ClientLayout } from "../../ui/client-layout/client-layout";
 import classes from "./style/form.module.scss"
 import countryList from 'react-select-country-list'
 import { FormInput } from '../../ui/form-input/form-input';
+import { Button } from 'src/ui/buttons/button/button';
+import Link from 'next/link';
+import LeftIcon from '../../ui/icon2/LeftIcon';
 
 const regValue = /^(?:[a-z0-9!#$%&amp;'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&amp;'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])$/;
 
@@ -111,8 +114,21 @@ export const FormExample = () => {
 
   return (
     <ClientLayout>
-      <section style={{ display: 'flex', width: '100%', justifyContent: 'center', height: '100vh' }}>
-        <form onSubmit={handleSubmit(onSubmit)} style={{ display: 'flex', maxWidth: '1138px', width: '100%', justifyContent: 'space-between', alignItems: 'center', position: 'relative', marginBottom: '30px' }}>
+      <section style={{paddingBottom: '40px'}}>
+        <header className={classes.form_header}>
+        <div style={{maxWidth: '719px', width: '100%', display: 'flex', justifyContent: 'space-between'}}>
+        <button >
+        <Link href={"/"}>
+          <div
+            className={classes.button_to_main_page_buttonWrapper}
+          >
+            <LeftIcon />
+          </div>
+          </Link>
+        </button>
+        <span>Your choise</span></div></header>
+        <form onSubmit={handleSubmit(onSubmit)} style={{ display: 'flex', flexWrap:'wrap', maxWidth: '1138px', width: '100%', marginBottom: '30px', justifyContent: 'center', margin: 'auto' }}>
+          <div style={{width: '100%', display: 'flex', justifyContent: 'space-between', marginBottom: '56px'}}>
           <div style={{ width: '40%' }}>
             {leftSideInputs.map((inputInfo) => {
 
@@ -160,8 +176,8 @@ export const FormExample = () => {
               />
             </div>
           </div>
-
-          <input style={{ position: 'absolute', left: '50%' }} type="submit" />
+          </div>
+          <Button size='medium' variant='magenta'type="submit" >REQUEST FOR QUOTE</Button>
         </form>
       </section>
     </ClientLayout>
