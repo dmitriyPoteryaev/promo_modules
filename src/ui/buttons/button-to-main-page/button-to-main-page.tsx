@@ -1,5 +1,4 @@
 import React, { FC } from "react";
-import { useNavigate, useParams } from "react-router-dom";
 import LeftIcon from "../../icon2/LeftIcon";
 import classes from "./styles/button-to-main-page.module.scss";
 import {defineIdApp} from "../../../utils/defineIdApp"

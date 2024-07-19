@@ -1,13 +1,17 @@
-import { observable, makeObservable, action } from "mobx"
+import { observable, makeObservable, action } from "mobx";
+import {mapOrderPositionToString} from "../utils/mapOrderPositionToString"
 
 class BasketStore {
 
     
   ArrayWithAllOrderPositionStore: any = [];
 
+  MapOrderPositionToString: string = '';
+
   constructor() {
     makeObservable(this, {
       ArrayWithAllOrderPositionStore: observable,
+      MapOrderPositionToString: observable,
       ChangeArrayWithAllOrderPosition: action,
     });
   }
@@ -33,6 +37,7 @@ class BasketStore {
     }
   
     this.ArrayWithAllOrderPositionStore = [...this.ArrayWithAllOrderPositionStore, {...obj, counter: 1}];
+    this.MapOrderPositionToString = mapOrderPositionToString(this.ArrayWithAllOrderPositionStore);
   };
 
 
@@ -52,6 +57,7 @@ class BasketStore {
 
     });
 
+    this.MapOrderPositionToString = mapOrderPositionToString(this.ArrayWithAllOrderPositionStore);
   }
 
   decrement =  (obj: any) => {
@@ -69,7 +75,8 @@ class BasketStore {
      
 
     });
-    
+    this.MapOrderPositionToString = mapOrderPositionToString(this.ArrayWithAllOrderPositionStore);
+
   }
 
   deletePosition =  (obj: any) => {
@@ -88,6 +95,8 @@ class BasketStore {
      
 
     });
+
+    this.MapOrderPositionToString = mapOrderPositionToString(this.ArrayWithAllOrderPositionStore);
     
   }
 

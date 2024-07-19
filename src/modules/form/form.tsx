@@ -9,6 +9,10 @@ import { FormInput } from '../../ui/form-input/form-input';
 import { Button } from 'src/ui/buttons/button/button';
 import Link from 'next/link';
 import LeftIcon from '../../ui/icon2/LeftIcon';
+import { formAPI } from "../../api/query-to-form";
+import { basketStore } from "../../store/index";
+import { observer } from "mobx-react-lite";
+
 
 const regValue = /^(?:[a-z0-9!#$%&amp;'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&amp;'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])$/;
 
@@ -91,7 +95,13 @@ type FormFileds = {
 
 const { TextArea } = Input;
 
-export const FormExample = () => {
+export const FormExample = observer(() => {
+
+  const { postInfoFromForm } = formAPI;
+
+  const {  ArrayWithAllOrderPositionStore } =
+  basketStore;
+
   const { control, handleSubmit, formState: { errors } } = useForm({
     defaultValues: {
       firstName: "",
@@ -104,17 +114,19 @@ export const FormExample = () => {
       zip: "",
       city: "",
       adress: "",
-      county: "",
     },
   })
 
   const onSubmit: SubmitHandler<FormFileds> = (data) => {
-    console.log(data)
+    postInfoFromForm(data);
+
   }
 
   return (
     <ClientLayout>
-      <section style={{paddingBottom: '40px'}}>
+      {ArrayWithAllOrderPositionStore.length === 0 ?
+      <section style={{paddingBottom: '40px'}}><header className={classes.form_header} style={{textAlign: 'center'}}>You did not choose any positions</header></section>
+      :<section style={{paddingBottom: '40px'}}>
         <header className={classes.form_header}>
         <div style={{maxWidth: '719px', width: '100%', display: 'flex', justifyContent: 'space-between'}}>
         <button >
@@ -179,7 +191,7 @@ export const FormExample = () => {
           </div>
           <Button size='medium' variant='magenta'type="submit" >REQUEST FOR QUOTE</Button>
         </form>
-      </section>
+      </section>}
     </ClientLayout>
   )
-}
+})

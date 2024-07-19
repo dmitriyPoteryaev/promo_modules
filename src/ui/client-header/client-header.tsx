@@ -3,7 +3,6 @@
 import React, { FC } from 'react';
 import { observer } from "mobx-react-lite";
 import { basketStore } from "../../store/index";
-import { formAPI } from "../../api/query-to-form";
 import Logo from "../icon2/Logo";
 import Link from 'next/link';
 import { ShoppingButton } from '../buttons/shopping-button/shopping-button';
@@ -16,8 +15,6 @@ export interface ClientHeaderProps {
 }
 
 export const ClientHeader: FC<ClientHeaderProps> = observer((props) => {
-
-    const { postInfoFromForm } = formAPI;
 
     
     const {ArrayWithAllOrderPositionStore } =
