@@ -12,7 +12,7 @@ export const FormInput = (props: any) => {
  const requiredNotification =  required ?  required : null;
 
     return(     <div className={classes.form_input} style={{position: 'relative'}}>
-      <span style={{ top: '-20px', height: '60px', marginTop: '43px', position: 'absolute', zIndex: '3'}}>{placeholder}{requiredNotification ? "*" : ""}</span>
+      <span style={{ top: '-20px', marginTop: '43px', position: 'absolute', zIndex: '3'}}>{placeholder}{requiredNotification ? "*" : ""}</span>
         <Controller
           name={name}
           control={control}
