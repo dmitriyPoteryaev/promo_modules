@@ -4,7 +4,6 @@ const postInfoFromForm = async (data) => {
 
   try {
 
-
     // Clear caart firstChild
 
     const res_clear = await fetch("https://akytec.de/en/request4quote/quote/send/", {
@@ -66,6 +65,7 @@ const postInfoFromForm = async (data) => {
 
     const {adress, city, company, country, email, firstName, lastName, quoteComments, state, telephone, zip} = data;
 
+console.log(data);
 
     const checkoutFormData = new FormData();
     checkoutFormData.append('options', basketStore.MapOrderPositionToString);
@@ -80,7 +80,7 @@ const postInfoFromForm = async (data) => {
     checkoutFormData.append('r4q[shipping][address]', adress);
     checkoutFormData.append('r4q[shipping][city]', city);
     checkoutFormData.append('r4q[shipping][postcode]', zip);
-    checkoutFormData.append('r4q[shipping][country]', country);
+    checkoutFormData.append('r4q[shipping][country]', state);
     checkoutFormData.append('r4q[shipping][region]', state);
 
 
