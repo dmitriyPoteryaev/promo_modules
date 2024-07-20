@@ -1,5 +1,5 @@
 import { observable, makeObservable, action } from "mobx";
-import {mapOrderPositionToString} from "../utils/mapOrderPositionToString"
+import {mapOrderPositionToString} from "../utils/mapOrderPositionToString";
 
 class BasketStore {
 

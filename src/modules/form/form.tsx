@@ -122,6 +122,8 @@ export const FormExample = observer(() => {
 
   }
 
+  console.log(countryList().getData());
+
   return (
     <ClientLayout>
       {ArrayWithAllOrderPositionStore.length === 0 ?
