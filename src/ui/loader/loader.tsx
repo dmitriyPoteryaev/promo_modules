@@ -7,7 +7,7 @@ export const Loader = () => {
 
   return (
     <div className={classes.layout_client}>
-         <Spin size="large" />
+         <Spin size="small" />
   </div>
   );
 };
