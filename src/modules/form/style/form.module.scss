@@ -28,3 +28,30 @@
     cursor: pointer;
 
 }
+
+.form_window {
+
+    border-radius: 4px;
+}
+
+.form_window header{
+
+    @include header-bold-40px;
+
+    line-height: 57.6px;
+    color: #212529;
+    font-family: 'Archivo-Narrow-Bold';
+
+}
+
+.form_ADakytec {
+    background: linear-gradient(
+        to right,
+        rgba(17, 38, 58, 1),
+        rgba(25, 61, 94, 1),
+        rgba(8, 128, 132, 1),
+        rgba(8, 128, 132, 1),
+        rgba(0, 161, 151, 1)
+    );
+
+}

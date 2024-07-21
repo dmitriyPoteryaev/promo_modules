@@ -9,9 +9,10 @@ import { FormInput } from '../../ui/form-input/form-input';
 import { Button } from 'src/ui/buttons/button/button';
 import Link from 'next/link';
 import LeftIcon from '../../ui/icon2/LeftIcon';
-import { formAPI } from "../../api/query-to-form";
 import { basketStore } from "../../store/index";
 import { observer } from "mobx-react-lite";
+import { Spin } from "antd";
+import Image from 'next/image';
 
 
 const regValue = /^(?:[a-z0-9!#$%&amp;'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&amp;'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])$/;
@@ -97,9 +98,7 @@ const { TextArea } = Input;
 
 export const FormExample = observer(() => {
 
-  const { postInfoFromForm } = formAPI;
-
-  const {  ArrayWithAllOrderPositionStore } =
+  const {  ArrayWithAllOrderPositionStore, isLoading, isOpenWindow, queryToFormStore, closeWindow } =
   basketStore;
 
   const { control, handleSubmit, formState: { errors } } = useForm({
@@ -117,15 +116,76 @@ export const FormExample = observer(() => {
     },
   })
 
+  console.log(isLoading, isOpenWindow)
+
   const onSubmit: SubmitHandler<FormFileds> = (data) => {
-    postInfoFromForm(data);
+    queryToFormStore(data);
 
   }
 
-  console.log(countryList().getData());
-
   return (
     <ClientLayout>
+     {isOpenWindow && <div
+      style={{backgroundColor: 'rgba(101, 94, 94, 0.5)', 
+        display: 'flex', 
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        width: '100%', 
+        position: 'fixed', 
+        zIndex: '10',
+        left: '0',
+        right: '0',
+        top: '0',
+        bottom: '0',
+         }}
+      >
+      <div className={classes.form_window} style={{backgroundColor: 'rgba(255, 255, 255, 0.95)', 
+        display: 'flex', 
+        flexDirection: 'column',
+        alignItems: 'center',
+        paddingTop: '48px',
+        maxWidth: '746px', 
+        width: '100%', 
+        position: 'relative'
+
+         }}>
+          <div style={{width: '100%', display: 'flex', justifyContent: "end"}}>   <Image onClick={closeWindow} style={{marginRight: '45px', cursor: 'pointer'}} width={15} height={15} src='/png/form/cross.svg' alt='cross'/></div>
+          <Image style={{marginBottom: '28px'}} width={172} height={172} src='/png/form/proveNotice.svg' alt='notice'/>
+        <header style={{marginBottom: '20px'}}>Request improved</header>
+        <div style={{textAlign: 'center', 
+          margin: 'auto', 
+          marginBottom: '37px',
+          fontSize: '20px', 
+          lineHeight: '28.79px', 
+          fontWeight: '400',
+          fontFamily: 'Istok-Regular',
+          paddingLeft: '76px',
+          paddingRight: '76px',}}>We'll get back to you within 24 hours. If the request was sent on a Friday or a weekend, please expect a response on Monday.</div>
+        <div  className={classes.form_ADakytec} style={{margin: 'auto', 
+          width: '100%', 
+          display: 'flex', 
+          alignItems: 'center', 
+          flexDirection: 'column',
+          justifyContent: 'space-between', 
+          paddingTop: '24px', 
+          paddingBottom: '43px'}}>
+        <header style={{fontSize: '28px', 
+          lineHeight: '37.72px', 
+          marginBottom: '33px', 
+          paddingTop: '0px', 
+          color: 'white',
+          maxWidth: '598px' }} className={classes.akytecAd_title}>Looking for even more quality items for your projects?</header>
+
+            <Button variant='magenta' size='large' >  
+            <Link style={{width: '100%'}} target="_blank" href='https://akytec.de/en/'>                 
+                        DISCOVER AKYTEC PRODUCTS
+                        </Link> 
+                    </Button>
+             
+        </div>
+        </div>
+      </div>}
       {ArrayWithAllOrderPositionStore.length === 0 ?
       <section style={{paddingBottom: '40px'}}><header className={classes.form_header} style={{textAlign: 'center'}}>You did not choose any positions</header></section>
       :<section style={{paddingBottom: '40px'}}>
@@ -191,7 +251,8 @@ export const FormExample = observer(() => {
             </div>
           </div>
           </div>
-          <Button size='medium' variant='magenta'type="submit" >REQUEST FOR QUOTE</Button>
+          <div style={{width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center'}}><Button size='medium' variant='magenta'type="submit" disabled={isLoading} >REQUEST FOR QUOTE</Button>
+          {isLoading && <div style={{marginLeft: '20px'}}>< Spin /></div>}</div>
         </form>
       </section>}
     </ClientLayout>

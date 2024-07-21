@@ -119,10 +119,10 @@ console.log(data);
       throw Error("Что пошло не так! Перезагрузите страницу");
 
     }
-    console.log(res_checkout.text());
+  //   console.log(res_checkout.text());
 
 
-  }
+   }
 
   catch (err: any) {
 
