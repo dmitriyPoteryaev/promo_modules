@@ -1,0 +1,22 @@
+@import "../../../assets/styles/mixins/mixins.scss";
+
+.modelSpecsBlock_header {
+
+    @include header-bold-60px;
+
+    margin: auto;
+    margin-top: 85px;
+    text-align: center;
+    color: #212529;
+    line-height: 57.6px;
+    font-family: 'Archivo-Narrow-Bold';
+
+}
+
+.modelSpecsBlock ul {
+
+    margin: auto;
+    max-width: 1135px;
+    width: 100%
+
+}
