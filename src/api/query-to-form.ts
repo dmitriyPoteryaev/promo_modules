@@ -71,8 +71,6 @@ let numericValueisGetInfo = isGetInfo ? 1 : 0;
 
 let numericValueiisGetNews = isGetNews ? 1 : 0;
 
-console.log(numericValueisGetInfo, numericValueiisGetNews);
-
     const checkoutFormData = new FormData();
     checkoutFormData.append('options', basketStore.MapOrderPositionToString);
     checkoutFormData.append("r4q[details][firstname]", firstName);
