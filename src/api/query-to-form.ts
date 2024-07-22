@@ -65,7 +65,7 @@ const postInfoFromForm = async (data) => {
 
     const {adress, city, company, country, email, firstName, lastName, quoteComments, telephone, zip, isGetInfo, isGetNews} = data;
 
-console.log(data);
+console.log('Ты здесь', data, company);
 
 let numericValueisGetInfo = isGetInfo ? 1 : 0;
 
