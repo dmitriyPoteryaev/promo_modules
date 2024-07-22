@@ -115,7 +115,7 @@ export const FormExample = observer(() => {
     },
   })
 
-  console.log(isLoading, isOpenWindow)
+  console.log(countryList().getData().map(elem => {return {value: elem.label, label: elem.label }}))
 
   const onSubmit: SubmitHandler<FormFileds> = (data) => {
     // console.log(data);
@@ -246,7 +246,7 @@ export const FormExample = observer(() => {
                 name="country"
                 control={control}
                 render={({ field }) => <Select showSearch  {...field} placeholder='Select here' optionFilterProp="label" style={{ width: '100%', backgroundColor: '#E3E3E3', height: '60px', marginTop: '43px' }}
-                  options={countryList().getData()}
+                  options={countryList().getData().map(elem => {return {value: elem.label, label: elem.label }})}
                 />}
               />
             </div>
