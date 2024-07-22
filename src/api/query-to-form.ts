@@ -63,7 +63,7 @@ const postInfoFromForm = async (data) => {
 
     // add product to cart
 
-    const {adress, city, company, country, email, firstName, lastName, quoteComments, state, telephone, zip, isGetInfo, isGetNews} = data;
+    const {adress, city, company, country, email, firstName, lastName, quoteComments, telephone, zip, isGetInfo, isGetNews} = data;
 
 console.log(data);
 
@@ -86,8 +86,8 @@ console.log(numericValueisGetInfo, numericValueiisGetNews);
     checkoutFormData.append('r4q[shipping][address]', adress);
     checkoutFormData.append('r4q[shipping][city]', city);
     checkoutFormData.append('r4q[shipping][postcode]', zip);
-    checkoutFormData.append('r4q[shipping][country]', state);
-    checkoutFormData.append('r4q[shipping][region]', state);
+    checkoutFormData.append('r4q[shipping][country]', country);
+    checkoutFormData.append('r4q[shipping][region]', country);
 
 
     const res_checkout = await fetch("https://akytec.de/en/request4quote/quote/send/", {
