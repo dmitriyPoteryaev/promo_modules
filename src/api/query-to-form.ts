@@ -63,9 +63,15 @@ const postInfoFromForm = async (data) => {
 
     // add product to cart
 
-    const {adress, city, company, country, email, firstName, lastName, quoteComments, state, telephone, zip} = data;
+    const {adress, city, company, country, email, firstName, lastName, quoteComments, state, telephone, zip, isGetInfo, isGetNews} = data;
 
 console.log(data);
+
+let numericValueisGetInfo = isGetInfo ? 1 : 0;
+
+let numericValueiisGetNews = isGetNews ? 1 : 0;
+
+console.log(numericValueisGetInfo, numericValueiisGetNews);
 
     const checkoutFormData = new FormData();
     checkoutFormData.append('options', basketStore.MapOrderPositionToString);
@@ -74,8 +80,8 @@ console.log(data);
     checkoutFormData.append('r4q[details][email]', email);
     checkoutFormData.append('r4q[details][telephone]', telephone);
     checkoutFormData.append('r4q[details][remark]', quoteComments);
-    checkoutFormData.append("r4q[billing][is_required]", '1');
-    checkoutFormData.append("r4q[shipping][is_required]", '0');
+    checkoutFormData.append("r4q[billing][is_required]", `${numericValueisGetInfo}`);
+    checkoutFormData.append("r4q[shipping][is_required]", `${numericValueiisGetNews}`);
     checkoutFormData.append('r4q[shipping][company]', company);
     checkoutFormData.append('r4q[shipping][address]', adress);
     checkoutFormData.append('r4q[shipping][city]', city);

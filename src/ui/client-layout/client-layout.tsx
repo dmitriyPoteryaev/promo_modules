@@ -40,11 +40,11 @@ export const ClientLayout: FC<ClientLayoutProps> = (props) => {
       name: "Mx Modifications",
 
     },
-    {
-      href: "/",
-      name: "More Info",
+    // {
+    //   href: "/",
+    //   name: "More Info",
 
-    },
+    // },
 
   ]
 

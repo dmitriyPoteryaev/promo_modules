@@ -1,7 +1,7 @@
 'use client'
 
 import { SubmitHandler, useForm, Controller } from 'react-hook-form';
-import { Input, Select } from 'antd';
+import { Input, Select, Checkbox } from 'antd';
 import { ClientLayout } from "../../ui/client-layout/client-layout";
 import classes from "./style/form.module.scss"
 import countryList from 'react-select-country-list'
@@ -92,6 +92,8 @@ type FormFileds = {
   city: string;
   adress: string;
   county: string;
+  isGetInfo: boolean;
+  isGetNews: boolean;
 };
 
 const { TextArea } = Input;
@@ -113,13 +115,16 @@ export const FormExample = observer(() => {
       zip: "",
       city: "",
       adress: "",
+      isGetInfo: false,
+      isGetNews: false,
     },
   })
 
   console.log(isLoading, isOpenWindow)
 
   const onSubmit: SubmitHandler<FormFileds> = (data) => {
-    queryToFormStore(data);
+    console.log(data);
+    // queryToFormStore(data);
 
   }
 
@@ -202,7 +207,7 @@ export const FormExample = observer(() => {
         </button>
         <span>Your choise</span></div></header>
         <form onSubmit={handleSubmit(onSubmit)} style={{ display: 'flex', flexWrap:'wrap', maxWidth: '1138px', width: '100%', marginBottom: '30px', justifyContent: 'center', margin: 'auto' }}>
-          <div style={{width: '100%', display: 'flex', justifyContent: 'space-between', marginBottom: '56px'}}>
+          <div style={{width: '100%', display: 'flex', justifyContent: 'space-between', marginBottom: '56px', flexWrap: 'wrap'}}>
           <div style={{ width: '40%' }}>
             {leftSideInputs.map((inputInfo) => {
 
@@ -250,6 +255,23 @@ export const FormExample = observer(() => {
               />
             </div>
           </div>
+          <label style={{width: '100%', marginTop: '52px', display: 'flex', justifyContent: 'center'}}>
+            <Controller
+              name="isGetInfo"
+              control={control}
+              render={({ field }) => <Checkbox {...field} />}
+            />
+            <div style={{fontSize: '16px', marginLeft: '21px'}}>Please, call me, I would like to obtain further information about this product.</div>
+          </label>
+          <label style={{width: '100%', marginTop: '5px', display: 'flex', justifyContent: 'center'}}>
+            <Controller
+              name="isGetNews"
+              control={control}
+              render={({ field }) => <Checkbox {...field} />}
+            />
+            <div style={{fontSize: '16px', marginLeft: '21px'}}>Yes, I would like to receive company news, notifications of new products, invitations tp webinars, etc.</div>
+          </label>
+
           </div>
           <div style={{width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center'}}><Button size='medium' variant='magenta'type="submit" disabled={isLoading} >REQUEST FOR QUOTE</Button>
           {isLoading && <div style={{marginLeft: '20px'}}>< Spin /></div>}</div>

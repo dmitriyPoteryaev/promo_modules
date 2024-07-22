@@ -3,7 +3,7 @@
 "modules": [
     {
         "certain_name": "MV210-202",
-        "common_name": "DIGITAL INPUT MODULE",
+        "common_name": "DIGITAL INPUT up to 100 kHz",
         "DI": 20,
         "DO": null,
         "AI": null,
@@ -16,7 +16,7 @@
     },
     {
         "certain_name": "MV210-204",
-        "common_name": "DIGITAL INPUT MODULE",
+        "common_name": "DIGITAL INPUT up to 400 Hz",
         "DI": 20,
         "DO": null,
         "AI": null,
@@ -29,7 +29,7 @@
     },
     {
         "certain_name": "MV210-212",
-        "common_name": "DIGITAL INPUT MODULE",
+        "common_name": "DIGITAL INPUT up to 100 kHz",
         "DI": 32,
         "DO": null,
         "AI": null,
@@ -42,7 +42,7 @@
     },
     {
         "certain_name": "MV210-214",
-        "common_name": "DIGITAL INPUT MODULE",
+        "common_name": "DIGITAL INPUT up to 400 Hz",
         "DI": 32,
         "DO": null,
         "AI": null,
@@ -55,7 +55,7 @@
     },
     {
         "certain_name": "MV210-221",
-        "common_name": "DIGITAL INPUT MODULE",
+        "common_name": "DIGITAL INPUT up to 400 Hz",
         "DI": 15,
         "DO": null,
         "AI": null,
@@ -68,7 +68,7 @@
     },
     {
         "certain_name": "MK210-311",
-        "common_name": "INPUT & OUTPUT MODULE",
+        "common_name": "INPUT & OUTPUT",
         "DI": 6,
         "DO": 8,
         "AI": null,
@@ -81,7 +81,7 @@
     },
     {
         "certain_name": "MK210-312",
-        "common_name": "INPUT & OUTPUT MODULE",
+        "common_name": "INPUT & OUTPUT",
         "DI": 12,
         "DO": 4,
         "interface_connection": "Ethenet",
@@ -92,7 +92,7 @@
     },
     {
         "certain_name": "MU210-401",
-        "common_name": "DIGITAL OUTPUT MODULE",
+        "common_name": "DIGITAL OUTPUT (NO relays)",
         "DI": null,
         "DO": 8,
         "AI": null,
@@ -105,7 +105,7 @@
     },
     {
         "certain_name": "MU210-402",
-        "common_name": "DIGITAL OUTPUT MODULE",
+        "common_name": "DIGITAL OUTPUT (NO relays)",
         "DI": null,
         "DO": 16,
         "AI": null,
@@ -118,7 +118,7 @@
     },
     {
         "certain_name": "MU210-412",
-        "common_name": "DIGITAL OUTPUT MODULE",
+        "common_name": "DIGITAL OUTPUT (NPN)",
         "DI": null,
         "DO": 24,
         "AI": null,
@@ -131,7 +131,7 @@
     },
     {
         "certain_name": "MU210-502",
-        "common_name": "ANALOG OUTPUT MODULE",
+        "common_name": "ANALOG OUTPUT",
         "DI": null,
         "DO": null,
         "AI": null,
@@ -144,7 +144,7 @@
     },
     {
         "certain_name": "MV210-101",
-        "common_name": "DIGITAL OUTPUT MODULE",
+        "common_name": "ANALOG INPUT",
         "DI": null,
         "DO": null,
         "AI": 8,
@@ -153,21 +153,7 @@
         "image": "/png/main/modification/Mx210/MV210-101.png",
         "width": 228.03,
         "height": 221.73,
-        "href": "/"
-    }
-    ,
-    {
-        "certain_name": "MU210-403",
-        "common_name": "DIGITAL OUTPUT MODULE",
-        "DI": null,
-        "DO": 16,
-        "AI": null,
-        "AO": null,
-        "interface_connection": "Ethenet",
-        "image": "/png/main/modification/Mx210/MU210-402.png",
-        "width": 228.03,
-        "height": 223.73,
-        "href": "/"
+        "href": "https://akytec.de/media/wysiwyg/downloads/MX210/MV210-101/UG_MV210-101_3-EN-31755-2.5.pdf"
     }
 
 
