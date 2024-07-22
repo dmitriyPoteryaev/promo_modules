@@ -13,6 +13,7 @@ import { basketStore } from "../../store/index";
 import { observer } from "mobx-react-lite";
 import { Spin } from "antd";
 import Image from 'next/image';
+import classesInput from "../../ui/form-input/styles/form_input.module.scss"
 
 
 const regValue = /^(?:[a-z0-9!#$%&amp;'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&amp;'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])$/;
@@ -37,10 +38,6 @@ const rightSideInputs = [
   {
     name: 'zip',
     placeholder: 'Zip/Postal Code',
-  },
-  {
-    name: 'country',
-    placeholder: 'Country',
   },
 
 ];
@@ -87,7 +84,6 @@ type FormFileds = {
   telephone: string;
   quoteComments: string;
   country: string;
-  state: string;
   zip: string;
   city: string;
   adress: string;
@@ -109,7 +105,6 @@ export const FormExample = observer(() => {
       email: "",
       lastName: "",
       telephone: "",
-      state: "",
       country: "",
       quoteComments: "",
       zip: "",
@@ -123,8 +118,8 @@ export const FormExample = observer(() => {
   console.log(isLoading, isOpenWindow)
 
   const onSubmit: SubmitHandler<FormFileds> = (data) => {
-    console.log(data);
-    // queryToFormStore(data);
+    // console.log(data);
+    queryToFormStore(data);
 
   }
 
@@ -246,8 +241,9 @@ export const FormExample = observer(() => {
               />)
             })}
             <div style={{ position: 'relative' }}>
+            <span className={classesInput.formInput_country} style={{ top: '-20px', marginTop: '43px', position: 'absolute', zIndex: '3'}}>Country</span>
               <Controller
-                name="state"
+                name="country"
                 control={control}
                 render={({ field }) => <Select showSearch  {...field} placeholder='Select here' optionFilterProp="label" style={{ width: '100%', backgroundColor: '#E3E3E3', height: '60px', marginTop: '43px' }}
                   options={countryList().getData()}
@@ -267,6 +263,7 @@ export const FormExample = observer(() => {
             <Controller
               name="isGetNews"
               control={control}
+              
               render={({ field }) => <Checkbox {...field} />}
             />
             <div style={{fontSize: '16px', marginLeft: '21px'}}>Yes, I would like to receive company news, notifications of new products, invitations tp webinars, etc.</div>

@@ -1,6 +1,6 @@
 @import "../../..//assets/styles/mixins/mixins.scss";
 
-.form_input span{
+.form_input span, .formInput_country{
 
     @include text-bold-16px;
 
@@ -17,3 +17,4 @@
     color: #CD3D64;
 
 }
+
