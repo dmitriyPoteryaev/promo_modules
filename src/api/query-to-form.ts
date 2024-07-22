@@ -85,7 +85,6 @@ let numericValueiisGetNews = isGetNews ? 1 : 0;
     checkoutFormData.append('r4q[shipping][city]', city);
     checkoutFormData.append('r4q[shipping][postcode]', zip);
     checkoutFormData.append('r4q[shipping][country]', country);
-    checkoutFormData.append('r4q[shipping][region]', country);
 
 
     const res_checkout = await fetch("https://akytec.de/en/request4quote/quote/send/", {
