@@ -22,7 +22,7 @@ const rightSideInputs = [
 
   {
     required: {
-      required: 'County is required',
+      required: 'Company is required',
     },
     name: 'company',
     placeholder: 'Company',
@@ -114,8 +114,6 @@ export const FormExample = observer(() => {
       isGetNews: false,
     },
   })
-
-  console.log(countryList().getData().map(elem => {return {value: elem.label, label: elem.label }}))
 
   const onSubmit: SubmitHandler<FormFileds> = (data) => {
     // console.log(data);
@@ -240,13 +238,13 @@ export const FormExample = observer(() => {
                 placeholder={placeholder}
               />)
             })}
-            <div style={{ position: 'relative' }}>
+             <div style={{ position: 'relative' }}>
             <span className={classesInput.formInput_country} style={{ top: '-20px', marginTop: '43px', position: 'absolute', zIndex: '3'}}>Country</span>
               <Controller
                 name="country"
                 control={control}
                 render={({ field }) => <Select showSearch  {...field} placeholder='Select here' optionFilterProp="label" style={{ width: '100%', backgroundColor: '#E3E3E3', height: '60px', marginTop: '43px' }}
-                  options={countryList().getData().map(elem => {return {value: elem.label, label: elem.label }})}
+                  options={countryList().getData()}
                 />}
               />
             </div>
