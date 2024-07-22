@@ -3,8 +3,8 @@ import type { Metadata } from 'next';
 import '../assets/styles/base/base.scss';
 
 export const metadata: Metadata = {
-  title: 'React App',
-  description: 'Web site created...',
+  title: 'Akytec-promo-modules',
+  description: 'Akytec-promo-modules',
 }
 
 export default function RootLayout({
