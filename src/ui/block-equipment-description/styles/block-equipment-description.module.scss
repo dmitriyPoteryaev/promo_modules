@@ -1,0 +1,63 @@
+@import '../../../assets//styles/mixins/mixins.scss';
+
+.equipmentBlock {
+    
+
+    margin: auto;
+    margin-bottom: 40px;
+    max-width: 1135px;
+    width: 100%;
+    border: 1px solid #DEDEDE;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center
+
+}
+
+.table_equipment {
+
+    margin: auto;
+    max-width: 1135px;
+    width: 100%;
+    border-collapse: collapse;
+    transition: all 1s ease 0s;
+}
+
+.table_equipment tbody tr th, .table_equipment thead tr th {
+
+    @include text-regular-14px;
+
+    padding: 4px;
+    line-height: 14px;
+    font-weight: 400;
+    font-family: 'Istok-Regular';
+
+}
+
+.table_equipment tbody tr th div{
+
+    @include text-regular-14px;
+
+    line-height: 14px;
+    font-weight: 400;
+    font-family: 'Istok-Regular';
+
+}
+
+.notVisible {
+  
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(0%, -50%);
+}
+
+.visible {
+
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0px, 0%);
+
+}
+
+

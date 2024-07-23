@@ -1,11 +1,11 @@
-import React from "react";
+'use client'
+import React, {useState} from "react";
 import classes from './styles/models-specs.module.scss';
 import { ClientLayout } from "../../ui/client-layout/client-layout";
 import {BlockEquipmentDescription} from "../../ui/block-equipment-description/block-equipment-description"
-
+import * as  moduleInfo from './module.json';
 
 export const  ModelsSpecs = () => {
-
     const equipmentInfo = [
 
         {
@@ -13,33 +13,44 @@ export const  ModelsSpecs = () => {
             img: '/png/main/Oppotunities/Mx210/Mx210.png',
             width: 154.03,
             height: 154.03,
+            fullDescription: moduleInfo["Mx210"],
+
         },
         {
             name: "Mx110",
             img: '/png/main/Oppotunities/Mx110/Mx110.png',
             width: 166.48,
             height: 157.49,
+            fullDescription: moduleInfo["Mx210"],
         },
         {
             name: "akytec Tool Pro",
             img: '/png/main/Oppotunities/Tool-pro/akYtec-Tool-Pro.png',
             width: 168.41,
             height: 168.41,
+            fullDescription: moduleInfo["Mx210"],
         },
     ]
-     
+
+    const [visonEquipment, setVisonEquipment] = useState({
+        Mx210: false,
+        Mx110: false,
+        "akytec Tool Pro": false,
+    })
+
+
 
     return(
         <ClientLayout>
     <section className={classes.modelSpecsBlock}>
         <header className={classes.modelSpecsBlock_header}>Models & specs</header>
-        <ul>
-        {equipmentInfo.map((equipment) => {
+        <div style={{marginTop: '49px'}}>
+        {Object.values(equipmentInfo).map((equipment) => {
 
-       return(<BlockEquipmentDescription equipment={equipment}/> )
+       return(<BlockEquipmentDescription equipment={equipment} visonEquipment={visonEquipment} setVisonEquipment={setVisonEquipment}/> )
         })}
 
-        </ul>
+        </div>
 
     </section>
     </ClientLayout>)
