@@ -110,6 +110,33 @@ let numericValueiisGetNews = isGetNews ? 1 : 0;
       "credentials": "include"
     });
     console.log(res_checkout);
+    
+
+
+    const res_crm = await fetch("https://akytec.de/de/request4quote/quote/success/", {
+      "headers": {
+        "accept": "*/*",
+        "accept-language": "en-US,en;q=0.9,uk;q=0.8",
+        "cache-control": "no-cache",
+        "pragma": "no-cache",
+        "priority": "u=1, i",
+        "sec-ch-ua": "\"Google Chrome\";v=\"125\", \"Chromium\";v=\"125\", \"Not.A/Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "sec-fetch-dest": "empty",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-site": "same-origin",
+      },
+
+      "referrer": "https://promo-modules.akytec.de/",
+      "referrerPolicy": "strict-origin-when-cross-origin",
+      "body": checkoutFormData,
+      "method": "POST",
+      "mode": "no-cors",
+      "credentials": "include"
+    });
+    console.log("res_crm", res_crm);
+    
     if (res_checkout.status == 200) {
 
       console.log("All was went susscesfully");
