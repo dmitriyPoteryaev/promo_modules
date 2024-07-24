@@ -45,8 +45,21 @@
 
 }
 
+.table_equipment tbody tr th button{
+
+    @include text-regular-14px;
+
+    font-size: 14px;
+    line-height: 18.86px;
+    font-weight: 700;
+    font-family: 'Archivo-Narrow-Bold';
+    color: #00A197;
+
+}
+
 .notVisible {
   
+    display: none;
     opacity: 0;
     visibility: hidden;
     transform: translate(0%, -50%);
@@ -54,10 +67,30 @@
 
 .visible {
 
+    display: block;
     opacity: 1;
     visibility: visible;
     transform: translate(0px, 0%);
 
 }
 
+.ordereButton_true, .ordereButton_false {
+
+border: 1px solid #00A197 ;
+border-top: 0px solid transparent;
+
+}
+
+
+.ordereButton_true:hover {
+
+    background-color:#BFBFBF ;
+
+}
+
+.ordereButton_true:hover button{
+
+    color: white;
+
+}
 

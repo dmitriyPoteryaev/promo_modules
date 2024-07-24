@@ -4,8 +4,16 @@ import classes from './styles/models-specs.module.scss';
 import { ClientLayout } from "../../ui/client-layout/client-layout";
 import {BlockEquipmentDescription} from "../../ui/block-equipment-description/block-equipment-description"
 import * as  moduleInfo from './module.json';
+import { basketStore } from "../../store/index";
+import { observer } from "mobx-react-lite";
 
-export const  ModelsSpecs = () => {
+
+export const  ModelsSpecs = observer(() => {
+
+    
+  const { ChangeArrayWithAllOrderPosition, ArrayWithAllOrderPositionStore } =
+  basketStore;
+
     const equipmentInfo = [
 
         {
@@ -47,7 +55,7 @@ export const  ModelsSpecs = () => {
         <div style={{marginTop: '49px'}}>
         {Object.values(equipmentInfo).map((equipment) => {
 
-       return(<BlockEquipmentDescription equipment={equipment} visonEquipment={visonEquipment} setVisonEquipment={setVisonEquipment}/> )
+       return(<BlockEquipmentDescription ArrayWithAllOrderPositionStore={ArrayWithAllOrderPositionStore} ChangeArrayWithAllOrderPosition={ChangeArrayWithAllOrderPosition} equipment={equipment} visonEquipment={visonEquipment} setVisonEquipment={setVisonEquipment}/> )
         })}
 
         </div>
@@ -55,4 +63,4 @@ export const  ModelsSpecs = () => {
     </section>
     </ClientLayout>)
 
-}
+})
