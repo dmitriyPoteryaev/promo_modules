@@ -6,7 +6,7 @@ import {BlockEquipmentDescription} from "../../ui/block-equipment-description/bl
 import * as  moduleInfo from './module.json';
 import { basketStore } from "../../store/index";
 import { observer } from "mobx-react-lite";
-
+ 
 
 export const  ModelsSpecs = observer(() => {
 
@@ -21,7 +21,7 @@ export const  ModelsSpecs = observer(() => {
             img: '/png/main/Oppotunities/Mx210/Mx210.png',
             width: 154.03,
             height: 154.03,
-            fullDescription: moduleInfo["Mx210"],
+            FullDescription: moduleInfo["Mx210"],
 
         },
         {
@@ -29,14 +29,14 @@ export const  ModelsSpecs = observer(() => {
             img: '/png/main/Oppotunities/Mx110/Mx110.png',
             width: 166.48,
             height: 157.49,
-            fullDescription: moduleInfo["Mx210"],
+            FullDescription: moduleInfo["Mx110"],
         },
         {
             name: "akytec Tool Pro",
             img: '/png/main/Oppotunities/Tool-pro/akYtec-Tool-Pro.png',
             width: 168.41,
             height: 168.41,
-            fullDescription: moduleInfo["Mx210"],
+            FullDescription: "",
         },
     ]
 
@@ -45,7 +45,6 @@ export const  ModelsSpecs = observer(() => {
         Mx110: false,
         "akytec Tool Pro": false,
     })
-
 
 
     return(

@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Pdf from '../icon2/Pdf';
 import { getClasses } from './styles/get-classes';
+import {SpecsToolPro} from "../../modules/models-specs/specs-tool-pro/specs-tool-pro"
 
 
 import * as  modulesInfoMx110 from '../../modules/main/modifications_Mx110/modulesInfo.json';
@@ -13,7 +14,7 @@ import * as  modulesInfoMx210 from '../../modules/main/modifications_Mx210/modul
 
 // const Table = (props) => {
 
-//     const {fullDescription} = props;
+//     const {FullDescription} = props;
 
 //    return <table className={classes.table_equipment}>
 //     <thead >
@@ -30,7 +31,7 @@ import * as  modulesInfoMx210 from '../../modules/main/modifications_Mx210/modul
 //     </thead>
 //     <tbody>
   
-//         {Object.values(fullDescription).map((modulePosition: any, ) => {
+//         {Object.values(FullDescription).map((modulePosition: any, ) => {
 
          
 // return <>
@@ -73,7 +74,7 @@ import * as  modulesInfoMx210 from '../../modules/main/modifications_Mx210/modul
 export const BlockEquipmentDescription = (props) => {
     const {equipment, visonEquipment, setVisonEquipment, ChangeArrayWithAllOrderPosition, ArrayWithAllOrderPositionStore} = props;
 
-    const  {name, img, width, height, fullDescription} = equipment;
+    const  {name, img, width, height, FullDescription} = equipment;
 
 //     const { token } = theme.useToken();
 
@@ -92,13 +93,13 @@ export const BlockEquipmentDescription = (props) => {
 //     {
 //       key: '1',
 //       label: 'This is panel header 1',
-//       children: <Table fullDescription={fullDescription}/>,
+//       children: <Table FullDescription={FullDescription}/>,
 //       style: panelStyle,
 //     },
 //     {
 //       key: '2',
 //       label: 'This is panel header 2',
-//       children: <Table fullDescription={fullDescription}/>,
+//       children: <Table FullDescription={FullDescription}/>,
 //       style: panelStyle,
 //     },
 //     {
@@ -116,8 +117,6 @@ export const BlockEquipmentDescription = (props) => {
 //     border: 'none',
 //   };
 
-console.log(ArrayWithAllOrderPositionStore[name]);
-
 
     return (
     <div style={{ width: '100%', maxWidth: '1135px', margin: 'auto', marginBottom: '40px'}}>
@@ -125,6 +124,10 @@ console.log(ArrayWithAllOrderPositionStore[name]);
             <div style={{borderRight: '1px solid #DEDEDE', width: '20%'}}><Image width={width} height={height} src={img} alt=''/></div>
             <div>{name}</div>
         </div>
+         {name === "akytec Tool Pro"
+ ? <SpecsToolPro className={cnContainerBlockEquipment}/>
+         
+ :
          <table className={cnContainerBlockEquipment}>
     <thead >
         <tr >
@@ -140,7 +143,7 @@ console.log(ArrayWithAllOrderPositionStore[name]);
     </thead>
     <tbody>
   
-        {Object.values(fullDescription).map((modulePosition: any, ) => {
+        {Object.values(FullDescription).map((modulePosition: any, ) => {
 
          
 return <>
@@ -175,7 +178,7 @@ return <>
                 </>})}
     
     </tbody>
-</table>
+</table>}
 </div>)
 
 {/* <Collapse
