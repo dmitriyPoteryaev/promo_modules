@@ -29,7 +29,7 @@ export const ModuleAdAboutModBus: FC = () => {
                         <li>DIN-rail & wall mounting</li>
                         <li>Free and easy-to-use software for configuring modules</li>
                     </ul>
-                    <Link href='/#modification'>
+                    <Link href='/moreInfo'>
                     <Button variant='magenta' size='large' >                   
                     EXPLORE MODELS &amp; SPECS
                 </Button></Link> 
@@ -53,7 +53,7 @@ export const ModuleAdDeployment: FC = () => {
                     <header>Flexible Deployment with Daisy Chain Networking and <br/> Auto-Bypass Protection</header>
                     <p className={classes.description_Mx210}>Daisy chain connectivity offers flexible cabling and space saving capabilities. With Ethernet auto-bypass
                         function supported to prevent accidental power failures if one of the modules unexpectedly shuts down.</p>
-                        <Link href='/#modification'>
+                        <Link href='/moreInfo'>
                         <Button variant='magenta' size='large' >                   
                         EXPLORE MODELS &amp; SPECS
                      </Button></Link>

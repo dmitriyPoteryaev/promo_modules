@@ -16,7 +16,7 @@ export const Modifications_Mx110 = observer(() => {
   basketStore;
 
     return (<section style={{paddingBottom: '143px'}} className={classes.moidificationBlock}>
-      <header className={classes.moidificationBlock_title}>Mx110 modifications</header>
+      <header className={classes.moidificationBlock_title}>Mx110 with RS485</header>
       <div style={{width: '100%',maxWidth: '1162px', textAlign: 'left', fontSize: '20px', marginBottom: '9px'}}>Number of inputs/outputs:</div>
       <div  className={classes.moidificationBlock_listCheckbox}>
       <div>
