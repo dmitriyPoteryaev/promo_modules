@@ -1,0 +1,63 @@
+.AkytecToolPro_header {
+
+
+    font-size: 20px;
+    line-height: 28.79px;
+    font-weight: 700;
+    font-family: 'Istok-Regular-Bold';
+    color: #00A197;
+
+
+}
+
+.AkytecToolPro_writting div{
+
+
+    font-size: 14px;
+    line-height: 20.15px;
+    font-weight: 400;
+    font-family: 'Istok-Regular';
+    color: #212529;
+
+
+}
+
+.AkytecToolPro_equipmnet {
+
+    margin: auto;
+    max-width: 1135px;
+    width: 100%;
+    transition: all 1s ease 0s;
+}
+
+.notVisible {
+  
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(0%, -50%);
+}
+
+.visible {
+
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0px, 0%);
+
+}
+@media screen and (max-width: 1135px) {
+
+    .AkytecToolPro_equipmnet {
+
+        margin: auto;
+        max-width: unset !important;
+        overflow-x: auto;
+    }
+
+    .AkytecToolPro_wrapper {
+        min-width: 1135px;
+        
+    }
+        
+}  

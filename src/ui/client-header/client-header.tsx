@@ -46,7 +46,7 @@ export const ClientHeader: FC<ClientHeaderProps> = observer((props) => {
                     </nav>
                 </div>
                 <div>
-                    {/* <Link href={"/"}>More Info</Link> */}
+                     <Link href={"/moreInfo"}>More Info</Link> 
                     <ShoppingButton
                         changeVisibilityModal={changeVisibilityModal}
                         isEmptyBasket={isEmptyBasket}

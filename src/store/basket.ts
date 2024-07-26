@@ -189,6 +189,7 @@ let numericValueiisGetNews = isGetNews ? 1 : 0;
   }
 
   ChangeArrayWithAllOrderPosition = (obj: any) => {
+    console.log(obj);
 
     if( this.ArrayWithAllOrderPositionStore.some((orderedModification: any) => obj.certain_name === orderedModification.certain_name)){
 

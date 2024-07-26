@@ -22,6 +22,10 @@
   @include font($size: 20px, $weight: 400, $lineHeight: 24px);
 }
 
+@mixin header-bold-28px {
+  @include font($size: 28px, $weight: 700, $lineHeight: 32px);
+}
+
 @mixin header-regular-bold-20px {
   @include font($size: 20px, $weight: 700, $lineHeight: 27px);
 }

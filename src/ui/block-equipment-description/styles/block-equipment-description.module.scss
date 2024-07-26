@@ -1,0 +1,113 @@
+@import '../../../assets//styles/mixins/mixins.scss';
+
+.equipmentBlock {
+    
+
+    margin: auto;
+    margin-bottom: 40px;
+    max-width: 1135px;
+    width: 100%;
+    border: 1px solid #DEDEDE;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center
+
+}
+
+.table_equipment {
+
+    margin: auto;
+    max-width: 1135px;
+    width: 100%;
+    border-collapse: collapse;
+    transition: all 1s ease 0s;
+}
+
+.table_equipment tbody tr th, .table_equipment thead tr th {
+
+    @include text-regular-14px;
+
+    padding: 4px;
+    line-height: 14px;
+    font-weight: 400;
+    font-family: 'Istok-Regular';
+
+}
+
+.table_equipment tbody tr th div{
+
+    @include text-regular-14px;
+
+    line-height: 14px;
+    font-weight: 400;
+    font-family: 'Istok-Regular';
+
+}
+
+.table_equipment tbody tr th button{
+
+    @include text-regular-14px;
+
+    font-size: 14px;
+    line-height: 18.86px;
+    font-weight: 700;
+    font-family: 'Archivo-Narrow-Bold';
+    color: #00A197;
+
+}
+
+.notVisible {
+  
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(0%, -50%);
+}
+
+.visible {
+
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0px, 0%);
+
+}
+
+.ordereButton_true, .ordereButton_false {
+
+border: 1px solid #00A197 ;
+border-top: 0px solid transparent;
+
+}
+
+
+.ordereButton_true:hover {
+
+    background-color:#BFBFBF ;
+
+}
+
+.ordereButton_true:hover button{
+
+    color: white;
+
+}
+
+
+@media screen and (max-width: 1135px) {
+
+    .table_equipment {
+
+        margin: auto;
+        max-width: unset !important;
+        width: 100%;
+        min-width: 1135px;
+    }
+
+    .tableWrapper {
+        overflow-x: auto;
+        
+    }
+        
+}  

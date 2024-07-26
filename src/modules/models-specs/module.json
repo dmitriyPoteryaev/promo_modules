@@ -1,0 +1,235 @@
+{  "Mx210":{
+
+    "MV210": {
+        "MV210-101": {
+            "Digital inputs": "",
+            "Digital outputs": "",
+            "Analog inputs": "8",
+            "Analog outputs": "",
+            "Properties": ["Inputs: RTD, TC, 0-5 mA, 0(4)-20 mA, 0-1 V, 0...(2)5 kohm"],
+            "Download": "https://akytec.de/media/wysiwyg/downloads/MX210/MV210-101/UG_MV210-101_3-EN-31755-2.5.pdf",
+            "Buy": "ADD TO CART"
+        },
+        "MV210-202": {
+            "Digital inputs": "20",
+            "Digital outputs": "",
+            "Analog inputs": "",
+            "Analog outputs": "",
+            "Properties": ["Inputs: switch contacts, NPN/PNP sensors, pulse counters",  "(24 V DC external power supply, measuring frequency up to 100 kHz)"],
+            "Download": "https://akytec.de/media/wysiwyg/downloads/MX210/MV210-2xx/UG_MV210-202-204_3-EN-43057-2.10.pdf",
+            "Buy": "ADD TO CART"
+        },
+        "MV210-204": {
+            "Digital inputs": "20",
+            "Digital outputs": "",
+            "Analog inputs": "",
+            "Analog outputs": "",
+            "Properties": ["Inputs: switch contacts (no external power supply required),",  "NPN sensors, pulse counters (24 V DC external power supply,", "measuring frequency up to 400 Hz)"],
+            "Download": "https://akytec.de/media/wysiwyg/downloads/MX210/MV210-2xx/UG_MV210-202-204_3-EN-43057-2.10.pdf",
+            "Buy": "ADD TO CART"
+        },
+        "MV210-212": {
+            "Digital inputs": "32",
+            "Digital outputs": "",
+            "Analog inputs": "",
+            "Analog outputs": "",
+            "Properties": ["Inputs: switch contacts, NPN/PNP sensors, pulse counters", "(24 V DC external power supply, measuring frequency up to 100 kHz)"],
+            "Download": "https://akytec.de/media/wysiwyg/downloads/MX210/MV210-2xx/UG_MV210-212-214_3-EN-59115-2.3.pdf",
+            "Buy": "ADD TO CART"
+        },
+        "MV210-214": {
+            "Digital inputs": "32",
+            "Digital outputs": "",
+            "Analog inputs": "",
+            "Analog outputs": "",
+            "Properties": ["Inputs: switch contacts (no external power supply required),", "NPN sensors, pulse counters (24 V DC external power supply,", "measuring frequency up to 400 Hz)"],
+            "Download": "https://akytec.de/media/wysiwyg/downloads/MX210/MV210-2xx/UG_MV210-212-214_3-EN-59115-2.3.pdf",
+            "Buy": "ADD TO CART"
+        },
+        "MV210-221": {
+            "Digital inputs": "15",
+            "Digital outputs": "",
+            "Analog inputs": "",
+            "Analog outputs": "",
+            "Properties": ["6 inputs: switch contacts (no external power supply required), NPN", "sensors, pulse counters (24 V DC external power supply, measuring", "frequency up to 400 Hz). 9 inputs: AC 230V"],
+            "Download": "https://akytec.de/media/wysiwyg/downloads/MX210/MV210-2xx/UG_MV210-221_3-EN-38998-2.2.pdf",
+            "Buy": "ADD TO CART"
+        }
+    },
+    "MK210": {
+        "MK210-311": {
+            "Digital inputs": "6",
+            "Digital outputs": "8",
+            "Analog inputs": "",
+            "Analog outputs": "",
+            "Properties": ["Inputs: switch contacts (no external power supply required), NPN sensors;", "Outputs: relays (NO), 5 A at 250 VAC, cos  > 0.4 or 3 A at 30 VDC"],
+            "Download": "https://akytec.de/media/wysiwyg/downloads/MX210/MK210-311/UG_МК210-301-311_3-EN-25165-2.6.pdf",
+            "Buy": "ADD TO CART"
+        },
+        "MK210-312": {
+            "Digital inputs": "12",
+            "Digital outputs": "4",
+            "Analog inputs": "",
+            "Analog outputs": "",
+            "Properties": ["Inputs: switch contacts (24 V DC external power supply),", "NPN/PNP sensors; Outputs: relays (NO),", "5 A at 250 VAC, cos > 0.4 or 3 A at 30 VDC"],
+            "Download": "https://akytec.de/media/wysiwyg/downloads/MX210/MK210-312/UG_MK210-302-312_3-EN-38929-2.4.pdf",
+            "Buy": "ADD TO CART"
+        }
+       
+    },
+    "MU210": {
+        "MU210-401": {
+            "Digital inputs": "8",
+            "Digital outputs": "",
+            "Analog inputs": "",
+            "Analog outputs": "",
+            "Properties": ["Outputs: relays (NO) 5 A at 250 VAC, cos > 0.4 or 3 A at 30 VDC"],
+            "Download": "https://akytec.de/media/wysiwyg/downloads/MX210/MU210-40x/UG_MU210-401_3-EN-43201-2.3.pdf",
+            "Buy": "ADD TO CART"
+        },
+        "MU210-402": {
+            "Digital inputs": "16",
+            "Digital outputs": "",
+            "Analog inputs": "",
+            "Analog outputs": "",
+            "Properties": ["Outputs: relays (NO) 5 A at 250 VAC, cos > 0.4 or 3 A at 30 VDC"],
+            "Download": "https://akytec.de/media/wysiwyg/downloads/MX210/MU210-40x/UG_MU210-402_3-EN-47647-2.2.pdf",
+            "Buy": "ADD TO CART"
+        },
+        "MU210-412": {
+            "Digital inputs": "24",
+            "Digital outputs": "",
+            "Analog inputs": "",
+            "Analog outputs": "",
+            "Properties": ["Outputs: NPN transistors; 150 mA, 36 V DC (DO1…DO8)", "and 400 mA, 36 V DC (DO9…DO24)"],
+            "Download": "https://akytec.de/media/wysiwyg/downloads/MX210/MU210-40x/UG_MU210‐412_3-EN-125356-1.4.pdf",
+            "Buy": "ADD TO CART"
+        },
+        "MU210-502": {
+            "Digital inputs": "",
+            "Digital outputs": "",
+            "Analog inputs": "",
+            "Analog outputs": "6",
+            "Properties": ["Outputs: 0(4)...20 mA, 0...(1)10 V, accuracy 0.5 %"],
+            "Download": "https://akytec.de/media/wysiwyg/downloads/MX210/MU210-502/UG_MU210-502_3-EN-122423-1.9.pdf",
+            "Buy": "ADD TO CART"
+        }
+       
+    }
+
+},
+"Mx110":{
+
+    "MV110": {
+        "MV110-24.8A": {
+            "Digital inputs": "",
+            "Digital outputs": "",
+            "Analog inputs": "8",
+            "Analog outputs": "",
+            "Properties": ["Inputs: RTD, TC, 0-5 mA, 0(4)-20 mA, 0-1 V,",  "25...900(2000) ohm, switch contacts"],
+            "Download": "https://akytec.de/media/wysiwyg/downloads/MX110/MV110-8A/User%20guide_MV110-8A_2019.08_0288_EN.pdf",
+            "Buy": "ADD TO CART"
+        },
+        "MV110-24.8AS": {
+            "Digital inputs": "",
+            "Digital outputs": "",
+            "Analog inputs": "8",
+            "Analog outputs": "",
+            "Properties": ["'Fast' inputs: 0(4)-20 mA, 0-5 mA, 0-10 V,",  "measuring frequency up to 200 Hz"],
+            "Download": "https://akytec.de/media/wysiwyg/downloads/MX110/MV110-8AS/User%20guide_MV110-8AS_2019.08_0226_EN.pdf",
+            "Buy": "ADD TO CART"
+        },
+        "MV110-24.16D": {
+            "Digital inputs": "16",
+            "Digital outputs": "",
+            "Analog inputs": "",
+            "Analog outputs": "",
+            "Properties": ["Inputs: switch contacts (no external power supply", "required), NPN sensors, pulse counters (24 V DC", "external power supply, measuring frequency up to1kHz)"],
+            "Download": "https://akytec.de/media/wysiwyg/downloads/MX110/MV110-16D(DN)/MV110-16D(DN)_0294_EN.pdf",
+            "Buy": "ADD TO CART"
+        },
+        "MV110-24.16DN": {
+            "Digital inputs": "16",
+            "Digital outputs": "",
+            "Analog inputs": "",
+            "Analog outputs": "",
+            "Properties": ["Inputs: switch contacts, NPN sensors, pulse counters", "(24 V DC external power supply, measuring frequency up to 1kHz)"],
+            "Download": "https://akytec.de/media/wysiwyg/downloads/MX110/MV110-16D(DN)/MV110-16D(DN)_0294_EN.pdf",
+            "Buy": "ADD TO CART"
+        }
+    },
+    "MK110": {
+        "MK110-24.8D.4R": {
+            "Digital inputs": "8",
+            "Digital outputs": "4",
+            "Analog inputs": "",
+            "Analog outputs": "",
+            "Properties": ["Inputs: Switching contacts, NPN sensors", "Outputs: relays 4 A, 24 V DC"],
+            "Download": "https://akytec.de/media/wysiwyg/downloads/MX110/MK110-8D4R/User%20guide_MK110-8D4R_2019.08_0295_EN.pdf",
+            "Buy": "ADD TO CART"
+        }
+       
+    },
+    "MU110": {
+        "MU110-24.8I": {
+            "Digital inputs": "8",
+            "Digital outputs": "",
+            "Analog inputs": "",
+            "Analog outputs": "",
+            "Properties": ["Outputs: 4-20 mA, accuracy 0.5 %"],
+            "Download": "https://akytec.de/media/wysiwyg/downloads/MX110/MU110-8I/User%20guide_MU110-8I_2019.08_0293_EN.pdf",
+            "Buy": "ADD TO CART"
+        },
+        "MU110-24.6U": {
+            "Digital inputs": "",
+            "Digital outputs": "",
+            "Analog inputs": "",
+            "Analog outputs": "6",
+            "Properties": ["Outputs: 0-10 V, accuracy 0.5 %"],
+            "Download": "https://akytec.de/media/wysiwyg/downloads/MX110/MU110-6U/User%20guide_MU110-6U_2019.08_0292_EN.pdf",
+            "Buy": "ADD TO CART"
+        },
+        "MU110-24.8R": {
+            "Digital inputs": "",
+            "Digital outputs": "8",
+            "Analog inputs": "",
+            "Analog outputs": "",
+            "Properties": ["Outputs: relays (NO), 4 A, 250 V AC or 24 V DC"],
+            "Download": "https://akytec.de/media/wysiwyg/downloads/MX110/MU110-8R(K)/User%20guide_MU110-8R(K)_2019.08_0296_EN.pdf",
+            "Buy": "ADD TO CART"
+        },
+        "MU110-24.8K": {
+            "Digital inputs": "",
+            "Digital outputs": "8",
+            "Analog inputs": "",
+            "Analog outputs": "",
+            "Properties": ["Outputs: NPN transistors, 400 mA, 60 V DC"],
+            "Download": "https://akytec.de/media/wysiwyg/downloads/MX110/MU110-8R(K)/User%20guide_MU110-8R(K)_2019.08_0296_EN.pdf",
+            "Buy": "ADD TO CART"
+        },
+        "MU110-24.16R": {
+            "Digital inputs": "",
+            "Digital outputs": "16",
+            "Analog inputs": "",
+            "Analog outputs": "",
+            "Properties": ["Outputs: relays (NO) 3 A at 250 V AC or 30 V DC"],
+            "Download": "https://akytec.de/media/wysiwyg/downloads/MX110/MU110-16R(K)/User%20guide_MU110-16R(K)_2019.08_0291_EN.pdf",
+            "Buy": "ADD TO CART"
+        }
+        ,
+        "MU110-24.16K": {
+            "Digital inputs": "",
+            "Digital outputs": "16",
+            "Analog inputs": "",
+            "Analog outputs": "",
+            "Properties": ["Outputs: relays (NO) 3 A at 250 V AC or 30 V DC"],
+            "Download": "https://akytec.de/media/wysiwyg/downloads/MX110/MU110-16R(K)/User%20guide_MU110-16R(K)_2019.08_0291_EN.pdf",
+            "Buy": "ADD TO CART"
+        }
+       
+    }
+
+}
+
+
+  }

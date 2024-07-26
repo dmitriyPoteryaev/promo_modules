@@ -13,6 +13,7 @@ import { Modifications_Mx210 } from "./modifications_Mx210/Modifications_Mx210";
 import { Modifications_Mx110 } from "./modifications_Mx110/modifications_Mx110";
 import {AdAkytec, AdAkytecBottom} from "./ad-akytec/ad-akytec";
 import { TableComprasion } from "./module-comprasion-table/module-comprssion-table";
+import { CustomCollapse } from "src/ui/custom-collapse/custom-collapse";
 
 export const Main = () => {
 
@@ -33,6 +34,7 @@ export const Main = () => {
      <Modifications_Mx210/>
      <Modifications_Mx110/>
      <AdAkytecBottom/>
+     <CustomCollapse/>
     </ClientLayout>
   );
 };
