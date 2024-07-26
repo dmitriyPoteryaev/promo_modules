@@ -34,7 +34,7 @@ export const Main = () => {
      <Modifications_Mx210/>
      <Modifications_Mx110/>
      <AdAkytecBottom/>
-     <CustomCollapse/>
+     {/* <CustomCollapse/> */}
     </ClientLayout>
   );
 };
