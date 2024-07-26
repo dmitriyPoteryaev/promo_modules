@@ -24,7 +24,7 @@ export const Mx110_swiperBlock = () => {
                 <li>Compatibility with any equipment supporting the RS-485 interface and Modbus-RTU/ASCII protocols.</li>
             </ul>
             <div style={{marginTop: '69px'}}>
-            <Link href='/'>
+            <Link href='/moreInfo'>
             <Button variant='magenta' size='large' >                   
                         EXPLORE MODELS {"&"} SPECS
                      </Button></Link></div>

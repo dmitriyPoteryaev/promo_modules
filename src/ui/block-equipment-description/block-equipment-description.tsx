@@ -74,7 +74,7 @@ import * as  modulesInfoMx210 from '../../modules/main/modifications_Mx210/modul
 export const BlockEquipmentDescription = (props) => {
     const {equipment, visonEquipment, setVisonEquipment, ChangeArrayWithAllOrderPosition, ArrayWithAllOrderPositionStore} = props;
 
-    const  {name, img, width, height, FullDescription} = equipment;
+    const  {name, img, width, height, FullDescription, blockName} = equipment;
 
 //     const { token } = theme.useToken();
 
@@ -120,7 +120,7 @@ export const BlockEquipmentDescription = (props) => {
 
     return (
     <div style={{ width: '100%', maxWidth: '1135px', margin: 'auto', marginBottom: '40px'}}>
-        <div onClick={() => {setVisonEquipment((prevState) =>{ return {...prevState, [name]: !prevState[name]}})}} style={{border: '1px solid #DEDEDE', display: 'flex' , alignItems: 'center'}}>
+        <div onClick={() => {setVisonEquipment((prevState) =>{ return {...prevState, [name]: !prevState[name]}})}} style={{border: '1px solid #DEDEDE', display: 'flex' , alignItems: 'center', cursor: 'pointer'}}>
             <div style={{borderRight: '1px solid #DEDEDE', width: '20%', display: 'flex', justifyContent: 'center'}}><Image width={width} height={height} src={img} alt=''/></div>
             <div
             style={{
@@ -130,7 +130,7 @@ export const BlockEquipmentDescription = (props) => {
                 lineHeight: '32px',
                 marginLeft: '65px'
             }}
-            >{name}</div>
+            >{blockName}</div>
         </div>
          {name === "akytec Tool Pro"
  ? <SpecsToolPro visonEquipment={visonEquipment[name]}/>

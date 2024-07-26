@@ -18,6 +18,7 @@ export const  ModelsSpecs = observer(() => {
 
         {
             name: "Mx210",
+            blockName: "Mx210 with Ethernet",
             img: '/png/main/Oppotunities/Mx210/Mx210.png',
             width: 154.03,
             height: 154.03,
@@ -26,6 +27,7 @@ export const  ModelsSpecs = observer(() => {
         },
         {
             name: "Mx110",
+            blockName: "Mx110 with RS485",
             img: '/png/main/Oppotunities/Mx110/Mx110.png',
             width: 166.48,
             height: 157.49,
@@ -33,6 +35,7 @@ export const  ModelsSpecs = observer(() => {
         },
         {
             name: "akytec Tool Pro",
+            blockName: "akytec Tool Pro",
             img: '/png/main/Oppotunities/Tool-pro/akYtec-Tool-Pro.png',
             width: 168.41,
             height: 168.41,
@@ -41,9 +44,9 @@ export const  ModelsSpecs = observer(() => {
     ]
 
     const [visonEquipment, setVisonEquipment] = useState({
-        Mx210: false,
-        Mx110: false,
-        "akytec Tool Pro": false,
+        Mx210: true,
+        Mx110: true,
+        "akytec Tool Pro": true,
     })
 
 
