@@ -120,14 +120,23 @@ export const BlockEquipmentDescription = (props) => {
 
     return (
     <div style={{ width: '100%', maxWidth: '1135px', margin: 'auto', marginBottom: '40px'}}>
-        <div onClick={() => {setVisonEquipment((prevState) =>{ return {...prevState, [name]: !prevState[name]}})}} style={{border: '1px solid #DEDEDE', display: 'flex'}}>
-            <div style={{borderRight: '1px solid #DEDEDE', width: '20%'}}><Image width={width} height={height} src={img} alt=''/></div>
-            <div>{name}</div>
+        <div onClick={() => {setVisonEquipment((prevState) =>{ return {...prevState, [name]: !prevState[name]}})}} style={{border: '1px solid #DEDEDE', display: 'flex' , alignItems: 'center'}}>
+            <div style={{borderRight: '1px solid #DEDEDE', width: '20%', display: 'flex', justifyContent: 'center'}}><Image width={width} height={height} src={img} alt=''/></div>
+            <div
+            style={{
+                fontFamily: 'Istok-Regular-Bold',
+                fontWeight: '700',
+                fontSize: '20px',
+                lineHeight: '32px',
+                marginLeft: '65px'
+            }}
+            >{name}</div>
         </div>
          {name === "akytec Tool Pro"
- ? <SpecsToolPro className={cnContainerBlockEquipment}/>
+ ? <SpecsToolPro visonEquipment={visonEquipment[name]}/>
          
  :
+ <div className={classes.tableWrapper}>
          <table className={cnContainerBlockEquipment}>
     <thead >
         <tr >
@@ -178,7 +187,7 @@ return <>
                 </>})}
     
     </tbody>
-</table>}
+</table></div>}
 </div>)
 
 {/* <Collapse

@@ -50,7 +50,7 @@ export const  ModelsSpecs = observer(() => {
     return(
         <ClientLayout>
     <section className={classes.modelSpecsBlock}>
-        <header className={classes.modelSpecsBlock_header}>Models & specs</header>
+        <header className={classes.modelSpecsBlock_header}>Models and specs</header>
         <div style={{marginTop: '49px'}}>
         {Object.values(equipmentInfo).map((equipment) => {
 

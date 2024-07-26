@@ -94,3 +94,20 @@ border-top: 0px solid transparent;
 
 }
 
+
+@media screen and (max-width: 1135px) {
+
+    .table_equipment {
+
+        margin: auto;
+        max-width: unset !important;
+        width: 100%;
+        min-width: 1135px;
+    }
+
+    .tableWrapper {
+        overflow-x: auto;
+        
+    }
+        
+}  
