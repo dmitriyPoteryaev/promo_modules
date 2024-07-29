@@ -28,7 +28,7 @@ export default function RootLayout({
           }}
         />
         {/* End Google Tag Manager */}
-
+        <link rel="icon" href="https://akytec.de/media/favicon/default/favicon.png" type="image/x-icon"/>
 
       </head>
       <body>

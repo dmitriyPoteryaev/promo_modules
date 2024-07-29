@@ -21,7 +21,8 @@ export const Application3 = () => {
   return (
     <ClientLayout>
       <BlockLayout>
-        <ButtonToMainPage />
+        <div style={{maxWidth: '1162px', width: '100%', margin: 'auto'}}>     <ButtonToMainPage /></div>
+  
         <section className={classes.application3}>
           <header className={classes.application3_header}>
             Solution for Wireless Farm Dispath

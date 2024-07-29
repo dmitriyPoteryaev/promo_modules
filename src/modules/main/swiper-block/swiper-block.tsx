@@ -18,13 +18,13 @@ export const SwiperBlock = () => {
         <div className={classes.swiper_wrapperBlock}>
         <article>
             <header>Connection options</header>
-            <ul>
+            <ul style={{maxWidth: '480px'}}>
                 <li>Increase the number of inputs and outputs of any PLC with Ethernet in centralized and decentralized systems.</li>
                 <li>Connecting modules to CLOUD services through routers or gateways for remote monitoring and control.</li>
                 <li>Connecting to a PC for remote data acquisition <br/> into a SCADA system or other software.</li>
                 <li>Connection to any equipment supporting Ethenet interface and Modbus TCP, SNMP, MQTT communication protocols.</li>
             </ul>
-            <Image style={{marginTop: '30px'}} width={564} height={50} src='/png/main/multiple-protocols/Mx210/logo.svg' alt="protocols_logo"/>
+            <Image style={{marginTop: '30px'}} width={470} height={50} src='/png/main/multiple-protocols/Mx210/logo.svg' alt="protocols_logo"/>
         </article>
         <div style={{ maxWidth: '620px', width: '100%' }}>
         <CustomSwiper arrayWithPng={pngsProtocolsMx210}/>

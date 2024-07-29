@@ -19,7 +19,7 @@ export const Application1 = () => {
   return (
     <ClientLayout>
       <BlockLayout>
-         <ButtonToMainPage />
+      <div style={{maxWidth: '1162px', width: '100%', margin: 'auto'}}>     <ButtonToMainPage /></div>
         <section className={classes.application1}>
           <header className={classes.application1_header}>
             Ensuring Continuous Monitoring and Control of Server Room Parameters
