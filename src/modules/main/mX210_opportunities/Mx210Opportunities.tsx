@@ -23,10 +23,10 @@ export const Mx210Opportunities: FC = () => {
     return <section className={classes.Mx210opportunities} id='Mx210'>
         <div className={classes.Mx210opportunities_line}><div>Mx210 <span>with Ethernet</span></div></div>
         <div className={classes.Mx210opportunities_fullInfo}>
-            <article>
-            <p><strong>Mx210</strong> - the line of universal I/O modules with Ethernet interfaces. 
+            <article >
+            <p style={{maxWidth: '470px'}}><strong>Mx210</strong> - the line of universal I/O modules with Ethernet interfaces. 
                 These modules support a wide range of protocols, such as Modbus TCP, MQTT, and SNMP, making them suitable for both 
-                centralized and decentralized industrial automation systems, <br/> as well as IIoT applications.</p>
+                centralized and decentralized industrial automation systems, as well as IIoT applications.</p>
                 <div className={classes.Mx210opportunities_wrapperImg}>
                 <Image width={535} height={535} className={classes.Mx210opportunities_imgModule} src="/png/main/Oppotunities/Mx210/Mx210.png" alt="Mx210" />
                 <div>Compatibility with third-party PLCs</div> 

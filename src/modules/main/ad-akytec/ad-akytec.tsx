@@ -19,7 +19,7 @@ export const AdAkytec = () => {
                         DISCOVER AKYTEC PRODUCTS
                     </Button></Link> </div>
                     </div>
-                    <Image src="/png/main/akytec-ad/akytec-ad.svg" width={637} height={347} alt=""/>
+                    <Image style={{paddingTop: '15px'}} src="/png/main/akytec-ad/akytec-ad.svg" width={620} height={365} alt=""/>
         </div>
     </section>)
 }

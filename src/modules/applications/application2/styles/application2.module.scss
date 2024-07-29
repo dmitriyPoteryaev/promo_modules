@@ -4,17 +4,15 @@
 
 .application2 {
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+   width: 100%;
 }
 
 .application2_header {
     @include header-bold-60px;
 
-    max-width: 1530.21px;
+    max-width: 1162px;
     width: 100%;
+    margin: auto;
     font-family: 'Archivo-Narrow-Bold';
     color: #212529;
 }
@@ -23,6 +21,9 @@
 
     margin-top: 30px;
     display: flex;
+    max-width: 1162px;
+    width: 100%;
+    margin: auto;
 }
 
 .application2_shotDescription figure {
@@ -76,13 +77,18 @@
 
 .application2_mainImg {
 
-    margin: 69px 0px 140.53px 0px;
+    max-width: 1162px;
+    width: 100%;
+    margin: auto;
+    margin-top: 69px;
+    margin-bottom: 71px;
 }
 
 .application2_textDescription{
 
+    max-width: 1162px;
     width: 100%;
-    max-width: 1530px;
+    margin: auto;
     margin-bottom: 138px;
     color: #000000;
 }
@@ -178,5 +184,14 @@
         
     font-size: 40px;
     }
+
+}
+
+@media screen and (max-width:  450px) {
+
+    .application2_header {
+      font-size: 40px;
+    }
+
 
 }

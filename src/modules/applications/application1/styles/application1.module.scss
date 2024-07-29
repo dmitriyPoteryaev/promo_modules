@@ -4,25 +4,27 @@
 
 .application1 {
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 100%;
 
 }
 
 .application1_header {
     @include header-bold-60px;
 
-    max-width: 1530.21px;
+    max-width: 1162px;
     width: 100%;
+     margin: auto;
     font-family: 'Archivo-Narrow-Bold';
     color: #212529;
 }
 
 .application1_shotDescription {
 
+    max-width: 1162px;
+    width: 100%;
     margin-top: 30px;
     display: flex;
+    margin: auto;
 }
 
 .application1_shotDescription figure {
@@ -49,13 +51,18 @@
 
 .application1_mainImg {
 
-    margin: 69px 0px 140.53px 0px;
+    max-width: 1162px;
+    width: 100%;
+    margin: auto;
+    margin-top: 69px;
+    margin-bottom: 71px;
 }
 
 .application1_textDescription{
 
+    max-width: 1162px;
     width: 100%;
-    max-width: 1530px;
+    margin: auto;
     margin-bottom: 138px;
 }
 
@@ -115,6 +122,16 @@
 
         margin-right: 0px;
      }
+
+
+}
+
+
+@media screen and (max-width:  350px) {
+
+    .application1_header {
+      font-size: 40px;
+    }
 
 
 }

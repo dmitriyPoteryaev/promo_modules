@@ -19,7 +19,7 @@ export const Application2 = () => {
   return (
     <ClientLayout>
       <BlockLayout>
-         <ButtonToMainPage /> 
+      <div style={{maxWidth: '1162px', width: '100%', margin: 'auto'}}>     <ButtonToMainPage /></div>
         <section className={classes.application2}>
           <header className={classes.application2_header}>
             Pharmaceutical Warehouse Automation
