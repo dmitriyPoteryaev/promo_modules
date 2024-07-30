@@ -249,13 +249,13 @@ export const FormExample = observer(() => {
               />
             </div>
           </div>
-          <label style={{width: '100%', marginTop: '52px', display: 'flex', justifyContent: 'center'}}>
+          <label style={{width: '100%', marginTop: '52px', display: 'flex'}}>
             <Controller
               name="isGetInfo"
               control={control}
               render={({ field }) => <Checkbox {...field} />}
             />
-            <div style={{fontSize: '16px', marginLeft: '21px'}}>Please, call me, I would like to obtain further information about this product.</div>
+            <div style={{fontSize: '16px', marginLeft: '21px', fontFamily: 'Istok-Regular', lineHeight: '32px', fontWeight: '400', color: '#212529'}}>Please, call me, I would like to obtain further information about this product.</div>
           </label>
           <label style={{width: '100%', marginTop: '5px', display: 'flex', justifyContent: 'center'}}>
             <Controller
@@ -264,7 +264,7 @@ export const FormExample = observer(() => {
               
               render={({ field }) => <Checkbox {...field} />}
             />
-            <div style={{fontSize: '16px', marginLeft: '21px'}}>Yes, I would like to receive company news, notifications of new products, invitations tp webinars, etc.</div>
+            <div style={{fontSize: '16px', marginLeft: '21px', fontFamily: 'Istok-Regular', lineHeight: '32px', fontWeight: '400', color: '#212529'}}>Yes, I would like to receive company news, notifications of new products, invitations tp webinars, etc.</div>
           </label>
 
           </div>
