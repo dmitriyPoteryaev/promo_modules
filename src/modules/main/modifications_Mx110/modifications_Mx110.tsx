@@ -12,17 +12,21 @@ export const Modifications_Mx110 = observer(() => {
 
   const [isChecked, isSetChecked] = useState({});
 
+  const [isShowFilter, isSetShowFilter] = useState(true);
+
   const { ChangeArrayWithAllOrderPosition, ArrayWithAllOrderPositionStore } =
   basketStore;
 
-    return (<section style={{paddingBottom: '143px'}} className={classes.moidificationBlock}>
-      <header className={classes.moidificationBlock_title}>Mx110 with RS485</header>
-      <div style={{width: '100%',maxWidth: '1162px', textAlign: 'left', fontSize: '20px', marginBottom: '9px'}}>Number of inputs/outputs:</div>
-      <div  className={classes.moidificationBlock_listCheckbox}>
-      <div>
-      <span style={{marginRight: "12px"}}> AI</span>
-      <ul style={{display: 'flex'}}>
-      <li>
+    return (<section className={classes.moidificationBlock} id='modification'>
+      <header className={classes.moidificationBlock_title}>Mx110 with Rs485</header>
+      {/* <div style={{width: '100%',maxWidth: '1162px', textAlign: 'left', fontSize: '20px', marginBottom: '9px'}}>Number of inputs/outputs:</div> */}
+       <div  className={classes.moidificationBlock_listCheckbox}>
+        <div  className={classes.moidificationBlock_hideFiltersBlock}>Number of inputs/outputs: <button onClick={() => isSetShowFilter((prevState) => !prevState)}>{isShowFilter ? 'Hide filters' : 'Show filters'}</button></div>
+        {isShowFilter && <div className={classes.moidificationBlock_boxCheckbox} style={{width: '76%', display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '12px'}}>
+      <div  style={{marginTop: '13px', paddingLeft: '30px', paddingRight: '30px', paddingBottom: '8px', paddingTop: '7px', display: 'flex', borderRadius: '2px', boxShadow: '0 0 10px 0 rgba(38, 59, 59, 0.1)', flexDirection: 'column', justifyContent: 'space-between', alignItems: 'center', backgroundColor: 'white'}}>
+      <span> AI</span>
+      <ul style={{display: "flex", width: '95px', justifyContent:"space-between"}}>
+        <li>
       <RadioButton name='AI' text="AI" number='2' value="2" checkedObj={isChecked} onChange={(event) => {
         const name = event.target.name;
         const value = event.target.value;
@@ -36,9 +40,9 @@ export const Modifications_Mx110 = observer(() => {
         </li>
         </ul>
         </div>
-        <div>
-          <span style={{marginRight: "12px"}}> AO</span>
-          <ul style={{display: 'flex'}}>
+        <div style={{marginTop: '13px', paddingLeft: '30px', paddingRight: '30px', paddingBottom: '8px', paddingTop: '7px', display: 'flex', borderRadius: '2px', boxShadow: '0 0 10px 0 rgba(38, 59, 59, 0.1)', flexDirection: 'column', justifyContent: 'space-between', alignItems: 'center', backgroundColor: 'white'}}>
+          <span> AO</span>
+          <ul style={{display: "flex", justifyContent:"space-between", width: '95px'}}>
           <li>
       <RadioButton name='AO' text="AO" checkedObj={isChecked} number='6' value="6" onChange={(event) => {
         const name = event.target.name;
@@ -53,9 +57,10 @@ export const Modifications_Mx110 = observer(() => {
           </li>
          </ul>
          </div>
-         <div>
-            <span style={{marginRight: "12px"}}> DI</span>
-            <ul style={{display: "flex"}}>
+
+         <div style={{marginTop: '13px', paddingLeft: '35px', paddingRight: '35px', paddingBottom: '8px', paddingTop: '7px', display: 'flex', borderRadius: '2px', boxShadow: '0 0 10px 0 rgba(38, 59, 59, 0.1)', flexDirection: 'column', justifyContent: 'space-between', alignItems: 'center', backgroundColor: 'white', maxWidth: '220px', width: '100%'}}>
+            <span> DI</span>
+            <ul style={{display: "flex", maxWidth: '155px', width: '100%', justifyContent:"space-between"}}>
             <li>
          <RadioButton name='DI' text="DI" checkedObj={isChecked} number='8' value="8" onChange={(event) => {
         const name = event.target.name;
@@ -70,18 +75,18 @@ export const Modifications_Mx110 = observer(() => {
 
         isSetChecked(changeState(name, event.target.checked, value, isChecked))}}/>
           </li>
-          <li>
-         <RadioButton name='DI' text="DI" checkedObj={isChecked} number='32' value="32" onChange={(event) => {
+         <li>
+               <RadioButton name='DI' text="DI" checkedObj={isChecked} number='32' value="32" onChange={(event) => {
         const name = event.target.name;
         const value = event.target.value;
 
         isSetChecked(changeState(name, event.target.checked, value, isChecked))}}/>
-         </li>
+        </li>
         </ul>
         </div>
-        <div>
-            <span style={{marginRight: "12px"}}> DO</span>
-            <ul style={{display: "flex"}}>
+        <div style={{marginTop: '13px', paddingLeft: '35px', paddingRight: '35px', paddingBottom: '8px', paddingTop: '7px', display: 'flex', borderRadius: '2px', boxShadow: '0 0 10px 0 rgba(38, 59, 59, 0.1)', flexDirection: 'column', justifyContent: 'space-between', alignItems: 'center', backgroundColor: 'white', maxWidth: '300px', width: '100%'}}>
+            <span> DO</span>
+            <ul style={{display: "flex", maxWidth: '215px', width: '100%', justifyContent:"space-between"}}>
             <li>
            <RadioButton name='DO' text="DO" checkedObj={isChecked} number='4' value="4" onChange={(event) => {
         const name = event.target.name;
@@ -111,13 +116,14 @@ export const Modifications_Mx110 = observer(() => {
          </li>
          </ul>
          </div>
+        </div>}
       </div>
       <ul className={classes.moidificationBlock__listModifications}>
         {sortModifications(modulesInfo.modules, isChecked, ArrayWithAllOrderPositionStore)?.length !== 0 ?  sortModifications(modulesInfo.modules, isChecked, ArrayWithAllOrderPositionStore).map((infoAboutModule) => {
            
            return(<ModificationCard key={infoAboutModule.certain_name} info={infoAboutModule} ChangeArrayWithAllOrderPosition={ChangeArrayWithAllOrderPosition}/>)
 
-        }) : <div className={classes.moidificationBlock__listModifications_empty}>There is not appropriate Mx110</div>
+        }) : <div className={classes.moidificationBlock__listModifications_empty}>There is not appropriate Mx210</div>
 
         }
       

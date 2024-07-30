@@ -28,11 +28,12 @@ export const RadioButton: FC<RadioButtonProps> = ({
       });
 
   return (
-    <label className={classes.label_radio_button}>
+    <label className={classes.label_radio_button} style={{display: 'flex'}}>
       <input className={classes.input_radio_button}  type="checkbox" {...props} checked={checked}/>
       <span className={cnContainerFakeRadioButton}>
+      {number}
       </span>
-      <span className={classes.label_radio_number}>{number}</span>
+      {/* <span className={classes.label_radio_number}>{number}</span> */}
     </label>
   );
 };

@@ -3,7 +3,7 @@
 .label_radio_button {
 
   width: fit-content;
-  padding-left: 1.3em;
+  // padding-left: 1.3em;
   position: relative;
   display: flex;
   align-items: center;
@@ -18,45 +18,54 @@
 
 .fake_radio_button {
 
-  width: 25px;
-  height: 25px;
+  width: 34px;
+  height: 34px;
   padding: 6px;
-  border: 1px solid  #212529;
-  margin-left: -0.6em;
-  position: absolute;
+  // margin-left: -0.6em;
+  // position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  // top: 50%;
+  // transform: translate(-50%, -50%);
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
-  background-image: url('');
+  background-color: #E7E7E7;
+  font-family: 'Istok-Regular';
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 400;
+  color: #212529;
+  border-radius: 2px;
   
 }
 
 //hover effect; styles checked radio-button 
 .fake_radio_button:hover{
 
-    background-image: url(../../../assets/svgs/radio-button-tick-hover.svg);
+  background-color: #00A197;
+  color: #FFFFFF;
 }
 //active effect; styles checked radio-button 
 .fake_radio_button:active{
 
-    background-image: url(../../../assets/svgs/radio-button-tick-active.svg);
+  background-color: #00A197;
+  color: #FFFFFF;
 
 }
 
 .fake_radio_button_checked_true{
 
-  background-image: url(../../../assets/svgs/radio-button-tick-active.svg);
+  background-color: #00A197;
+  color: #FFFFFF;
 
 }
 
 .fake_radio_button_checked_true:hover{
 
-  background-image: url(../../../assets/svgs/radio-button-tick-active.svg);
+  background-color: #00A197;
+  color: #FFFFFF;
 
 }
 
