@@ -24,7 +24,7 @@ export const ButtonToMainPage: FC = () => {
         </button>
         </Link>
         <div>
-          <div>Modules Mx110/210 |</div> <div>Application {specificId}</div>
+        <Link href={"/"}><div>Modules Mx110/210 |</div></Link><Link href={"/#applications"}> <div>Application </div></Link>
         </div>
       </div>
     </div>

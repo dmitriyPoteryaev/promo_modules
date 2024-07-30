@@ -257,7 +257,7 @@ export const FormExample = observer(() => {
             />
             <div style={{fontSize: '16px', marginLeft: '21px', fontFamily: 'Istok-Regular', lineHeight: '32px', fontWeight: '400', color: '#212529'}}>Please, call me, I would like to obtain further information about this product.</div>
           </label>
-          <label style={{width: '100%', marginTop: '5px', display: 'flex', justifyContent: 'center'}}>
+          <label style={{width: '100%', marginTop: '5px', display: 'flex'}}>
             <Controller
               name="isGetNews"
               control={control}

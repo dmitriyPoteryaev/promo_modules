@@ -59,6 +59,16 @@
   cursor: pointer;
 }
 
+.application ul li span:hover {
+ 
+  color: #FF007D;
+}
+
+.application ul li span:active {
+ 
+  color: #FF007D;
+}
+
 @media screen and (max-width: 1250px) {
 
   .application ul {

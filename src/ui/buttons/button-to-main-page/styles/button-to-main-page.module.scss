@@ -42,13 +42,26 @@
 
     font-family: 'Istok-Regular';
     color: #797979;
+    height: 20px;
 }
 
 .button_to_main_page_container div div:last-child {
 
     height: 20px;
     margin-left: 5px;
+}
+
+
+.button_to_main_page_container div div:last-child:hover {
+    
+    margin-left: 5px;
     border-bottom: 1px solid #797979;
 }
+
+.button_to_main_page_container div div:first-child:hover {
+
+    border-bottom: 1px solid #797979;
+}
+
 
 
