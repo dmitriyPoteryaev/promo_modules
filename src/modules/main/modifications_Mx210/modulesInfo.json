@@ -49,9 +49,10 @@
         "AO": null,
         "interface_connection": "Ethenet",
         "image": "/png/main/modification/Mx210/MV210-214.png",
-        "width": 258.26,
-        "height": 258.26,
-        "href": "https://akytec.de/media/wysiwyg/downloads/MX210/MV210-2xx/UG_MV210-212-214_3-EN-59115-2.3.pdf"
+        "width": 265,
+        "height": 265,
+        "href": "https://akytec.de/media/wysiwyg/downloads/MX210/MV210-2xx/UG_MV210-212-214_3-EN-59115-2.3.pdf",
+        "unAppproprietedSize": true
     },
     {
         "certain_name": "MV210-221",

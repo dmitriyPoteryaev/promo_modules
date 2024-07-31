@@ -36,7 +36,7 @@ export const ModuleAdAboutModBus: FC = () => {
                 </div>
 
                 
-                <div className={classes.moduleAd_modulePhoto}><Image src={modulePhoto} alt="module" /></div>
+                <div className={classes.moduleAd_modulePhoto}><Image src={modulePhoto} width={600} height={535} alt="module" /></div>
 
             </article>
         </div>

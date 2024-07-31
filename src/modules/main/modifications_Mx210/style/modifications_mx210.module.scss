@@ -110,6 +110,20 @@
 
 }
 
+@media screen and (max-width: 1230px) {
+
+
+    
+.moidificationBlock__listModifications {
+
+    padding-left: 24px;
+    padding-right: 24px;
+
+
+}
+
+}
+
 
 @media screen and (max-width: 1200px) {
 
@@ -235,3 +249,17 @@
 //     }
 
 // }
+
+@media screen and (max-width: 400px) {
+
+
+    
+    .moidificationBlock__listModifications {
+    
+        padding-left: 0px;
+        padding-right: 0px;
+    
+    
+    }
+    
+    }

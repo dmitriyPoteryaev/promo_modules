@@ -9,7 +9,7 @@ export const ModificationCard: FC<any> = (props) => {
 
 const {info, ChangeArrayWithAllOrderPosition} = props;
 
-const {AI, AO, DI, DO, certain_name, common_name, image, width, height, isOrdered, href} = info;
+const {AI, AO, DI, DO, certain_name, common_name, image, width, height, isOrdered, href, unAppproprietedSize} = info;
 
 const {cnContainerNotification, cnContainerButton} = getClasses({
     isOrdered,
@@ -18,7 +18,7 @@ const {cnContainerNotification, cnContainerButton} = getClasses({
 
     return (<li className={classes.modificationCardBlock}>
         <span className={cnContainerNotification}>ADDED TO CART</span>
-        <Image alt="module" src={image} width={width} height={height}/>
+        <Image style={{ position: unAppproprietedSize ? 'absolute' : 'unset', top: unAppproprietedSize ? '0px' : 'unset',  }} alt="module" src={image} width={width} height={height}/>
         <header>{certain_name}</header>
         <div>{common_name}</div>
         <div>{DI && ` DI: ${DI}`}{DO && ` DO: ${DO}`}{AI && ` AI: ${AI}`}{AO && ` AO: ${AO}`}</div>
